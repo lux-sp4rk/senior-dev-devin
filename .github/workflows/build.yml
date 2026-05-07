@@ -13,17 +13,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: "20"
 
       - name: Build index.html
-        run: ./scripts/build.sh
+        run: npm run build
 
       - name: Commit & push
         if: github.event_name == 'push'
         run: |
+          git add index.html
           if ! git diff --cached --quiet; then
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"

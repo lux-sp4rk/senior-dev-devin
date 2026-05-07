@@ -1,61 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html data-init-no-bookmark="">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Devin the Senior Dev</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-    * { box-sizing: border-box; }
-    body {
-      background: #0a0a0a;
-      color: #e0e0e0;
-      font-family: 'JetBrains Mono', 'Courier New', monospace;
-      font-size: 15px;
-      line-height: 1.7;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-    .episode-header {
-      color: #555;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #222;
-      padding-bottom: 1rem;
-    }
-    .tw-link {
-      color: #7ee787;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .tw-link:hover { color: #a5f3b4; }
-    hr { border: none; border-top: 1px solid #222; margin: 2rem 0; }
-  </style>
-</head>
-<body>
-<tw-storydata name="Devin the Senior Dev" ifid="DEVIN-SENIOR-DEV-E001" format="Harlowe" format-version="3.3.0" start="prologue_greg_office" options="" hidden="">
-<tw-passagedata name="StoryTitle">Devin the Senior Dev</tw-passagedata>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Devin the Senior Dev</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #0a0a0a;
+        color: #e0e0e0;
+        font-family: "JetBrains Mono", "Courier New", monospace;
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+      .episode-header {
+        color: #555;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #222;
+        padding-bottom: 1rem;
+      }
+      .tw-link {
+        color: #7ee787;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .tw-link:hover {
+        color: #a5f3b4;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #222;
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <tw-storydata
+      name="Devin the Senior Dev"
+      ifid="DEVIN-SENIOR-DEV-E001"
+      format="Harlowe"
+      format-version="3.3.0"
+      start="prologue-greg-office"
+      options=""
+      hidden=""
+    >
+      <tw-passagedata name="StoryTitle">Devin the Senior Dev</tw-passagedata>
 <tw-passagedata name="StoryData">{
   "ifid": "DEVIN-SENIOR-DEV-E001",
   "format": "Harlowe",
   "format-version": "3.3.0",
-  "start": "prologue_greg_office"
+  "start": "prologue-greg-office"
 }</tw-passagedata>
-<tw-passagedata name="prologue_greg_office">&lt;!-- EPISODE 1: The Deal --&gt;
+<tw-passagedata name="episode-2-monday">&lt;!-- EPISODE 2 PENDING — this is where your thread continues. --&gt;
+
+[This is where your next post picks up. The Monday meeting. Greg. The Guy.]
+
+[["Restart from beginning."|prologue-greg-office]]</tw-passagedata>
+<tw-passagedata name="path-vimrc">You’ve clutched your .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. Your boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued.
+
+"Devin," Greg whispers, his voice thick with the fake empathy of a corporate executioner. "The board doesn't want 'artisanal logic.' They want *velocity*."
+
+[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."-&gt;prologue-walk-home]]
+[[B) Stare at his hairline until he feels the weight of his own mortality.-&gt;prologue-walk-home]]</tw-passagedata>
+<tw-passagedata name="path-rust">You spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling you that your memory management is "unethical."
+
+You don't finish the system. You don't even finish the boilerplate. But you do manage to make a "Hello World" binary that is memory-safe, thread-safe, and exactly 4MB of pure, unadulterated hubris.
+
+Monday morning, you show it to Greg. He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak.
+
+"Where is the AI, Devin?" he asks. His voice is flat. The twitch in his eye has been replaced by a terrifying, absolute stillness. "The board wanted a 10x leverage generator. You gave me a... 'zero-cost abstraction' for a problem we don't have."
+
+He doesn't even wait for you to explain the ownership model. He just slides a cardboard box across the desk. It’s already got your spare mechanical keyboard and your "I survived the Cloudflare outage" mug in it.
+
+**GAME OVER: THE PURIST'S PLIGHT**
+*You chose technical excellence over corporate survival. The borrow checker is happy, but your mortgage lender isn't.*
+
+[[Try again, but this time lie like a professional.-&gt;prologue-greg-office]]</tw-passagedata>
+<tw-passagedata name="path-a-grind">You clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that you've been pretending to read since 2019.
+
+The hours blur. Eigenvectors. Backpropagation. You drink so much coffee your hands start to look like they'd shake during a drug test.
+
+By 4am you're staring at a whiteboard covered in notation that could qualify as abstract art.
+
+Monday arrives like a freight train with no brakes.
+
+[["Go to the meeting."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="path-b-liquidate">You open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
+
+It is not enough.
+
+But it buys two weeks of breathing room.
+
+[["Continue."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="path-c-create-guy">You sit in the dark for exactly eleven minutes. Then you open a browser.
+
+First: LinkedIn. You create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+
+Then the CV. You write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
+
+You hit save.
+
+[["Continue."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="prologue-greg-office">&lt;!-- EPISODE 1: The Deal --&gt;
 
 The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair like a man who has never written a line of code but has read exactly one article about "AI leverage."
 
-"Bring him in Monday," Greg says. His smile doesn't reach his eyes. It doesn't reach anywhere.
+"Quarterly reviews", he says, vibrating with "AI leverage" energy, "Now, tell me: why hasn't your output increased by 10x?"
 
-You don't know a guy. You know a guy who knows a guy who once used ChatGPT to write a wedding toast. That's it. That's the whole network.
-
-But you said yes anyway.
-
-[[["Head home."|prologue_walk_home]]]</tw-passagedata>
-<tw-passagedata name="prologue_walk_home">The evening air is thick with the smell of money burning. Not yours — not yet — but the premonition of it. Your apartment building rises like a courthouse at the end of a long hallway.
+[[A) Sweat over the .vimrc you’ve groomed since 2004. -&gt;path-vimrc]]
+[[B) Rewrite the review system in Rust.-&gt;path-rust]]</tw-passagedata>
+<tw-passagedata name="prologue-walk-home">The evening air is thick with the smell of money burning. Not yours — not yet — but the premonition of it. Your apartment building rises like a courthouse at the end of a long hallway.
 
 You open the door.
 
@@ -65,86 +128,117 @@ She looks up. "The car was fine," she says. "The other guy wasn't."
 
 Three months. No work. A three-car pileup that somehow involved no cars. The insurance is a fog. The savings account is a rumor.
 
-&gt; **A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.**
+What do you do?
+[[A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.-&gt;path-a-grind]]
+[[B) Sell your IBM Model M and 1998 'Vim Power User' shirt on eBay.-&gt;path-b-liquidate]]
+[[C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍-&gt;path-c-create-guy]]</tw-passagedata>
+    </tw-storydata>
+    <script>
+      (function () {
+        var storyData = document.querySelector("tw-storydata");
+        var passages = {};
+        var startPassage = storyData.getAttribute("start");
 
-[["Grind."|path_a_grind]]
+        Array.from(storyData.querySelectorAll("tw-passagedata")).forEach(
+          function (p) {
+            passages[p.getAttribute("name")] = p.innerHTML;
+          },
+        );
 
-&gt; **B) Sell your IBM Model M and 1998 'Vim Power User' shirt on eBay.**
+        function render(text) {
+          // 1. Basic Markdown-ish formatting (process BEFORE links to avoid mangling HTML tags)
+          // Bold: **text**
+          text = text.replace(/\*\*([^\*\n]+)\*\*/g, "<strong>$1</strong>");
+          // Italics: _text_ (only single words or phrases without newlines)
+          text = text.replace(/_([^_\n ]+)_/g, "<em>$1</em>");
 
-[["Liquidate."|path_b_liquidate]]
+          // 2. Images
+          text = text.replace(
+            /\[img\[([^\]]+)\]/g,
+            '<img src="$1" style="max-width:100%">',
+          );
 
-&gt; **C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍**
+          function processLink(content) {
+            // Handle |
+            if (content.includes("|")) {
+              var parts = content.split("|");
+              return (
+                '<a class="tw-link" data-dest="' +
+                parts[1].trim() +
+                '">' +
+                parts[0].trim() +
+                "</a>"
+              );
+            }
+            // Handle -> or -&gt;
+            if (
+              content.indexOf("->") !== -1 ||
+              content.indexOf("-&gt;") !== -1
+            ) {
+              var parts = content.split(/->|-&gt;/);
+              return (
+                '<a class="tw-link" data-dest="' +
+                parts[1].trim() +
+                '">' +
+                parts[0].trim() +
+                "</a>"
+              );
+            }
+            // Handle <- or &lt;-
+            if (
+              content.indexOf("<-") !== -1 ||
+              content.indexOf("&lt;-") !== -1
+            ) {
+              var parts = content.split(/<-|&lt;-/);
+              return (
+                '<a class="tw-link" data-dest="' +
+                parts[0].trim() +
+                '">' +
+                parts[1].trim() +
+                "</a>"
+              );
+            }
+            // Simple link
+            return (
+              '<a class="tw-link" data-dest="' +
+              content.trim() +
+              '">' +
+              content.trim() +
+              "</a>"
+            );
+          }
 
-[["Fabricate."|path_c_create_guy]]</tw-passagedata>
-<tw-passagedata name="path_a_grind">You clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of _Pattern Recognition and Machine Learning_ that you've been pretending to read since 2019.
+          // 3. Process links: [[...]]
+          text = text.replace(/\[\[+([^\]]+)\]\]+/g, function (m, content) {
+            return processLink(content);
+          });
 
-The hours blur. Eigenvectors. Backpropagation. You drink so much coffee your hands start to look like they'd shake during a drug test.
+          // 4. Support basic line breaks
+          text = text.replace(/\n/g, "<br>");
 
-By 4am you're staring at a whiteboard covered in notation that could qualify as abstract art.
+          return text;
+        }
 
-Monday arrives like a freight train with no brakes.
+        function go(name) {
+          var html = passages[name] || "<p>Passage not found: " + name + "</p>";
+          document.getElementById("game").innerHTML =
+            '<div class="episode-header">DEVIN THE SENIOR DEV — ' +
+            name.replace(/-/g, " ").toUpperCase() +
+            "</div>" +
+            render(html);
+          document
+            .getElementById("game")
+            .querySelectorAll(".tw-link")
+            .forEach(function (a) {
+              a.addEventListener("click", function (e) {
+                go(this.getAttribute("data-dest"));
+              });
+            });
+        }
 
-[["Go to the meeting."|episode_2_monday]]</tw-passagedata>
-<tw-passagedata name="path_b_liquidate">You open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
-
-It is not enough.
-
-But it buys two weeks of breathing room.
-
-[["Continue."|episode_2_monday]]</tw-passagedata>
-<tw-passagedata name="path_c_create_guy">You sit in the dark for exactly eleven minutes. Then you open a browser.
-
-First: LinkedIn. You create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
-
-Then the CV. You write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
-
-You hit save.
-
-[["Continue."|episode_2_monday]]</tw-passagedata>
-<tw-passagedata name="episode_2_monday">&lt;!-- EPISODE 2 PENDING — this is where your thread continues. --&gt;
-
-[This is where your next post picks up. The Monday meeting. Greg. The Guy.]
-
-[["Restart from beginning."|prologue_greg_office]]</tw-passagedata>
-
-</tw-storydata>
-<script>
-(function(){
-  var storyData = document.querySelector('tw-storydata');
-  var passages = {};
-  var startPassage = storyData.getAttribute('start');
-
-  Array.from(storyData.querySelectorAll('tw-passagedata')).forEach(function(p){
-    passages[p.getAttribute('name')] = p.innerHTML;
-  });
-
-  function render(text) {
-    text = text.replace(/\[img\[([^\]]+)\]/g, '<img src="$1" style="max-width:100%">');
-    text = text.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, function(m, label, dest){
-      return '<a class="tw-link" data-dest="'+dest+'">'+label+'</a>';
-    });
-    text = text.replace(/\[\[\[([^\]|]+)\|([^\]]+)\]\]\]/g, function(m, label, dest){
-      return '<a class="tw-link" data-dest="'+dest+'">'+label+'</a>';
-    });
-    text = text.replace(/\[\[([^\]]+)\]\]/g, function(m, dest){
-      return '<a class="tw-link" data-dest="'+dest+'">'+dest+'</a>';
-    });
-    text = text.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>');
-    text = text.replace(/_([^_]+)_/g, '<em>$1</em>');
-    return text;
-  }
-
-  function go(name) {
-    var html = passages[name] || '<p>Passage not found: ' + name + '</p>';
-    document.getElementById('game').innerHTML = '<div class="episode-header">DEVIN THE SENIOR DEV — ' + name.replace(/_/g, ' ').toUpperCase() + '</div>' + render(html);
-    document.getElementById('game').querySelectorAll('.tw-link').forEach(function(a){
-      a.addEventListener('click', function(e){ go(this.getAttribute('data-dest')); });
-    });
-  }
-
-  document.body.innerHTML = '<div id="game"></div>';
-  go(startPassage);
-})();
-</script>
-</body>
+        document.body.innerHTML = '<div id="game"></div>';
+        go(startPassage);
+      })();
+    </script>
+  </body>
 </html>
