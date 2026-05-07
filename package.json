@@ -1,0 +1,9 @@
+{
+  "name": "devin-the-senior-dev",
+  "version": "1.0.0",
+  "description": "An interactive fiction series about a senior dev drowning in corporate AI pressure",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js"
+  }
+}

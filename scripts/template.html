@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html data-init-no-bookmark="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devin the Senior Dev</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #e0e0e0;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    .episode-header {
+      color: #555;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #222;
+      padding-bottom: 1rem;
+    }
+    .tw-link {
+      color: #7ee787;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .tw-link:hover { color: #a5f3b4; }
+    hr { border: none; border-top: 1px solid #222; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+<tw-storydata name="Devin the Senior Dev" ifid="DEVIN-SENIOR-DEV-E001" format="Harlowe" format-version="3.3.0" start="prologue_greg_office" options="" hidden="">
+{{PASSAGES}}
+</tw-storydata>
+<script>
+(function(){
+  var storyData = document.querySelector('tw-storydata');
+  var passages = {};
+  var startPassage = storyData.getAttribute('start');
+
+  Array.from(storyData.querySelectorAll('tw-passagedata')).forEach(function(p){
+    passages[p.getAttribute('name')] = p.innerHTML;
+  });
+
+  function render(text) {
+    text = text.replace(/\[img\[([^\]]+)\]/g, '<img src="$1" style="max-width:100%">');
+    text = text.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, function(m, label, dest){
+      return '<a class="tw-link" data-dest="'+dest+'">'+label+'</a>';
+    });
+    text = text.replace(/\[\[\[([^\]|]+)\|([^\]]+)\]\]\]/g, function(m, label, dest){
+      return '<a class="tw-link" data-dest="'+dest+'">'+label+'</a>';
+    });
+    text = text.replace(/\[\[([^\]]+)\]\]/g, function(m, dest){
+      return '<a class="tw-link" data-dest="'+dest+'">'+dest+'</a>';
+    });
+    text = text.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>');
+    text = text.replace(/_([^_]+)_/g, '<em>$1</em>');
+    return text;
+  }
+
+  function go(name) {
+    var html = passages[name] || '<p>Passage not found: ' + name + '</p>';
+    document.getElementById('game').innerHTML = '<div class="episode-header">DEVIN THE SENIOR DEV — ' + name.replace(/_/g, ' ').toUpperCase() + '</div>' + render(html);
+    document.getElementById('game').querySelectorAll('.tw-link').forEach(function(a){
+      a.addEventListener('click', function(e){ go(this.getAttribute('data-dest')); });
+    });
+  }
+
+  document.body.innerHTML = '<div id="game"></div>';
+  go(startPassage);
+})();
+</script>
+</body>
+</html>
