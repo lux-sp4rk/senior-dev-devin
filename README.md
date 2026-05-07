@@ -1,8 +1,8 @@
-# Devin the Senior Dev
+# Sr. Dev Devin
 
 An interactive fiction series about a senior dev drowning in corporate AI pressure, financial stress, and bad decisions. Written as branching narrative Twine episodes.
 
-**Start:** Open `index.html` in any browser. No server required.
+[PLAY GAME](https://lux-sp4rk.github.io/senior-dev-devin)
 
 ---
 
