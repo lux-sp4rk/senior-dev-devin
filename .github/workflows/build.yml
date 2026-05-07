@@ -24,9 +24,9 @@ jobs:
       - name: Commit & push
         if: github.event_name == 'push'
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add index.html
-          git diff --cached --quiet || exit 0
-          git commit -m "build: regenerate index.html [skip ci]"
-          git push
+          if ! git diff --cached --quiet; then
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git commit -m "build: regenerate index.html [skip ci]"
+            git push
+          fi
