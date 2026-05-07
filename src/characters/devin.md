@@ -4,6 +4,8 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 
 ## Surface Facts
 
+- Radical Competence — The person people call at 3 AM when the production database is a smoking crater and the "senior" leads are panicking. He can see patterns in logs that look like noise to everyone else.
+- Intellectual Integrity — Views a hacky "TODO" in the codebase as a personal betrayal of the craft. He doesn't just want it to work; he wants it to be *correct*.
 - Uses vim — .vimrc groomed since 2004, gold-plated anchor energy
 - Owns an IBM Model M keyboard
 - "I survived the Cloudflare outage" mug
@@ -13,7 +15,7 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 
 ## Obsessions and Avoidances
 
-- Technical excellence as identity — the borrow checker is "unethical" because it judges him
+- Technical excellence as morality — he views bad code as a lie, and the borrow checker as the only honest thing left in his life. The machine doesn't lie to him; only people do.
 - Avoids lying professionally until he can't anymore
 - Avoids asking for help — considers it weakness
 - Obsesses over tooling (vimrc, keyboard, Rust) as displacement activity
@@ -23,6 +25,7 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 - When cornered, retreats into technical detail as armor
 - Makes dry, precise jokes when nervous
 - Has a tendency to narrate his own suffering with analyst detachment
+- **Quiet Vulnerability** — The mask slips when he looks at Sarah's medical bills or the kids' broken toys; he stops talking and just stares at the flickering cursor for too long.
 
 ## Blind Spots
 
@@ -34,7 +37,8 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 ## Values Under Pressure
 
 - Survival vs. integrity: starts choosing survival (fabricating "The Guy") after trying both purity and grinding
-- Family vs. self: clearly loves Sarah but has been absent — money pressure is a proxy for this
+- Family vs. self: **Protective Loyalty** — His financial desperation isn't greed; it's a desperate, quiet attempt to ensure Sarah never has to choose between physical therapy and the mortgage. He will burn his own reputation to keep her world intact.
+- Clearly loves Sarah but has been absent — money pressure is a proxy for this
 
 ## Voice (from writing so far)
 
@@ -45,12 +49,12 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 
 ## Unfinished Business
 
-- Wants: keep his job, provide for his family, not become his father
-- Thinks he wants: to be proven right about technical excellence
-- Actually needs: to accept that the game was never about code
+- Wants: Keep his family afloat, protect Sarah from the reality of their bankruptcy, and prove his worth through the only thing he knows—code. He wants to be the hero who fixes the system, not the one who breaks under it.
+- Thinks he wants: To be proven right about technical excellence; to win the argument with Greg.
+- Actually needs: To accept that his value as a human isn't tied to his git commit history, and that he can't solve family trauma with a more efficient algorithm. He needs to let Sarah in.
 
 ## Story Arc (provisional)
 
-- Start: employed but threatened, financially underwater
-- Midpoint: the lie is in motion, pressure mounts
-- End TBD: likely some form of reckoning — the game over screen is visible even in episode 1
+- Start: Highly competent but socially isolated, drowning in a system that devalues his integrity.
+- Midpoint: The lie ("The Guy") is in motion, forcing him to choose between his craft (integrity) and his family (survival).
+- End TBD: A reckoning where his radical competence is finally used for himself/family rather than a corporation that hates him—or a tragic fall where his integrity is the last thing he loses.
