@@ -5,7 +5,7 @@ The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, le
 
 "Quarterly reviews", he says, vibrating with "AI leverage" energy, "Now, tell me: why hasn't your output increased by 10x?"
 
-[[A) Sweat over the .vimrc you’ve groomed since 2004. ->path-vimrc]]
+[[A) Sweat over the .vimrc you’ve groomed since 2004. 🐍->path-vimrc]]
 [[B) Rewrite the review system in Rust.->path-rust]]
 
 
