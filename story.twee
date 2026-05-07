@@ -14,9 +14,13 @@ Devin the Senior Dev
 
 The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair like a man who has never written a line of code but has read exactly one article about "AI leverage."
 
-"Bring him in Monday," Greg says. His smile doesn't reach his eyes. It doesn't reach anywhere.
+"Quarterly reviews", he says, vibrating with "AI leverage" energy, "Now, tell me: why hasn't your output increased by 10x?"
 
-You don't know a guy. You know a guy who knows a guy who once used ChatGPT to write a wedding toast. That's it. That's the whole network.
+What do you do?
+[[A) Sweat over the .vimrc you’ve groomed since 2004. ->path_vimrc]]
+[[B) Rewrite the review system in Rust.->path_rust]]
+
+"Bring him in Monday," Greg says. His smile doesn't reach his eyes. It doesn't reach anywhere.
 
 But you said yes anyway.
 
@@ -82,3 +86,19 @@ You hit save.
 [This is where your next post picks up. The Monday meeting. Greg. The Guy.]
 
 [["Restart from beginning."|prologue_greg_office]]
+
+:: path_vimrc
+You’ve clutched your .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. Your boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued.
+
+"Devin," Greg whispers, his voice thick with the fake empathy of a corporate executioner. "The board doesn't want 'artisanal logic.' They want *velocity*."
+
+> What do you do?
+[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."->prologue_walk_home]]
+[[B) Stare at his hairline until he feels the weight of his own mortality.->prologue_walk_home]]
+
+:: path_rust
+You spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling you that your memory management is "unethical."
+
+You don't finish the system, but you do manage to make the "Hello World" binary exactly 4MB. You feel pure. You feel safe. You feel like a real engineer.
+
+[[Continue.|prologue_walk_home]]

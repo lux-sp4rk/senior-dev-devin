@@ -4,6 +4,7 @@
   "description": "An interactive fiction series about a senior dev drowning in corporate AI pressure",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js"
   }
 }

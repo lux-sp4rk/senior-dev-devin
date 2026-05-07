@@ -1,0 +1,26 @@
+:: prologue-greg-office
+<!-- EPISODE 1: The Deal -->
+
+The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair like a man who has never written a line of code but has read exactly one article about "AI leverage."
+
+"Quarterly reviews", he says, vibrating with "AI leverage" energy, "Now, tell me: why hasn't your output increased by 10x?"
+
+[[A) Sweat over the .vimrc you’ve groomed since 2004. 🐍->path-vimrc]]
+[[B) Rewrite the review system in Rust.->path-rust]]
+
+
+:: prologue-walk-home
+The evening air is thick with the smell of money burning. Not yours — not yet — but the premonition of it. Your apartment building rises like a courthouse at the end of a long hallway.
+
+You open the door.
+
+Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids are fighting over a broken iPad screen. The mortgage statement sits on the counter like a small, polite suicide note.
+
+She looks up. "The car was fine," she says. "The other guy wasn't."
+
+Three months. No work. A three-car pileup that somehow involved no cars. The insurance is a fog. The savings account is a rumor.
+
+What do you do?
+[[A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.->path-a-grind]]
+[[B) Sell your IBM Model M and 1998 'Vim Power User' shirt on eBay.->path-b-liquidate]]
+[[C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍->path-c-create-guy]]
