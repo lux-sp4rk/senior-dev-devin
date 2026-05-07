@@ -1,0 +1,84 @@
+:: StoryTitle
+Devin the Senior Dev
+
+:: StoryData
+{
+  "ifid": "DEVIN-SENIOR-DEV-E001",
+  "format": "Harlowe",
+  "format-version": "3.3.0",
+  "start": "prologue_greg_office"
+}
+
+:: prologue_greg_office
+<!-- EPISODE 1: The Deal -->
+
+The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair like a man who has never written a line of code but has read exactly one article about "AI leverage."
+
+"Bring him in Monday," Greg says. His smile doesn't reach his eyes. It doesn't reach anywhere.
+
+You don't know a guy. You know a guy who knows a guy who once used ChatGPT to write a wedding toast. That's it. That's the whole network.
+
+But you said yes anyway.
+
+[[["Head home."|prologue_walk_home]]]
+
+:: prologue_walk_home
+The evening air is thick with the smell of money burning. Not yours — not yet — but the premonition of it. Your apartment building rises like a courthouse at the end of a long hallway.
+
+You open the door.
+
+Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids are fighting over a broken iPad screen. The mortgage statement sits on the counter like a small, polite suicide note.
+
+She looks up. "The car was fine," she says. "The other guy wasn't."
+
+Three months. No work. A three-car pileup that somehow involved no cars. The insurance is a fog. The savings account is a rumor.
+
+> **A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.**
+
+[["Grind."|path_a_grind]]
+
+> **B) Sell your IBM Model M and 1998 'Vim Power User' shirt on eBay.**
+
+[["Liquidate."|path_b_liquidate]]
+
+> **C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍**
+
+[["Fabricate."|path_c_create_guy]]
+
+:: path_a_grind
+You clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of _Pattern Recognition and Machine Learning_ that you've been pretending to read since 2019.
+
+The hours blur. Eigenvectors. Backpropagation. You drink so much coffee your hands start to look like they'd shake during a drug test.
+
+By 4am you're staring at a whiteboard covered in notation that could qualify as abstract art.
+
+Monday arrives like a freight train with no brakes.
+
+[["Go to the meeting."|episode_2_monday]]
+
+:: path_b_liquidate
+You open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
+
+It is not enough.
+
+But it buys two weeks of breathing room.
+
+[["Continue."|episode_2_monday]]
+
+:: path_c_create_guy
+You sit in the dark for exactly eleven minutes. Then you open a browser.
+
+First: LinkedIn. You create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+
+Then the CV. You write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
+
+You hit save.
+
+[["Continue."|episode_2_monday]]
+
+:: episode_2_monday
+<!-- EPISODE 2 PENDING — this is where your thread continues. -->
+
+[This is where your next post picks up. The Monday meeting. Greg. The Guy.]
+
+[["Restart from beginning."|prologue_greg_office]]
