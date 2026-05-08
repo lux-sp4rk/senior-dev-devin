@@ -43,7 +43,7 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 ## Voice (from writing so far)
 
 - Dry, sardonic, systems-thinking metaphor-prone ("a courthouse at the end of a long hallway")
-- 2nd person default (Twine convention) but 1st person voice bleeds through
+- 1st person (to capture internal monologue and unreliable narrator perspective)
 - Sometimes too clever for his own good — "the language of the Snake"
 - Understatement as coping mechanism ("the insurance is a fog")
 
