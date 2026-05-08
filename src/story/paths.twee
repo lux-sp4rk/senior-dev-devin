@@ -1,5 +1,5 @@
 :: path-vimrc
-You’ve clutched your .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. Your boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued.
+I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued.
 
 "Devin," Greg whispers, his voice thick with the fake empathy of a corporate executioner. "The board doesn't want 'artisanal logic.' They want *velocity*."
 
@@ -7,34 +7,34 @@ You’ve clutched your .vimrc. It’s a pathetic sight—like a drowning man hol
 [[B) Stare at his hairline until he feels the weight of his own mortality.->prologue-walk-home]]
 
 :: path-rust
-You spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling you that your memory management is "unethical."
+I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical."
 
-You don't finish the system. You don't even finish the boilerplate. But you do manage to make a "Hello World" binary that is memory-safe, thread-safe, and exactly 4MB of pure, unadulterated hubris.
+I don't finish the system. I don't even finish the boilerplate. But I do manage to make a "Hello World" binary that is memory-safe, thread-safe, and exactly 4MB of pure, unadulterated hubris.
 
-Monday morning, you show it to Greg. He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak.
+Monday morning, I show it to Greg. He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak.
 
 "Where is the AI, Devin?" he asks. His voice is flat. The twitch in his eye has been replaced by a terrifying, absolute stillness. "The board wanted a 10x leverage generator. You gave me a... 'zero-cost abstraction' for a problem we don't have."
 
-He doesn't even wait for you to explain the ownership model. He just slides a cardboard box across the desk. It’s already got your spare mechanical keyboard and your "I survived the Cloudflare outage" mug in it.
+He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it.
 
 **GAME OVER: THE PURIST'S PLIGHT**
-*You chose technical excellence over corporate survival. The borrow checker is happy, but your mortgage lender isn't.*
+*I chose technical excellence over corporate survival. The borrow checker is happy, but my mortgage lender isn't.*
 
 [[Try again, but this time lie like a professional.->prologue-greg-office]]
 
 :: path-a-grind
-You clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that you've been pretending to read since 2019.
+I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019.
 
-The hours blur. Eigenvectors. Backpropagation. You drink so much coffee your hands start to look like they'd shake during a drug test.
+The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test.
 
-By 4am you're staring at a whiteboard covered in notation that could qualify as abstract art.
+By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art.
 
 Monday arrives like a freight train with no brakes.
 
 [["Go to the meeting."|episode-2-monday]]
 
 :: path-b-liquidate
-You open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
+I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
 
 It is not enough.
 
@@ -43,12 +43,12 @@ But it buys two weeks of breathing room.
 [["Continue."|episode-2-monday]]
 
 :: path-c-create-guy
-You sit in the dark for exactly eleven minutes. Then you open a browser.
+I sit in the dark for exactly eleven minutes. Then I open a browser.
 
-First: LinkedIn. You create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
 
-Then the CV. You write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
+Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
 
-You hit save.
+I hit save.
 
 [["Continue."|episode-2-monday]]
