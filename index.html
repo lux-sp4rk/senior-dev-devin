@@ -41,6 +41,18 @@
         border-top: 1px solid #222;
         margin: 2rem 0;
       }
+      .chapter-title {
+        display: inline-block;
+        background: #111;
+        color: #a5f3b4;
+        border: 1px solid #222;
+        border-left: 4px solid #7ee787;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0 2rem 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
@@ -111,12 +123,17 @@ I hit save.
 
 [["Continue."|episode-2-monday]]</tw-passagedata>
 <tw-passagedata name="prologue-greg-office">&lt;!-- EPISODE 1: The Deal --&gt;
+[img[src/images/scene01-greg-office.png]]
 
-Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it. 
+Greg doesn't write code. Greg has read about code. This is a nightmare, and I am currently living inside it. 
 
 The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy.
 
-"Quarterly reviews", he says. "Now, tell me: why hasn't your output increased by 10x?"
+"Quarterly reviews, Devin. It's time to operationalize your evolution," he says, leaning in close enough for me to smell the Soylent and the desperate scent of a man who just finished a 'Prompt Engineering' seminar.
+
+His eyes drift to my faded 2010 RailsConf hoodie, the one with the frayed cuffs and the ghostly outline of a Ruby gem.
+
+"It’s got such a nice, 'historical reenactment' dignity to it. Very 'unscalable' chic. Now, tell me: why hasn't your output increased by 10x?"
 
 [[A) Sweat over the .vimrc I've groomed since 2004. -&gt;path-vimrc]]
 [[B) Rewrite the review system in Rust.-&gt;path-rust]]</tw-passagedata>
@@ -154,9 +171,15 @@ What do I do?
           // Italics: _text_ (only single words or phrases without newlines)
           text = text.replace(/_([^_\n ]+)_/g, "<em>$1</em>");
 
+          // Render escaped comments as chapter titles
+          text = text.replace(
+            /&lt;!--\s*(.*?)\s*--&gt;/g,
+            '<div class="chapter-title">$1</div>',
+          );
+
           // 2. Images
           text = text.replace(
-            /\[img\[([^\]]+)\]/g,
+            /\[img\[([^\]]+)\]\]/g,
             '<img src="$1" style="max-width:100%">',
           );
 

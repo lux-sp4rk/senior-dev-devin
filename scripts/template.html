@@ -41,6 +41,18 @@
         border-top: 1px solid #222;
         margin: 2rem 0;
       }
+      .chapter-title {
+        display: inline-block;
+        background: #111;
+        color: #a5f3b4;
+        border: 1px solid #222;
+        border-left: 4px solid #7ee787;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0 2rem 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
@@ -74,9 +86,15 @@
           // Italics: _text_ (only single words or phrases without newlines)
           text = text.replace(/_([^_\n ]+)_/g, "<em>$1</em>");
 
+          // Render escaped comments as chapter titles
+          text = text.replace(
+            /&lt;!--\s*(.*?)\s*--&gt;/g,
+            '<div class="chapter-title">$1</div>',
+          );
+
           // 2. Images
           text = text.replace(
-            /\[img\[([^\]]+)\]/g,
+            /\[img\[([^\]]+)\]\]/g,
             '<img src="$1" style="max-width:100%">',
           );
 

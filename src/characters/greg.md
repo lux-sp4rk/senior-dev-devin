@@ -4,7 +4,8 @@ VP of Engineering. The villain who doesn't know he's the villain.
 
 ## Physical
 
-- Balding, wears a baseball hat at all times — "made peace with it" in the most aggressive way possible
+- **Age: late 30s** — younger than Devin (42), which is exactly what makes it hurt
+- Balding since high school, wears a baseball hat at all times — "made peace with it" in the most aggressive way possible
 - Standing desk, always sitting at it
 - Apple Watch, all Slack notifications
 - Stands too close when looking at my screen
