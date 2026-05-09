@@ -1,12 +1,14 @@
 :: prologue-greg-office
 <!-- EPISODE 1: The Deal -->
-[img[src/images/scene01-greg-office.png]
+[img[src/images/scene01-greg-office.png]]
 
 Greg doesn't write code. Greg has read about code. This is a nightmare, and I am currently living inside it. 
 
 The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy.
 
-"Quarterly reviews, Devin. It's time to operationalize your evolution," he says, leaning in close enough for me to smell the Soylent and the desperate scent of a man who just finished a 'Prompt Engineering' seminar. His eyes drift to my faded 2010 RailsConf hoodie, the one with the frayed cuffs and the ghostly outline of a Ruby gem. "It’s got such a nice, 'historical reenactment' dignity to it. Very 'unscalable' chic. Now, tell me: why hasn't your output increased by 10x?"
+"Quarterly reviews, Devin. It's time to operationalize your evolution," he says, leaning in close enough for me to smell the Soylent and the desperate scent of a man who just finished a 'Prompt Engineering' seminar.
+
+His eyes drift to my faded 2010 RailsConf hoodie, the one with the frayed cuffs and the ghostly outline of a Ruby gem. "It’s got such a nice, 'historical reenactment' dignity to it. Very 'unscalable' chic. Now, tell me: why hasn't your output increased by 10x?"
 
 [[A) Sweat over the .vimrc I've groomed since 2004. ->path-vimrc]]
 [[B) Rewrite the review system in Rust.->path-rust]]
