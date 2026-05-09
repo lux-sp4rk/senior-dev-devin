@@ -1,6 +1,6 @@
 # Devin
 
-Protagonist. Senior software engineer drowning in corporate AI pressure, financial stress, and bad decisions.
+Protagonist. 42 years old (born 1984). Senior software engineer drowning in corporate AI pressure, financial stress, and bad decisions.
 
 ## Surface Facts
 
@@ -10,6 +10,7 @@ Protagonist. Senior software engineer drowning in corporate AI pressure, financi
 - Owns an IBM Model M keyboard
 - "I survived the Cloudflare outage" mug
 - 1998 "Vim Power User" shirt (size Large, never washed, mint condition irony)
+- 2010 RailsConf hoodie — faded, frayed cuffs, ghostly Ruby gem outline; Greg calls it "unscalable chic"
 - Reading *Pattern Recognition and Machine Learning* since 2019 — has not finished it
 - Knows Rust, linear algebra, machine learning — thinks in systems and abstractions
 
