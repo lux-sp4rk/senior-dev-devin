@@ -1,54 +1,66 @@
 :: path-vimrc
-I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued.
+I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My 2011 MacBook Pro groans as I toggle a fold. The fans hit 6,000 RPM. It’s the sound of a man refusing to admit that the world has moved on to VS Code and Copilot.
 
-"Devin," Greg whispers, his voice thick with the fake empathy of a corporate executioner. "The board doesn't want 'artisanal logic.' They want *velocity*."
+My boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued. He’s looking at my terminal, where a Ruby 1.9.3 process is hanging on a broken pipe.
+
+"Devin," Greg whispers, his voice thick with the fake empathy of a corporate executioner. "The board doesn't want 'artisanal logic.' They want *velocity*. They want the kind of scale that doesn't rely on a man who still thinks `attr_accessible` is a valid security strategy."
+
+I stare at his hairline until he feels the weight of his own mortality. I could explain why the Asset Pipeline is superior to whatever Webpack-adjacent hellscape he's been pitched this week, but it would be like explaining the internal combustion engine to a man who only wants to talk about 'teleportation.'
 
 [[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."->prologue-walk-home]]
-[[B) Stare at his hairline until he feels the weight of his own mortality.->prologue-walk-home]]
+[[B) Stare at him until the silence becomes a HR violation.->prologue-walk-home]]
 
 :: path-rust
-I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical."
+I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical." My 2011 MacBook is so hot I could fry an egg on the 'S' key.
 
-I don't finish the system. I don't even finish the boilerplate. But I do manage to make a "Hello World" binary that is memory-safe, thread-safe, and exactly 4MB of pure, unadulterated hubris.
+I don't finish the system. I don't even finish the boilerplate. But I do manage to make a "Hello World" binary that is memory-safe, thread-safe, and exactly 4MB of pure, unadulterated hubris. It’s the most beautiful thing I’ve written since a Haml template back in 2012.
 
-Monday morning, I show it to Greg. He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak.
+[img[src/images/path-rust-hubris.png]]
+<!-- IMAGE PROMPT: A stylized illustration of Devin wrestling a glowing, angelic figure made of binary code (the Borrow Checker) in a dark server room. -->
 
-"Where is the AI, Devin?" he asks. His voice is flat. The twitch in his eye has been replaced by a terrifying, absolute stillness. "The board wanted a 10x leverage generator. You gave me a... 'zero-cost abstraction' for a problem we don't have."
+[[Next->path-rust-part-2]]
+
+:: path-rust-part-2
+Monday morning, I show it to Greg. He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak. My MacBook is still ticking from the heat.
+
+"Where is the AI, Devin?" he asks. His voice is flat. The twitch in his eye has been replaced by a terrifying, absolute stillness. "The board wanted a 10x leverage generator. You gave me a... 'zero-cost abstraction' for a problem we don't have. This isn't even 'unscalable chic' anymore. It's just... obsolete."
 
 He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it.
 
 **GAME OVER: THE PURIST'S PLIGHT**
-*I chose technical excellence over corporate survival. The borrow checker is happy, but my mortgage lender isn't.*
+*I chose technical excellence over corporate survival. The borrow checker is happy, but my mortgage lender isn't. The Austin Public Library has good Wi-Fi, I hear. And the woods nearby are quiet.*
 
 [[Try again, but this time lie like a professional.->prologue-greg-office]]
 
 :: path-a-grind
-I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019.
+I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019. It’s damp, and it smells faintly of the future I’m trying to avoid.
 
-The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test.
+The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test. My 2011 MacBook struggles to render the LaTeX in the PDFs. It’s a 200-level math problem being solved by a man with a 100-level grip on reality.
 
-By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art.
+By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art. Or a map of a campsite.
 
 Monday arrives like a freight train with no brakes.
 
 [["Go to the meeting."|episode-2-monday]]
 
 :: path-b-liquidate
-I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
+I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998. 
+
+I feel the "wrapper" of my life thinning. Each sale is a line removed from my `~/.vimrc`.
 
 It is not enough.
 
-But it buys two weeks of breathing room.
+But it buys two weeks of breathing room. Two weeks until I’m "unhosted."
 
 [["Continue."|episode-2-monday]]
 
 :: path-c-create-guy
-I sit in the dark for exactly eleven minutes. Then I open a browser.
+I sit in the dark for exactly eleven minutes. Then I open a browser. My 2011 MacBook Pro fans kick in just opening LinkedIn. The modern web is a bloated corpse, and I’m about to perform a digital autopsy.
 
 First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
 
-Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
+Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference. He thinks 'deterministic' is a type of coffee.
 
-I hit save.
+I hit save. I’ve just deployed a monolith of lies.
 
 [["Continue."|episode-2-monday]]
