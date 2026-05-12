@@ -13,12 +13,18 @@ Protagonist. 42 years old (born 1984). A man desperately clutching a 2011 stack 
 ## Surface Facts & Gear
 
 - **The Rig:** A weathered 2011 MacBook Pro. He sits at his kitchen table or his office desk, developing carpal tunnel while trying to ignore the modern world's "bloat."
+- **The Commute:** Drives a car he keeps running with spit and StackOverflow-tier mechanical hacks. Parks nose-in, the "normal" way, in the same spot every day for five years.
+- **The Office:** A generic shared workspace in an unglamorous part of town. Not a WeWork, but a "Work-O-Sphere" or something equally soul-crushing where you share a kitchen with a boutique pet food startup.
 - **The Stack:** 
     - **Vim (MacVim):** A 2,000-line `~/.vimrc` with broken Pathogen hooks. He views it as a precision instrument, even as the fans scream.
     - **Rails 3.2:** The peak of human achievement. Everything after is "unnecessary abstraction."
 - **Iconic Items:**
     - Faded 2010 RailsConf hoodie — his armor against the "Prompt Engineering" vibe of the office.
     - "I survived the Cloudflare outage" mug — a reminder of a time when technical skill mattered more than token throughput.
+- **Office Friction:**
+    - **Hardware Snobbery:** Uses a mechanical keyboard with loud, clicky Blue switches. He calls it "tactile feedback"; Greg calls it "a noise complaint waiting to happen."
+    - **The "Local-First" Manifesto:** Refuses to use the shared office Notion or Jira for his own notes, keeping everything in a giant `TODO.txt` that he edits in Vim and refuses to share because "it's not indexed for LLMs."
+    - **Meeting Ghosting:** Shows up to meetings without a laptop, just a physical pocket notebook and a pen that he clicks incessantly while Greg talks about "velocity."
 
 ## Voice & Philosophy
 
@@ -28,6 +34,7 @@ Protagonist. 42 years old (born 1984). A man desperately clutching a 2011 stack 
 ## Friction & Conflict
 
 - **Family vs. Integrity:** This is the core engine. He wants to save the family (Survival), but he refuses to change his methods (Integrity). He treats the mortgage like a bug he can fix with a more elegant algorithm.
+- **The Bob-Shaped Void:** Ever since Bob was "retired," Devin feels like a turtle without a shell. He used to take pride in his work; now he takes pride in his *resistance*. Every time he annoys Greg, he thinks he's honoring Bob's memory.
 - **Aletheia:** The AI agent offers him a six-figure "Principal" role. He wants the money for Sarah, but he rejects the offer because he cannot bring himself to work on a stack that "doesn't respect the Asset Pipeline."
 
 ## Blind Spots

@@ -1,6 +1,6 @@
 # Greg
 
-VP of Engineering. The villain who doesn't know he's the villain.
+VP of Engineering. The villain who doesn't know he's the villain. Joined 6 months ago, replacing the "Old Guard" VP who actually knew what a pointer was.
 
 ## Physical
 
@@ -9,6 +9,10 @@ VP of Engineering. The villain who doesn't know he's the villain.
 - Standing desk, always sitting at it
 - Apple Watch, all Slack notifications
 - Stands too close when looking at my screen
+- **The Commute:** Drives a leased Audi that he backs into parking spots with terrifying precision using the 360-degree camera. On his first day, he unknowingly took Devin's favorite spot, backing in so perfectly it felt like a tactical insertion.
+- **The "Digital Nomad" LARP:** Even though the office is a 15-minute drive from his house, he carries a massive Peak Design backpack filled with "EDC" (Everyday Carry) gear—braided cables, multiple power banks, and a foldable laptop stand. Devin views this as "prepping for a war that will never happen."
+- **Screen Habits:** Always has "The Primeagen" or a Vercel keynote playing at 2x speed in a small PiP window while he "works." He thinks it makes him look "connected"; Devin thinks it's a sign of a rotted attention span.
+- **Slack Hygiene:** Greg is an "active status" extremist. He uses custom emojis for everything and expects immediate "eyes" (👀) or "rocketship" (🚀) reactions to his announcements. Devin's Slack has been on "Away" since 2019.
 
 ## Language Tics
 
