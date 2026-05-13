@@ -110,10 +110,11 @@ jobs:
                   }
                 }
               },
-              "tools": {
-                "core": [
-                  "run_shell_command(*)"
-                ]
-              }
+              "policies": [
+                {
+                  "tools": ["*"],
+                  "arguments": ["*"]
+                }
+              ]
             }
           prompt: '/gemini-invoke'

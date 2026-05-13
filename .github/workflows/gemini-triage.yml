@@ -92,11 +92,12 @@ jobs:
                 "target": "local",
                 "outfile": ".gemini/telemetry.log"
               },
-              "tools": {
-                "core": [
-                  "run_shell_command(echo)"
-                ]
-              }
+              "policies": [
+                {
+                  "tools": ["run_shell_command"],
+                  "arguments": ["echo *"]
+                }
+              ]
             }
           prompt: '/gemini-triage'
 

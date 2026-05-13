@@ -126,13 +126,12 @@ jobs:
                 "target": "local",
                 "outfile": ".gemini/telemetry.log"
               },
-              "tools": {
-                "core": [
-                  "run_shell_command(echo)",
-                  "run_shell_command(jq)",
-                  "run_shell_command(printenv)"
-                ]
-              }
+              "policies": [
+                {
+                  "tools": ["run_shell_command"],
+                  "arguments": ["echo *", "jq *", "printenv *"]
+                }
+              ]
             }
           prompt: '/gemini-scheduled-triage'
 
