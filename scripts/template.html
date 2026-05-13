@@ -17,7 +17,7 @@
         line-height: 1.7;
         max-width: 720px;
         margin: 0 auto;
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem 8rem 1.5rem;
       }
       .episode-header {
         color: #555;
@@ -94,7 +94,7 @@
 
           // 2. Images
           text = text.replace(
-            /\[img\[([^\]]+)\]/g,
+            /\[img\[([^\]]+)\]\]/g,
             '<img src="$1" style="max-width:100%">',
           );
 
