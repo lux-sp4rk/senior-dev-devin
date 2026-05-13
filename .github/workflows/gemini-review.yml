@@ -19,7 +19,7 @@ defaults:
 jobs:
   review:
     runs-on: 'ubuntu-latest'
-    timeout-minutes: 7
+    timeout-minutes: 15
     permissions:
       contents: 'read'
       id-token: 'write'
@@ -121,8 +121,4 @@ jobs:
                 }
               ]
             }
-          extensions: |
-            [
-              "https://github.com/gemini-cli-extensions/code-review"
-            ]
           prompt: '/pr-code-review'
