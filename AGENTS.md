@@ -1,59 +1,85 @@
-# GEMINI.md - Project Context
+# AGENTS.md — senior-dev-devin
 
-## Project Overview
-**Devin the Senior Dev** is an interactive fiction project built using a modular Twine (Twee) structure. It tells a branching narrative about a senior developer facing corporate AI pressures and personal financial stress.
+## Worktree Map
 
-### Core Technologies
-- **Twee (Twine):** Source format for the interactive narrative.
-- **Node.js:** Powers the custom build and development pipeline.
-- **Custom Rendering Engine:** A bespoke HTML/JS engine (defined in `scripts/template.html`) that renders Twee passages in the browser.
+```
+~/Projects/senior-dev-devin/             ← main repo, branch pr-18
+~/Projects/senior-dev-devin-pr21/       ← branch narrative/character-friction-and-backstory (PR #21)
+```
 
-### Architecture
-- `src/metadata/`: Contains core story metadata (Title, IFID, Start passage).
-- `src/story/`: Contains modular `.twee` files for different story parts (prologue, episodes, paths).
-- `scripts/`: Contains the build and development logic.
-- `index.html`: The compiled output file containing the entire story and engine.
+**Symlink:** `./projects/` in agent workspaces → `~/Projects/`
+
+Each worktree is a completely separate Git checkout. Switching branches = switching directories. No `git checkout`, no `git stash`.
 
 ---
 
-## Building and Running
+## Branch Conventions
 
-### Development
-To start the development server with live rebuilding and a local preview:
-```bash
-npm run dev
-```
-- **Preview URL:** `http://localhost:3000`
-- **Watcher:** Automatically triggers a rebuild when `.twee` files in `src/` are modified.
+| Prefix | What | Example |
+|--------|------|---------|
+| `pr-N` | Long-lived feature branch | `pr-18` |
+| `narrative/` | Story content work | `narrative/character-friction-and-backstory` |
+| `fix/` | Bug or CI fixes | `fix/nodejs20-deprecation-warning` |
+| `feat/` | New features | — |
 
-### Production Build
-To generate the final `index.html` file:
+Never commit directly to `main`. All changes go through a branch → PR → review → merge.
+
+---
+
+## Adding a Worktree
+
 ```bash
-npm run build
+# From the main repo
+cd ~/Projects/senior-dev-devin
+git fetch origin <branch>
+git worktree add ~/Projects/senior-dev-devin-pr<NUM> <branch-name>
+
+# Then tell the agent which directory to work in
+# e.g., "work in ~/Projects/senior-dev-devin-pr21"
 ```
 
 ---
 
-## Development Conventions
+## GitHub Flow
 
-### 1. Naming Convention (Hyphen Rule)
-**ALWAYS use hyphens (`-`) instead of underscores (`_`) for passage names.**
-- ✅ `:: path-vimrc`
-- ❌ `:: path_vimrc`
+1. Agent or Uli creates a branch: `git checkout -b narrative/new-scene`
+2. Work happens in the appropriate worktree
+3. Push and open PR: `gh pr create`
+4. CI runs automatically (Gemini Dispatch workflow)
+5. **Uli approves/merges** — agents do not merge without Uli sign-off
+6. After merge: delete the branch locally and on GitHub
 
-**Rationale:** The custom rendering engine uses a regex that can misinterpret underscores as Markdown italics (e.g., `path_vimrc` becomes `path<em>vimrc</em>`), breaking the HTML `data-dest` attribute and causing "Passage not found" errors.
+---
 
-### 2. File Organization
-- New scenes or episodes should be created as separate `.twee` files in `src/story/`.
-- Keep `src/metadata/story.twee` reserved for `:: StoryTitle` and `:: StoryData`.
+## Project Tech Stack
 
-### 3. Link Syntax
-Standard Harlowe-style links are supported:
-- `[[Display Text->TargetPassage]]` (Recommended for clarity)
-- `[[TargetPassage]]`
-- `[[TargetPassage<-Display Text]]`
-- `[[Display Text|TargetPassage]]`
+- **Twine/Twee**: Modular story files in `src/story/`
+- **Node.js**: Build pipeline (`npm run build`, `npm run dev`)
+- **Custom HTML/JS engine**: Renders compiled `index.html`
 
-### 4. Code Style
-- **Build Scripts:** Written in ESM (ES Modules) using Node.js.
-- **Twee Files:** Use HTML comments for internal episode markers (e.g., `<!-- EPISODE 1 -->`).
+**Build:**
+```bash
+npm run build   # compiles src/**/*.twee → index.html
+npm run dev     # live-reload dev server
+```
+
+**Passage naming:** Always use hyphens, not underscores. `:: path-vimrc` ✅ `:: path_vimrc` ❌
+
+---
+
+## Uli as the Bottleneck
+
+**Rule of thumb:** If you're asking "should I…?" — you probably shouldn't be doing it. Agents should act autonomously within their domain. Uli's job is to:
+- Review and merge PRs
+- Make creative/strategic calls
+- Say yes or no to publication-gate decisions
+
+**Agents should:**
+- Propose, not ask permission
+- Execute without waiting for confirmation on routine tasks
+- Flag blockers explicitly: "can't proceed until Uli approves X"
+
+**To reduce friction:**
+- Never loop asking for confirmation on multi-step work
+- Use `--handoff` at end of session if Uli needs to do something next
+- Check `memory/` before assuming what's been decided
