@@ -26,6 +26,7 @@ This document defines the instructions for the **Gemini Gem** used to illustrate
 | :--- | :--- | :--- |
 | **Devin** | Faded 2010 RailsConf Hoodie | The "Legacy" era; craftsmanship; unscalable history. |
 | **Greg** | Glowing Apple Watch / Soylent | The "AI Leverage" era; shallow enthusiasm; intentionality. |
+| **Kieran** | Leather Peak Design bag / Matte bottle | The "Disruptor" era; effortless confidence; high-end abstraction. |
 | **The Office** | Flickering Fluorescents / Agent Dashboards | The hymn of mediocrity vs. **MCP-standardized swarm orchestration**. |
 | **The Code** | Rails 3 vs. Heuristic Synthesis | Artisanal logic vs. **Probabilistic assembly lines**. |
 
