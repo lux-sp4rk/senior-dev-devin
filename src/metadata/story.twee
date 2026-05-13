@@ -1,10 +1,10 @@
 :: StoryTitle
-Devin the Senior Dev
+Sr Dev Devin
 
 :: StoryData
 {
   "ifid": "DEVIN-SENIOR-DEV-E001",
   "format": "Harlowe",
   "format-version": "3.3.0",
-  "start": "prologue-greg-office"
+  "start": "intro-greg-office"
 }

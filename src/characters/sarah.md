@@ -27,6 +27,12 @@ Devin's wife. Injured, managing the household alone, knows more than Devin think
 - Doesn't push on the "three months" of no work — she's already calculated it
 - The silence in the room "has a different texture than it used to" — she's noticed, she's catalogued, she hasn't named it
 
+## Background & Profession
+
+- **Former Career:** Was a high-end furniture restorer. She understood the physical reality of objects—how wood ages, how joints fail. Devin used to watch her work and think that his code was just a digital version of her craft.
+- **The Accident:** A literal three-car pileup that happened because of an "AI-assisted cruise control" error in a luxury SUV. It’s the source of her quiet, simmering resentment toward "the future."
+- **The First Date:** They went to a dive bar that only played vinyl. Devin spent forty minutes explaining the data structure of the bar’s inventory system, and Sarah just smiled and told him he had "good hands."
+
 ## Character Notes (provisional)
 
 - She is not a victim — she's the most clear-eyed person in the story

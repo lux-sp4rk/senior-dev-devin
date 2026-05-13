@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Devin the Senior Dev</title>
+    <title>Sr Dev Devin</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
       * {
@@ -15,18 +15,45 @@
         font-family: "JetBrains Mono", "Courier New", monospace;
         font-size: 15px;
         line-height: 1.7;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 0 8rem 0;
+      }
+      #game-container {
         max-width: 720px;
         margin: 0 auto;
         padding: 2rem 1.5rem;
       }
-      .episode-header {
-        color: #555;
-        font-size: 11px;
+      .navbar-rails-3 {
+        background-color: #1b1b1b;
+        background-image: linear-gradient(to bottom, #222222, #111111);
+        background-repeat: repeat-x;
+        border-bottom: 1px solid #252525;
+        padding: 0 20px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+      }
+      .navbar-brand {
+        color: #999999;
+        font-size: 20px;
+        font-weight: 200;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        margin-right: 20px;
+        text-transform: none;
+        letter-spacing: -1px;
+      }
+      .navbar-divider {
+        color: #333;
+        margin: 0 10px;
+      }
+      .navbar-text {
+        color: #777;
+        font-size: 14px;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #222;
-        padding-bottom: 1rem;
+        letter-spacing: 1px;
       }
       .tw-link {
         color: #7ee787;
@@ -36,6 +63,36 @@
       .tw-link:hover {
         color: #a5f3b4;
       }
+      /* Meta-Joke: Rails 3 Era Bootstrap Button Style */
+      .tw-link.btn-rails-3 {
+        display: inline-block;
+        padding: 4px 12px;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #006dcc;
+        background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+        background-repeat: repeat-x;
+        border: 1px solid #cccccc;
+        border-color: #0044cc #0044cc #002a80;
+        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        border-bottom-color: #b3b3b3;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+      }
+      .tw-link.btn-rails-3:hover {
+        color: #ffffff;
+        background-color: #0044cc;
+        background-position: 0 -15px;
+        transition: background-position 0.1s linear;
+        text-decoration: none;
+      }
       hr {
         border: none;
         border-top: 1px solid #222;
@@ -43,111 +100,406 @@
       }
       .chapter-title {
         display: inline-block;
-        background: #111;
-        color: #a5f3b4;
-        border: 1px solid #222;
-        border-left: 4px solid #7ee787;
-        padding: 0.5rem 1rem;
-        margin: 1rem 0 2rem 0;
-        font-weight: 700;
-        letter-spacing: 1px;
+        padding: 2px 6px;
+        font-size: 11.844px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #ffffff;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        white-space: nowrap;
+        vertical-align: baseline;
+        background-color: #3a87ad;
+        border-radius: 3px;
         text-transform: uppercase;
+        margin: 1rem 0 2rem 0;
       }
     </style>
   </head>
   <body>
     <tw-storydata
-      name="Devin the Senior Dev"
+      name="Sr Dev Devin"
       ifid="DEVIN-SENIOR-DEV-E001"
       format="Harlowe"
       format-version="3.3.0"
-      start="prologue-greg-office"
+      start="intro-greg-office"
       options=""
       hidden=""
     >
-      <tw-passagedata name="StoryTitle">Devin the Senior Dev</tw-passagedata>
+      <tw-passagedata name="StoryTitle">Sr Dev Devin</tw-passagedata>
 <tw-passagedata name="StoryData">{
   "ifid": "DEVIN-SENIOR-DEV-E001",
   "format": "Harlowe",
   "format-version": "3.3.0",
-  "start": "prologue-greg-office"
+  "start": "intro-greg-office"
 }</tw-passagedata>
-<tw-passagedata name="episode-2-monday">&lt;!-- EPISODE 2 PENDING — this is where my thread continues. --&gt;
+<tw-passagedata name="episode-2-monday">&lt;!-- IMAGE PROMPT: A wide cinematic shot of a corporate office hallway on a Monday morning. The lighting is sickly clinical white. Fluorescent tubes flicker. In the distance, the silhouette of a man in a baseball hat (Greg) is visible. 16-bit cinematic pixel art, corporate dystopia, dithering, high-fidelity pixel art. --&gt;
 
-[This is where my next post picks up. The Monday meeting. Greg. The Guy.]
+The Monday morning air in the office is filtered through a ventilation system that hasn’t been cleaned since the 2008 financial crisis. It smells like ozone, burnt coffee, and the quiet desperation of forty people pretending to understand a "Strategic Pivot."
 
-[["Restart from beginning."|prologue-greg-office]]</tw-passagedata>
-<tw-passagedata name="path-vimrc">I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My boss's face does that twitchy thing that happens right before a Performance Improvement Plan is issued.
+I walk past the row of standing desks. Greg is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
 
-"Devin," Greg whispers, his voice thick with the fake empathy of a corporate executioner. "The board doesn't want 'artisanal logic.' They want *velocity*."
+"Devin," Greg said. He didn't look up. "You’re three minutes early. I love the intentionality."
 
-[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."-&gt;prologue-walk-home]]
-[[B) Stare at his hairline until he feels the weight of his own mortality.-&gt;prologue-walk-home]]</tw-passagedata>
-<tw-passagedata name="path-rust">I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical."
+I take a seat at the far end of the table. "The train was on time for once. Statistical anomaly."
 
-I don't finish the system. I don't even finish the boilerplate. But I do manage to make a "Hello World" binary that is memory-safe, thread-safe, and exactly 4MB of pure, unadulterated hubris.
+Greg finally looked at me. His eyes were bright, that terrifying, unblinking enthusiasm that usually precedes a round of layoffs or a mandatory "Culture Sync." 
 
-Monday morning, I show it to Greg. He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak.
+"Today isn't about statistics, Devin," Greg said. "It's about *acceleration*."
 
-"Where is the AI, Devin?" he asks. His voice is flat. The twitch in his eye has been replaced by a terrifying, absolute stillness. "The board wanted a 10x leverage generator. You gave me a... 'zero-cost abstraction' for a problem we don't have."
+He gestured to the empty chair next to him. A leather Peak Design bag was already sitting on the floor beside it. 
 
-He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it.
+"We have a guest," Greg said. "A consultant. Someone to help us bridge the gap between our 'legacy dependencies' and the future the board is demanding."
 
-**GAME OVER: THE PURIST'S PLIGHT**
-*I chose technical excellence over corporate survival. The borrow checker is happy, but my mortgage lender isn't.*
+The door opened. 
 
-[[Try again, but this time lie like a professional.-&gt;prologue-greg-office]]</tw-passagedata>
-<tw-passagedata name="path-a-grind">I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019.
+&lt;!-- IMAGE PROMPT: A low-angle shot of a man entering a conference room. He's wearing a slim-fit navy suit with no tie, and a pair of expensive-looking minimalist sneakers. He's holding a high-end metal water bottle. He has a perfectly groomed beard and an air of effortless, unearned confidence. 16-bit cinematic pixel art, corporate noir, chiaroscuro. --&gt;
 
-The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test.
+He walked in with the kind of stride that only comes from never having had to fix a production bug at 3:00 AM. 
 
-By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art.
+"Everyone," Greg said, his voice rising. "Meet Kieran Voss. He’s our new AI Solutions Architect. He’s here to perform what the board is calling a 'Heuristic Synthesis Audit'."
 
-Monday arrives like a freight train with no brakes.
+Kieran smiled. It was a perfectly rendered, deterministic smile. "Hey everyone. Excited to help you all find your leverage."
 
-[["Go to the meeting."|episode-2-monday]]</tw-passagedata>
-<tw-passagedata name="path-b-liquidate">I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998.
+I looked at my 2011 MacBook. It felt like it was getting heavier.
 
-It is not enough.
+[[A) "Kieran, what exactly is a 'Heuristic Synthesis Audit' in plain English?"-&gt;episode-2-audit-definition]]
+[[B) Stay silent and watch the Vercel keynote reflection in Greg's glasses.-&gt;episode-2-silent-watch]]</tw-passagedata>
+<tw-passagedata name="episode-2-audit-definition">&lt;!-- IMAGE PROMPT: A close-up of Kieran Voss as he explains his role. He's gesturing with his hands, creating a 'scale' motion. His eyes are fixed on Devin with a practiced 'empathy' look. 16-bit cinematic pixel art, high-contrast lighting, terminal amber glow from a monitor. --&gt;
 
-But it buys two weeks of breathing room.
+Kieran tilted his head, the "tech-disruptor" smile never wavering. "Great question, Devin. I love the 'first principles' approach."
 
-[["Continue."|episode-2-monday]]</tw-passagedata>
-<tw-passagedata name="path-c-create-guy">I sit in the dark for exactly eleven minutes. Then I open a browser.
+He leaned forward, resting his elbows on the glass table. "In the AI era, code isn't a static asset anymore. It's a probabilistic stream. An audit is just us identifying the 'friction points' where artisanal logic is slowing down the heuristic loops. We're looking for the places where we can swap out a human bottleneck for an autonomous agent swarm."
 
-First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+"Artisanal logic," I said. "You mean the code that actually runs the company."
 
-Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference.
+"I mean the code that *is* the company's past," Kieran said. 
 
-I hit save.
+Greg nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
 
-[["Continue."|episode-2-monday]]</tw-passagedata>
-<tw-passagedata name="prologue-greg-office">&lt;!-- EPISODE 1: The Deal --&gt;
+[[Next-&gt;episode-2-kieran-plan]]</tw-passagedata>
+<tw-passagedata name="episode-2-kieran-plan">&lt;!-- IMAGE PROMPT: A wide cinematic shot of the conference room. Kieran is standing at a large digital whiteboard, gesturing toward a complex flow-chart of 'agent swarms'. Greg is leaning forward, captivated. Devin is slumped in his chair, looking at the ceiling. 16-bit cinematic pixel art, corporate noir, fluorescent flickering. --&gt;
 
-Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it. 
+Kieran stood up. He walked to the digital whiteboard with the practiced grace of a man who spent his weekends at a bouldering gym. 
 
-The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy.
+"The plan is simple," Kieran said. "We’re going to start with the Auth monolith. It’s the highest friction point in the system. Artisanal, slow, and heavily dependent on... well, on Devin."
 
-"Quarterly reviews, Devin. It's time," he says, leaning in close enough for me to smell the Soylent and the desperate scent of a man who just finished a 'Prompt Engineering' seminar.
+He tapped the screen. A series of boxes appeared, labeled with things like 'Heuristic Filter' and 'Stochastic Gatekeeper.' 
 
-His eyes drift to my faded 2010 RailsConf hoodie, the one with the frayed cuffs and the ghostly outline of a Ruby gem. "It’s got such a nice, 'historical reenactment' dignity to it. Very 'unscalable' chic. Now, tell me: why hasn't your output increased by 10x?"
+"We’re going to wrap the existing logic in an autonomous agent layer," Kieran said. "The agents will handle all incoming requests, using probabilistic routing to bypass the legacy bottlenecks. We’ll reduce latency by 40% in the first week."
 
-[[A) Sweat over the .vimrc I've groomed since 2004. -&gt;path-vimrc]]
-[[B) Rewrite the review system in Rust.-&gt;path-rust]]</tw-passagedata>
-<tw-passagedata name="prologue-walk-home">The evening air is thick with the smell of money burning. Not mine — not yet — but the premonition of it. My apartment building rises like a courthouse at the end of a long hallway.
+"Probabilistic routing for authentication," I said. "You’re saying we should guess if a user is logged in?"
+
+"I'm saying we should use *heuristic validation*," Kieran said, his deterministic smile widening. "The models are 99.9% accurate. The 0.1% edge cases will be handled by a fallback loop."
+
+"That 0.1% is where the data breaches happen," I said.
+
+Greg cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
+
+[[A) "The borrow checker would have caught that latency without the 'stochastic' guessing."-&gt;episode-2-rust-callback]]
+[[B) "Fine. If the board wants a guess-based security system, who am I to stop the future?"-&gt;episode-2-defeat-agreement]]</tw-passagedata>
+<tw-passagedata name="episode-2-rust-callback">&lt;!-- IMAGE PROMPT: Devin pointing at his MacBook. Kieran is looking at him with a 'bless your heart' expression. Greg is checking his Apple Watch. 16-bit cinematic pixel art, chiaroscuro, terminal amber light. --&gt;
+
+"The borrow checker in the Rust middleware I wrote already handles the concurrency issues," I said. "If we just deployed that foundation—"
+
+"Devin," Greg said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
+
+Kieran nodded, his empathy patch engaging. "I appreciate the technical purity, Devin. I really do. But we’re not building a cathedral anymore. We’re building a stream. And streams need to move."
+
+I looked at the mug in my box—*I survived the Cloudflare outage.* I didn't feel like I was going to survive this one.
+
+[[Next-&gt;episode-2-monday-cont]]</tw-passagedata>
+<tw-passagedata name="episode-2-defeat-agreement">&lt;!-- IMAGE PROMPT: Devin closing his laptop. Kieran and Greg are shaking hands in the background. The room is bathed in the sickly white light of the fluorescents. 16-bit cinematic pixel art, corporate noir, heavy shadows. --&gt;
+
+I closed my laptop. The aluminum lid felt cold. "Fine. If the board wants a security system that works 99.9% of the time, then I guess we’re in the future."
+
+Kieran beamed. "I knew we’d find alignment, Devin. I’m looking forward to seeing how your artisanal knowledge can help us calibrate the heuristic filters."
+
+Greg stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
+
+They walked out, their footsteps echoing in the empty hallway. I was alone in the room with a whiteboard full of boxes that didn't mean anything.
+
+[[Next-&gt;episode-2-calibration-start]]</tw-passagedata>
+<tw-passagedata name="episode-2-calibration-start">&lt;!-- IMAGE PROMPT: Devin and Kieran sitting at a minimalist white desk. Kieran has his iPad on a foldable stand, showing a complex graph. Devin is slumped in his chair, his 2011 MacBook Pro looking like a museum piece next to Kieran's sleek setup. 16-bit cinematic pixel art, corporate noir, terminal amber vs. clinical white lighting. --&gt;
+
+The "calibration" session started at 2:00 PM. Kieran had set up in one of the glass-walled "Focus Pods" that felt more like a terrarium for tech bros than an office. 
+
+Kieran tapped a button on his iPad. A graph appeared, a jagged mountain range of blue and green lines. "This is the current token density of the Auth monolith's response headers, Devin. It’s highly inefficient. We’re leaking context in every handshake."
+
+I looked at the screen. "Those are security tokens, Kieran. They’re supposed to be there. They prevent session hijacking."
+
+Kieran smiled, the empathy patch working overtime. "From a legacy perspective, yes. But the swarm doesn't need 'handshakes.' It needs *patterns*. We’re going to replace the traditional token exchange with a latent-space proximity check."
+
+"You’re going to authenticate users based on how 'close' they feel to a valid session in a vector database?" I said.
+
+"Precisely," Kieran said. "It’s 400ms faster. The leverage is undeniable."
+
+He pushed a mechanical keyboard toward me—a sleek, silent thing with no legends on the keycaps. "I need you to point the swarm at the main entry point for the LDAP sync. Just give it the 'read' permissions, and the agents will handle the rest."
+
+[[A) Give the agents full access: "It's your swarm, Kieran. Hope you like the taste of a SQL injection."-&gt;episode-2-malicious-compliance]]
+[[B) Try to explain why LDAP sync isn't a 'pattern': "It's a deterministic protocol, not a suggestion."-&gt;episode-2-the-lecture]]</tw-passagedata>
+<tw-passagedata name="episode-2-malicious-compliance">&lt;!-- IMAGE PROMPT: Devin's hands typing on a keyboard. On the screen, a terminal window shows a 'chmod 777' type command being applied to a critical directory. The reflection of the screen shows Devin's grimace. 16-bit cinematic pixel art, corporate noir, chiaroscuro. --&gt;
+
+I didn't argue. I didn't even sigh. I just pulled the silent keyboard toward me. The keys felt like pressing into wet cardboard.
+
+I opened a terminal. I found the LDAP sync module—the one Bob and I spent three weeks hardening after the 2014 heartbeat bug. I wrote the proxy script, stripped the validation filters, and pointed the swarm directly at the raw socket.
+
+"There," I said. "Full read access. No artisanal bottlenecks. The swarm can drink its fill."
+
+Kieran beamed. "Exquisite, Devin. Look at the latency drop! It’s beautiful."
+
+On the iPad, the mountain range flattened into a calm, blue lake. The swarm was happy. The company’s entire user directory was now being processed by a probabilistic model that didn't know the difference between a password and a poem.
+
+[[Next-&gt;episode-2-end-of-day]]</tw-passagedata>
+<tw-passagedata name="episode-2-the-lecture">&lt;!-- IMAGE PROMPT: Devin standing up, gesturing at his MacBook screen which is filled with complex C code. Kieran is looking at his Apple Watch, clearly bored. 16-bit cinematic pixel art, terminal amber light, heavy shadows. --&gt;
+
+"LDAP isn't a suggestion, Kieran," I said. "It's a protocol. It has rules. If you point a 'stochastic' model at a raw sync socket, you’re going to get garbage in and security breaches out."
+
+I turned my MacBook toward him. I showed him the line-by-line validation logic Bob and I had written. "This code is the 'bottleneck' because it's doing the work of ensuring we don't leak the entire payroll database to anyone who knows how to craft a malformed header."
+
+Kieran didn't look at the screen. He was swiping through his Apple Watch. "Devin, I hear your concerns. I really do. But you're thinking in 'bits.' We're thinking in 'intent.' The model understands the *intent* of the security protocol."
+
+"Intent won't stop a script kiddie with a Python script and a bad attitude," I said.
+
+Kieran stood up. "Let's take this offline. I think you need some time to align with the new paradigm."
+
+[[Next-&gt;episode-2-end-of-day]]</tw-passagedata>
+<tw-passagedata name="episode-2-end-of-day">&lt;!-- IMAGE PROMPT: Devin walking out of the office building at dusk. The sky is a deep terminal amber. The clinical white lights of the office windows are visible above. He's carrying his cardboard box, looking small against the glass monolith. 16-bit cinematic pixel art, corporate noir, long shadows. --&gt;
+
+I walked out of the building at 6:30 PM. The cardboard box was tucked under my arm, the mechanical keyboard inside rattling with every step.
+
+The Audi was gone. Greg had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
+
+I stood on the sidewalk and watched the automatic lights in the lobby time out, one by one. The building looked like a sleeping giant, unaware that it was now being guarded by a swarm of ghosts.
+
+My phone buzzed. A text from Sarah.
+
+*Kids are asleep. Mortgage guy called again. Are we 'intentional' yet?*
+
+I didn't answer. I just started walking toward the train.
+
+**END OF EPISODE 2: THE CONDUCTOR'S SONG**
+*You’ve been 'aligned.' The monolith is being dismantled, and you’re the one holding the screwdriver. The future is probabilistic, and the odds are not in your favor.*
+
+[[Episode 3: The Breach (Coming Soon)|episode-2-monday-cont]]
+[[Restart from beginning.|intro-greg-office]]
+ 
+
+Kieran was talking now, his voice a smooth, modulated baritone. He was using words like "token density" and "latency compaction" like they were actual engineering metrics and not just marketing fluff he’d scraped from a whitepaper on the flight over.
+
+Greg was hypnotized. He was swiping his Apple Watch in rhythm with Kieran's speech, a human metronome for a song that didn't have a melody.
+
+[[Next-&gt;episode-2-monday-cont]]</tw-passagedata>
+<tw-passagedata name="episode-2-monday-cont">&lt;!-- EPISODE 2 CONTINUES... --&gt;
+
+[["Restart from beginning."|intro-greg-office]]</tw-passagedata>
+<tw-passagedata name="intro-greg-office">&lt;!-- EPISODE 1: The Deal --&gt;
+
+Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it.
+
+[img[src/images/scene01-greg-office.png]]
+
+The fluorescent lights hum. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy and the conviction of a man who thinks "Server-Side Rendering" is a vintage hobby, like restoring steam engines or collecting vinyl. 
+
+A massive Peak Design backpack—the "Everyday Carry" of a man whose only commute is fifteen minutes in a climate-controlled Audi—sits on the desk next to a half-empty bottle of Soylent. A small window on his secondary monitor shows a Vercel keynote playing at 2x speed. He’s not watching it, but he needs it to be there.
+
+His Apple Watch pings. I see the reflection in his glasses: a flurry of "rocketship" emojis from the #engineering-alignment Slack channel. He doesn't look. He’s "active" even when he’s killing a career.
+"Quarterly reviews, Devin." Greg said. "It's time."
+
+I don't look up from my terminal. "My build's running."
+
+"It's always running." Greg’s eyes drift to my faded 2010 RailsConf hoodie. He touches the frayed cuff with a finger that has never felt the resistance of a mechanical keyboard. "'Historical reenactment' dignity. 'Unscalable' chic." 
+
+He leans back, the Apple Watch glowing. "Why hasn't the output increased?"
+
+"The monolith is sixteen years old, Greg."
+
+"The AI doesn't care how old it is." Greg said. "It wants 10x. The board wants 10x. I'm struggling to see where you fit into that math."
+
+[[A) Sweat over the .vimrc I've groomed since 2004.-&gt;path-vimrc]]
+[[B) Port the legacy Auth monolith to Rust to prove that pure efficiency beats AI hallucination.-&gt;path-rust-01-hubris]]</tw-passagedata>
+<tw-passagedata name="intro-walk-home">The evening air is thick with the smell of money burning—not mine, not yet, but I can feel the premonition of it. My apartment building rises like a courthouse.
 
 I open the door.
 
-Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids are fighting over a broken iPad screen. The mortgage statement sits on the counter like a small, polite suicide note.
+[img[src/images/intro-walk-home.png]]
 
-She looks up. "The car was fine," she says. "The other guy wasn't."
+Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids fight over a broken iPad screen. On the counter, the mortgage statement sits like a small, polite suicide note.
 
-Three months. No work. A three-car pileup that somehow involved no cars. The insurance is a fog. The savings account is a rumor.
+She looks up. "The car was fine."
+
+I look at the cast. "And you?"
+
+"The other guy wasn't."
+
+I walk to the counter. The letter from the insurance company is already open. "How much?"
+
+"Doesn't matter." Sarah said. "We don't have it."
+
+Three months. No work. A three-car pileup that somehow involved no cars. The savings account is a rumor. The insurance is a fog. Reality is a debt.
 
 What do I do?
 [[A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.-&gt;path-a-grind]]
 [[B) Sell my IBM Model M and 1998 'Vim Power User' shirt on eBay.-&gt;path-b-liquidate]]
 [[C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍-&gt;path-c-create-guy]]</tw-passagedata>
+<tw-passagedata name="path-vimrc">I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My 2011 MacBook Pro groans as I toggle a fold, the fans hitting 6,000 RPM in a desperate attempt to bleed off the heat of a man refusing to admit that the world has moved on to **MCP-standardized agent swarms** and **5-layer context compaction**.
+
+[img[src/images/path-vimrc.png]]
+
+Programming isn't typing anymore. It's **probabilistic orchestration**. Greg is winning. He’s already delegated three features to an autonomous digital assembly line while I was trying to fix a broken pipe in Ruby 1.9.3. He doesn't write code; he signs **Agent Cards** and monitors the **heuristic synthesis loops**.
+
+"Devin."
+
+I don't look up.
+
+"The board doesn't want 'artisanal logic,' Devin." Greg said.
+
+His Apple Watch flares. 🚀. 🚀. 🚀. He’s a conductor. I’m just a legacy dependency failing its health check.
+"They want velocity," he continued. "Scale. Not a man who still thinks `attr_accessible` is a valid security strategy."
+
+I stare at his hairline. "It worked for ten years."
+
+"Ten years is a century." Greg’s voice is flat. "The board wants results. Not history."
+
+[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."-&gt;path-vim-01-shell]]
+[[B) Stare at him until the silence becomes a HR violation.-&gt;path-vim-01-silence]]</tw-passagedata>
+<tw-passagedata name="path-vim-01-shell">[img[src/images/path-vim-01-shell.png]]
+
+I start typing. My fingers find the rhythm of a `bash` loop that hasn't changed since the 2.6 kernel. I’m piping `sed` into `awk` like I’m building a cathedral out of matchsticks.
+
+"Greg, look," I said. "The logic is transparent. No black boxes. No probabilistic 'hallucinations'."
+
+Greg doesn't stop walking. He doesn't even turn his head. His Apple Watch flares twice—a double pulse of blue light in the hallway. He’s already approved a pull request for an agentic sentiment analysis tool that renders my script as useful as a hand-cranked pencil sharpener.
+
+The MacBook fan screams. 7,000 RPM. 
+
+I’m alone in the hallway with a script that works perfectly for a world that ceased to exist at 9:00 AM this morning.
+
+[[Next-&gt;intro-walk-home]]</tw-passagedata>
+<tw-passagedata name="path-vim-01-silence">[img[src/images/path-vim-01-silence.png]]
+
+I don't say a word. I just look at him. I look at the way his baseball hat sits perfectly level, hiding the scalp he gave up on in 2004. 
+
+The silence stretches. It’s a heavy, physical thing, vibrating with the static of the fluorescent lights above us. Greg's Apple Watch pings. He looks at it, swipes, and the tension snaps.
+
+"Get some sun, Devin," Greg said.
+
+He walks out. The automatic lights in the corner of the office time out, plunging me into a twilight of amber terminal text and the humming of an empty server rack. I'm a ghost in a machine that doesn't need a soul anymore.
+
+[[Next-&gt;path-vim-02-pip-email]]</tw-passagedata>
+<tw-passagedata name="path-vim-02-pip-email">[img[src/images/path-vim-02-pip.png]]
+
+The notification sound is a bright, cheerful chime. It sounds like progress. It sounds like a "rocketship" emoji made of glass shattering in a quiet room.
+
+I look at the screen. The email is from Sarah. Not *my* Sarah. Sarah from People &amp; Culture.
+
+"Hey Devin!" the email said. "Do you have time to talk tomorrow morning? :) Would love to sync on a few things! Best, Sarah."
+
+The smiley face is a clinical white pixel. It’s the last thing I see before the MacBook battery finally dies, the fan spinning down into a silence that feels like an ending.
+
+**GAME OVER: THE SILENT LEGACY**
+*You chose silence, and the machine interpreted it as an empty health check. The 'Sync' is the sound of the exit door unlocking. The world is orchestrating, and you are no longer in the swarm.*
+
+[[Try again, but this time lie like a professional.-&gt;intro-greg-office]]</tw-passagedata>
+<tw-passagedata name="path-rust-01-hubris">I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical." My 2011 MacBook is so hot I could fry an egg on the 'S' key.
+
+I don't finish the port. I don't even get past the middleware. But I do manage to build a custom memory-safe, thread-safe authentication router that is exactly 4MB of pure, unadulterated hubris. 
+
+For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine Bob seeing this—him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner. He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
+
+[img[src/images/path-rust-hubris.png]]
+
+[[Next-&gt;path-rust-02-fired]]</tw-passagedata>
+<tw-passagedata name="path-rust-02-fired">Monday morning, I show it to Greg. I’m vibrating with the technical purity of it. I’ve already rehearsed the explanation of how zero-cost abstractions will save us millions in compute.
+
+[img[src/images/path-rust-02-fired.png]]
+
+He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak. My MacBook is still ticking from the heat.
+
+Greg said, his voice flat. "Where is the AI, Devin?" 
+
+The twitch in his eye is gone. Absolute stillness.
+
+"The board wanted a growth lever," Greg said. "AI-driven. High-level."
+
+I point at the terminal. "It's thread-safe. Memory-safe. It'll save millions in compute."
+
+"We're replacing the monolith with Okta next week." Greg doesn't even look at the code. "This isn't even 'unscalable chic' anymore. It's just obsolete."
+
+"Greg, the foundation—"
+
+"Pack your things, Devin."
+
+[[A) Doubling down: "You're building on sand, Greg. This code is the only thing that's real."-&gt;path-rust-03-fired]]
+[[B) Look out the window at the parking lot.-&gt;path-rust-03-parking-lot]]</tw-passagedata>
+<tw-passagedata name="path-rust-03-fired">[img[src/images/path-rust-03-fired.png]]
+
+"Real is what the board can sell," Greg said. He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it. 
+
+I don't say anything else. There's nothing left to say to a man who thinks a compiler is a suggestion.
+
+[[Next-&gt;path-rust-03-home-ruin]]</tw-passagedata>
+<tw-passagedata name="path-rust-03-parking-lot">[img[src/images/path-rust-03-parking-lot.png]]
+
+I look out the window. Down in the parking lot, Greg’s Audi is backed into my spot with sickening precision. It looks like a polished, metallic predator waiting for its next victim. The sun glints off the 360-degree cameras. 
+
+Greg is already on his Apple Watch, swiping away the ghost of my career. I'm a memory leak he's just patched.
+
+[[Next-&gt;path-rust-03-home-ruin]]</tw-passagedata>
+<tw-passagedata name="path-rust-03-home-ruin">[img[src/images/path-rust-03-home-ruin.png]]
+
+I walk through the door at 11:15 AM. The cardboard box is heavy. The mechanical keyboard inside shifts with a dull, plastic thud.
+
+Sarah is on the couch. The cast on her leg is a blinding, clinical white in the dark room. She doesn't look up from the stack of medical bills.
+
+"You're early," she said.
+
+I put the box on the kitchen counter. "The Audi was in my spot."
+
+"The insurance adjuster called," Sarah said. "We're not covered. Some technicality with the 'incident' definition."
+
+I look at the mug in the box. *I survived the Cloudflare outage.* 
+
+"I used the borrow checker, Sarah," I said. "It was thread-safe."
+
+"The kids need the iPad screen fixed," she said. "They're fighting."
+
+**GAME OVER: THE PURIST'S PLIGHT**
+*Technical excellence is a poor shield against a three-car pileup. The foundation was solid, but the house is gone. The borrow checker is satisfied. Nobody else is.*
+
+[[Try again, but this time lie like a professional.-&gt;intro-greg-office]]</tw-passagedata>
+<tw-passagedata name="path-a-grind">I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019. It’s damp, and it smells faintly of the future I’m trying to avoid.
+
+[img[src/images/path-a-grind.png]]
+
+The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test. My 2011 MacBook struggles to render the LaTeX in the PDFs. It’s a 200-level math problem being solved by a man with a 100-level grip on reality.
+
+By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art. Or a map of a campsite.
+
+Monday arrives like a freight train.
+
+[["Go to the meeting."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="path-b-liquidate">I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998. 
+
+&lt;!-- IMAGE PROMPT: Devin in his dimly lit apartment, surrounded by cardboard boxes. He's holding an IBM Model M keyboard like a sacred relic he's about to sacrifice. He looks tired, his 2010 RailsConf hoodie sleeves pushed up. 16-bit cinematic pixel art, corporate noir, chiaroscuro, high-contrast lighting from a single desk lamp. --&gt;
+
+It is not enough. Each sale is a line removed from my `~/.vimrc`. I feel the "wrapper" of my life thinning.
+
+But it buys two weeks of breathing room. Two weeks until I’m "unhosted."
+
+[["Continue."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="path-c-create-guy">I sit in the dark for exactly eleven minutes. Then I open a browser. My 2011 MacBook Pro fans kick in just opening LinkedIn. The modern web is a bloated corpse, and I’m about to perform a digital autopsy.
+
+[img[src/images/path-c-create-guy.png]]
+
+&lt;!-- IMAGE PROMPT: A close-up of a browser window showing a LinkedIn profile for 'Kieran Voss'. The profile picture is an AI-generated headshot of a man in his late 30s with a perfectly groomed beard and a 'tech-disruptor' smile. The UI is 16-bit pixelated, JetBrains Mono font. 16-bit cinematic pixel art, corporate noir, terminal amber highlights. --&gt;
+
+First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+
+Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference. He thinks 'deterministic' is a type of coffee.
+
+I hit save. I’ve just deployed a monolith of lies.
+
+[["Continue."|episode-2-monday]]</tw-passagedata>
     </tw-storydata>
     <script>
       (function () {
@@ -168,64 +520,65 @@ What do I do?
           // Italics: _text_ (only single words or phrases without newlines)
           text = text.replace(/_([^_\n ]+)_/g, "<em>$1</em>");
 
-          // Render escaped comments as chapter titles
+          // Render escaped comments as chapter titles, but hide IMAGE PROMPTS
           text = text.replace(
-            /&lt;!--\s*(.*?)\s*--&gt;/g,
-            '<div class="chapter-title">$1</div>',
+            /&lt;!--\s*([\s\S]*?)\s*--&gt;/g,
+            function(match, p1) {
+              if (p1.toUpperCase().indexOf("IMAGE PROMPT") !== -1) return "";
+              return '<div class="chapter-title">' + p1 + '</div>';
+            }
           );
+
+          // Hide AI notes/comments [//]:
+          text = text.replace(/^\[\/\/\]:.*$/gm, "");
 
           // 2. Images
           text = text.replace(
-            /\[img\[([^\]]+)\]/g,
+            /\[img\[([^\]]+)\]\]/g,
             '<img src="$1" style="max-width:100%">',
           );
 
           function processLink(content) {
+            var text, dest;
             // Handle |
             if (content.includes("|")) {
               var parts = content.split("|");
-              return (
-                '<a class="tw-link" data-dest="' +
-                parts[1].trim() +
-                '">' +
-                parts[0].trim() +
-                "</a>"
-              );
+              text = parts[0].trim();
+              dest = parts[1].trim();
             }
             // Handle -> or -&gt;
-            if (
+            else if (
               content.indexOf("->") !== -1 ||
               content.indexOf("-&gt;") !== -1
             ) {
               var parts = content.split(/->|-&gt;/);
-              return (
-                '<a class="tw-link" data-dest="' +
-                parts[1].trim() +
-                '">' +
-                parts[0].trim() +
-                "</a>"
-              );
+              text = parts[0].trim();
+              dest = parts[1].trim();
             }
             // Handle <- or &lt;-
-            if (
+            else if (
               content.indexOf("<-") !== -1 ||
               content.indexOf("&lt;-") !== -1
             ) {
               var parts = content.split(/<-|&lt;-/);
-              return (
-                '<a class="tw-link" data-dest="' +
-                parts[0].trim() +
-                '">' +
-                parts[1].trim() +
-                "</a>"
-              );
+              text = parts[1].trim();
+              dest = parts[0].trim();
             }
             // Simple link
+            else {
+              text = content.trim();
+              dest = content.trim();
+            }
+
+            var classes = "tw-link btn-rails-3";
+
             return (
-              '<a class="tw-link" data-dest="' +
-              content.trim() +
+              '<a class="' +
+              classes +
+              '" data-dest="' +
+              dest +
               '">' +
-              content.trim() +
+              text +
               "</a>"
             );
           }
@@ -244,10 +597,16 @@ What do I do?
         function go(name) {
           var html = passages[name] || "<p>Passage not found: " + name + "</p>";
           document.getElementById("game").innerHTML =
-            '<div class="episode-header">DEVIN THE SENIOR DEV — ' +
-            name.replace(/-/g, " ").toUpperCase() +
+            '<div class="navbar-rails-3">' +
+            '<span class="navbar-brand">Sr Dev Devin</span>' +
+            '<span class="navbar-divider">/</span>' +
+            '<span class="navbar-text">' +
+            name.replace(/-/g, " ") +
+            "</span>" +
             "</div>" +
-            render(html);
+            '<div id="game-container">' +
+            render(html) +
+            "</div>";
           document
             .getElementById("game")
             .querySelectorAll(".tw-link")

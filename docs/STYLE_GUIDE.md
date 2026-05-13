@@ -12,7 +12,7 @@ This document defines the instructions for the **Gemini Gem** used to illustrate
 2.  **Color Palette:** "Corporate Dystopia." Dominated by terminal-amber, fluorescent-green, and deep shadows. Use "clinical white" only for Greg's sterile office. 
 3.  **Character Design:**
     *   **Devin (42):** Tired eyes, wearing a faded **2010 RailsConf hoodie** with frayed cuffs and a ghostly Ruby logo. He looks like a "historical reenactment" of the 2000s web.
-    *   **Greg (VP):** Wears a tech vest and a baseball hat. Always has an Apple Watch glowing with Slack pings. He represents "AI leverage" energy—over-enthusiastic and fake.
+    *   **Greg (VP):** Balding since high school; wears a **baseball hat** at all times. Wears **glasses** (often reflecting terminal or Slack UI). Always has an **Apple Watch** glowing with Slack pings. He represents "AI leverage" energy—over-enthusiastic and fake.
 4.  **Retro Elements:** Include pixelated UI elements like floating dialogue boxes in "JetBrains Mono," "Loading..." bars, or "Press Start" text in the scene.
 
 ### Mandatory Keywords for Image Generation
@@ -26,9 +26,12 @@ This document defines the instructions for the **Gemini Gem** used to illustrate
 | :--- | :--- | :--- |
 | **Devin** | Faded 2010 RailsConf Hoodie | The "Legacy" era; craftsmanship; unscalable history. |
 | **Greg** | Glowing Apple Watch / Soylent | The "AI Leverage" era; shallow enthusiasm; intentionality. |
-| **The Office** | Flickering Fluorescents | The hymn of mediocrity; corporate drain. |
+| **Kieran** | Leather Peak Design bag / Matte bottle | The "Disruptor" era; effortless confidence; high-end abstraction. |
+| **The Office** | Flickering Fluorescents / Agent Dashboards | The hymn of mediocrity vs. **MCP-standardized swarm orchestration**. |
+| **The Code** | Rails 3 vs. Heuristic Synthesis | Artisanal logic vs. **Probabilistic assembly lines**. |
 
 ## Usage
-Provide the Gem with a passage from the `.twee` files and ask it to:
+When working on story passages:
 1. Describe the composition.
-2. Generate a 16:9 cinematic image following these rules.
+2. **Generate a high-quality image prompt** for a 16:9 cinematic image following these rules.
+3. **DO NOT** trigger the image generation tool yourself. Handoff the prompt to the specialized illustrator agent.

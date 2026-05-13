@@ -1,0 +1,53 @@
+:: intro-greg-office
+<!-- EPISODE 1: The Deal -->
+
+Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it.
+
+[img[src/images/scene01-greg-office.png]]
+
+The fluorescent lights hum. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy and the conviction of a man who thinks "Server-Side Rendering" is a vintage hobby, like restoring steam engines or collecting vinyl. 
+
+A massive Peak Design backpack—the "Everyday Carry" of a man whose only commute is fifteen minutes in a climate-controlled Audi—sits on the desk next to a half-empty bottle of Soylent. A small window on his secondary monitor shows a Vercel keynote playing at 2x speed. He’s not watching it, but he needs it to be there.
+
+His Apple Watch pings. I see the reflection in his glasses: a flurry of "rocketship" emojis from the #engineering-alignment Slack channel. He doesn't look. He’s "active" even when he’s killing a career.
+"Quarterly reviews, Devin." Greg said. "It's time."
+
+I don't look up from my terminal. "My build's running."
+
+"It's always running." Greg’s eyes drift to my faded 2010 RailsConf hoodie. He touches the frayed cuff with a finger that has never felt the resistance of a mechanical keyboard. "'Historical reenactment' dignity. 'Unscalable' chic." 
+
+He leans back, the Apple Watch glowing. "Why hasn't the output increased?"
+
+"The monolith is sixteen years old, Greg."
+
+"The AI doesn't care how old it is." Greg said. "It wants 10x. The board wants 10x. I'm struggling to see where you fit into that math."
+
+[[A) Sweat over the .vimrc I've groomed since 2004.->path-vimrc]]
+[[B) Port the legacy Auth monolith to Rust to prove that pure efficiency beats AI hallucination.->path-rust-01-hubris]]
+
+
+:: intro-walk-home
+The evening air is thick with the smell of money burning—not mine, not yet, but I can feel the premonition of it. My apartment building rises like a courthouse.
+
+I open the door.
+
+[img[src/images/intro-walk-home.png]]
+
+Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids fight over a broken iPad screen. On the counter, the mortgage statement sits like a small, polite suicide note.
+
+She looks up. "The car was fine."
+
+I look at the cast. "And you?"
+
+"The other guy wasn't."
+
+I walk to the counter. The letter from the insurance company is already open. "How much?"
+
+"Doesn't matter." Sarah said. "We don't have it."
+
+Three months. No work. A three-car pileup that somehow involved no cars. The savings account is a rumor. The insurance is a fog. Reality is a debt.
+
+What do I do?
+[[A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.->path-a-grind]]
+[[B) Sell my IBM Model M and 1998 'Vim Power User' shirt on eBay.->path-b-liquidate]]
+[[C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍->path-c-create-guy]]

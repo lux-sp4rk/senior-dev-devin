@@ -67,6 +67,14 @@ npm run dev     # live-reload dev server
 
 ---
 
+## Image Workflow
+
+**Rule:** Every story path (passage) must have an accompanying image.
+- **Agent Role:** Do NOT generate the image yourself. Instead, create a high-quality **image prompt** based on the [Visual Style Guide](docs/STYLE_GUIDE.md).
+- **Handoff:** Include the prompt in the story file (or a separate assets tracker) for a specialized illustrator agent to fulfill.
+
+---
+
 ## Uli as the Bottleneck
 
 **Rule of thumb:** If you're asking "should I…?" — you probably shouldn't be doing it. Agents should act autonomously within their domain. Uli's job is to:

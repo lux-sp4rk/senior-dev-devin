@@ -26,9 +26,16 @@ const rebuild = () => {
 };
 
 // 2. Watcher
-console.log(`[dev] Watching for changes in ${SRC_DIR}...`);
+console.log(`[dev] Watching for changes in ${SRC_DIR} and template.html...`);
 watch(SRC_DIR, { recursive: true }, (eventType, filename) => {
   if (filename && filename.endsWith('.twee')) {
+    rebuild();
+  }
+});
+
+// Also watch the template file
+watch(path.dirname(BUILD_SCRIPT), (eventType, filename) => {
+  if (filename === 'template.html') {
     rebuild();
   }
 });

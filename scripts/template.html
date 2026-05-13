@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Devin the Senior Dev</title>
+    <title>Sr Dev Devin</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
       * {
@@ -15,18 +15,45 @@
         font-family: "JetBrains Mono", "Courier New", monospace;
         font-size: 15px;
         line-height: 1.7;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 0 8rem 0;
+      }
+      #game-container {
         max-width: 720px;
         margin: 0 auto;
-        padding: 2rem 1.5rem 8rem 1.5rem;
+        padding: 2rem 1.5rem;
       }
-      .episode-header {
-        color: #555;
-        font-size: 11px;
+      .navbar-rails-3 {
+        background-color: #1b1b1b;
+        background-image: linear-gradient(to bottom, #222222, #111111);
+        background-repeat: repeat-x;
+        border-bottom: 1px solid #252525;
+        padding: 0 20px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+      }
+      .navbar-brand {
+        color: #999999;
+        font-size: 20px;
+        font-weight: 200;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        margin-right: 20px;
+        text-transform: none;
+        letter-spacing: -1px;
+      }
+      .navbar-divider {
+        color: #333;
+        margin: 0 10px;
+      }
+      .navbar-text {
+        color: #777;
+        font-size: 14px;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
         text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #222;
-        padding-bottom: 1rem;
+        letter-spacing: 1px;
       }
       .tw-link {
         color: #7ee787;
@@ -36,6 +63,36 @@
       .tw-link:hover {
         color: #a5f3b4;
       }
+      /* Meta-Joke: Rails 3 Era Bootstrap Button Style */
+      .tw-link.btn-rails-3 {
+        display: inline-block;
+        padding: 4px 12px;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #006dcc;
+        background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+        background-repeat: repeat-x;
+        border: 1px solid #cccccc;
+        border-color: #0044cc #0044cc #002a80;
+        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        border-bottom-color: #b3b3b3;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+      }
+      .tw-link.btn-rails-3:hover {
+        color: #ffffff;
+        background-color: #0044cc;
+        background-position: 0 -15px;
+        transition: background-position 0.1s linear;
+        text-decoration: none;
+      }
       hr {
         border: none;
         border-top: 1px solid #222;
@@ -43,25 +100,28 @@
       }
       .chapter-title {
         display: inline-block;
-        background: #111;
-        color: #a5f3b4;
-        border: 1px solid #222;
-        border-left: 4px solid #7ee787;
-        padding: 0.5rem 1rem;
-        margin: 1rem 0 2rem 0;
-        font-weight: 700;
-        letter-spacing: 1px;
+        padding: 2px 6px;
+        font-size: 11.844px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #ffffff;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        white-space: nowrap;
+        vertical-align: baseline;
+        background-color: #3a87ad;
+        border-radius: 3px;
         text-transform: uppercase;
+        margin: 1rem 0 2rem 0;
       }
     </style>
   </head>
   <body>
     <tw-storydata
-      name="Devin the Senior Dev"
+      name="Sr Dev Devin"
       ifid="DEVIN-SENIOR-DEV-E001"
       format="Harlowe"
       format-version="3.3.0"
-      start="prologue-greg-office"
+      start="intro-greg-office"
       options=""
       hidden=""
     >
@@ -86,11 +146,17 @@
           // Italics: _text_ (only single words or phrases without newlines)
           text = text.replace(/_([^_\n ]+)_/g, "<em>$1</em>");
 
-          // Render escaped comments as chapter titles
+          // Render escaped comments as chapter titles, but hide IMAGE PROMPTS
           text = text.replace(
-            /&lt;!--\s*(.*?)\s*--&gt;/g,
-            '<div class="chapter-title">$1</div>',
+            /&lt;!--\s*([\s\S]*?)\s*--&gt;/g,
+            function(match, p1) {
+              if (p1.toUpperCase().indexOf("IMAGE PROMPT") !== -1) return "";
+              return '<div class="chapter-title">' + p1 + '</div>';
+            }
           );
+
+          // Hide AI notes/comments [//]:
+          text = text.replace(/^\[\/\/\]:.*$/gm, "");
 
           // 2. Images
           text = text.replace(
@@ -99,51 +165,46 @@
           );
 
           function processLink(content) {
+            var text, dest;
             // Handle |
             if (content.includes("|")) {
               var parts = content.split("|");
-              return (
-                '<a class="tw-link" data-dest="' +
-                parts[1].trim() +
-                '">' +
-                parts[0].trim() +
-                "</a>"
-              );
+              text = parts[0].trim();
+              dest = parts[1].trim();
             }
             // Handle -> or -&gt;
-            if (
+            else if (
               content.indexOf("->") !== -1 ||
               content.indexOf("-&gt;") !== -1
             ) {
               var parts = content.split(/->|-&gt;/);
-              return (
-                '<a class="tw-link" data-dest="' +
-                parts[1].trim() +
-                '">' +
-                parts[0].trim() +
-                "</a>"
-              );
+              text = parts[0].trim();
+              dest = parts[1].trim();
             }
             // Handle <- or &lt;-
-            if (
+            else if (
               content.indexOf("<-") !== -1 ||
               content.indexOf("&lt;-") !== -1
             ) {
               var parts = content.split(/<-|&lt;-/);
-              return (
-                '<a class="tw-link" data-dest="' +
-                parts[0].trim() +
-                '">' +
-                parts[1].trim() +
-                "</a>"
-              );
+              text = parts[1].trim();
+              dest = parts[0].trim();
             }
             // Simple link
+            else {
+              text = content.trim();
+              dest = content.trim();
+            }
+
+            var classes = "tw-link btn-rails-3";
+
             return (
-              '<a class="tw-link" data-dest="' +
-              content.trim() +
+              '<a class="' +
+              classes +
+              '" data-dest="' +
+              dest +
               '">' +
-              content.trim() +
+              text +
               "</a>"
             );
           }
@@ -162,10 +223,16 @@
         function go(name) {
           var html = passages[name] || "<p>Passage not found: " + name + "</p>";
           document.getElementById("game").innerHTML =
-            '<div class="episode-header">DEVIN THE SENIOR DEV — ' +
-            name.replace(/-/g, " ").toUpperCase() +
+            '<div class="navbar-rails-3">' +
+            '<span class="navbar-brand">Sr Dev Devin</span>' +
+            '<span class="navbar-divider">/</span>' +
+            '<span class="navbar-text">' +
+            name.replace(/-/g, " ") +
+            "</span>" +
             "</div>" +
-            render(html);
+            '<div id="game-container">' +
+            render(html) +
+            "</div>";
           document
             .getElementById("game")
             .querySelectorAll(".tw-link")
