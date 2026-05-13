@@ -1,49 +1,61 @@
-# Devin: The Rails 3 Ascetic
+# Devin
 
-**Archetype:** The Digital Diogenes (Tragic Outcome) / The Protective Traditionalist
+Protagonist. 42 years old (born 1984). Senior software engineer drowning in corporate AI pressure, financial stress, and bad decisions.
 
-Protagonist. 42 years old (born 1984). A man desperately clutching a 2011 stack to solve 2026 problems. He isn't seeking the tent; he is seeking a way to save his family without losing his soul, but his definition of "soul" is locked in a `Gemfile.lock` from Rails 3.2.
+## Surface Facts
 
-## Core Identity: The Protective Traditionalist
+- Radical Competence — The person people call at 3 AM when the production database is a smoking crater and the "senior" leads are panicking. He can see patterns in logs that look like noise to everyone else.
+- Intellectual Integrity — Views a hacky "TODO" in the codebase as a personal betrayal of the craft. He doesn't just want it to work; he wants it to be *correct*.
+- Uses vim — .vimrc groomed since 2004, gold-plated anchor energy
+- Owns an IBM Model M keyboard
+- "I survived the Cloudflare outage" mug
+- 1998 "Vim Power User" shirt (size Large, never washed, mint condition irony)
+- 2010 RailsConf hoodie — faded, frayed cuffs, ghostly Ruby gem outline; Greg calls it "unscalable chic"
+- Reading *Pattern Recognition and Machine Learning* since 2019 — has not finished it
+- Knows Rust, linear algebra, machine learning — thinks in systems and abstractions
 
-- **Economic Status:** Precipice. He has a mortgage, a wife (Sarah), and kids. He is terrified of failing them. Every technical stand he takes is, in his mind, a way to prove his value so he can keep the house.
-- **The Rigor Mortis:** Frozen neuroplasticity. It’s not that he wants to live in the past; it’s that he *cannot* leave it. He treats modern "wrappers" (Vercel, Tailwind, AI) as a personal and professional rot that he must protect his family from.
-- **The Hubris:** Believes that if he just solves the problem "correctly" (the 2011 way), the world will realize its mistake and reward him. He refuses to change his stack, not out of laziness, but out of a misplaced sense of duty to the "truth" of the monolith.
+## Obsessions and Avoidances
 
-## Surface Facts & Gear
+- Technical excellence as morality — he views bad code as a lie, and the borrow checker as the only honest thing left in his life. The machine doesn't lie to him; only people do.
+- Avoids lying professionally until he can't anymore
+- Avoids asking for help — considers it weakness
+- Obsesses over tooling (vimrc, keyboard, Rust) as displacement activity
 
-- **The Rig:** A weathered 2011 MacBook Pro. He sits at his kitchen table or his office desk, developing carpal tunnel while trying to ignore the modern world's "bloat."
-- **The Commute:** Drives a car he keeps running with spit and StackOverflow-tier mechanical hacks. Parks nose-in, the "normal" way, in the same spot every day for five years.
-- **The Office:** A generic shared workspace in an unglamorous part of town. Not a WeWork, but a "Work-O-Sphere" or something equally soul-crushing where you share a kitchen with a boutique pet food startup.
-- **The Stack:** 
-    - **Vim (MacVim):** A 2,000-line `~/.vimrc` with broken Pathogen hooks. He views it as a precision instrument, even as the fans scream.
-    - **Rails 3.2:** The peak of human achievement. Everything after is "unnecessary abstraction."
-- **Iconic Items:**
-    - Faded 2010 RailsConf hoodie — his armor against the "Prompt Engineering" vibe of the office.
-    - "I survived the Cloudflare outage" mug — a reminder of a time when technical skill mattered more than token throughput.
-- **Office Friction:**
-    - **Hardware Snobbery:** Uses a mechanical keyboard with loud, clicky Blue switches. He calls it "tactile feedback"; Greg calls it "a noise complaint waiting to happen."
-    - **The "Local-First" Manifesto:** Refuses to use the shared office Notion or Jira for his own notes, keeping everything in a giant `TODO.txt` that he edits in Vim and refuses to share because "it's not indexed for LLMs."
-    - **Meeting Ghosting:** Shows up to meetings without a laptop, just a physical pocket notebook and a pen that he clicks incessantly while Greg talks about "velocity."
+## Friction in Scenes
 
-## Voice & Philosophy
-
-- **Sharp & Protective:** His sharp tongue is a defense mechanism. He uses "truth bombs" to justify his refusal to adapt, convincing himself that his technical purity is the only thing that will eventually save Sarah and the kids.
-- **The Rejectionist:** He rejects modern frameworks because he believes they are "scams." He won't use Tailwind because it "breaks the separation of concerns," even if using it would save his job.
-
-## Friction & Conflict
-
-- **Family vs. Integrity:** This is the core engine. He wants to save the family (Survival), but he refuses to change his methods (Integrity). He treats the mortgage like a bug he can fix with a more elegant algorithm.
-- **The Bob-Shaped Void:** Ever since Bob was "retired," Devin feels like a turtle without a shell. He used to take pride in his work; now he takes pride in his *resistance*. Every time he annoys Greg, he thinks he's honoring Bob's memory.
-- **Aletheia:** The AI agent offers him a six-figure "Principal" role. He wants the money for Sarah, but he rejects the offer because he cannot bring himself to work on a stack that "doesn't respect the Asset Pipeline."
+- When cornered, retreats into technical detail as armor
+- Makes dry, precise jokes when nervous
+- Has a tendency to narrate his own suffering with analyst detachment
+- **Quiet Vulnerability** — The mask slips when he looks at Sarah's medical bills or the kids' broken toys; he stops talking and just stares at the flickering cursor for too long.
 
 ## Blind Spots
 
-- Thinks his refusal to adapt is "integrity" when it's actually a fear of the unknown.
-- Believes he can "out-code" the collapsing economy without changing his tools.
-- Doesn't realize that by refusing to "lie like a professional," he is choosing the tent over his family.
+- Believes technical skill will save him — it won't
+- Doesn't see that his avoidance of corporate politics is itself a choice with consequences
+- Doesn't know how to ask for help; considers it weakness when it's actually the only real option
+- Thinks he's smarter than the situation; the story will test that
 
-## Story Arc: Branching Tragedies
+## Values Under Pressure
 
-- **Ending 1: The Purist's Plight:** He chooses technical purity (Rust) to prove his worth, gets fired, and watches his world dissolve.
-- **Ending 2: The Digital Diogenes:** The ultimate tragedy. He survives by lying (The Guy), but when the final choice comes to truly adapt or lose everything, he chooses the purity of the tent. He ends up "unhosted" not because he wanted to, but because he was too rigid to stay indoors.
+- Survival vs. integrity: starts choosing survival (fabricating "The Guy") after trying both purity and grinding
+- Family vs. self: **Protective Loyalty** — His financial desperation isn't greed; it's a desperate, quiet attempt to ensure Sarah never has to choose between physical therapy and the mortgage. He will burn his own reputation to keep her world intact.
+- Clearly loves Sarah but has been absent — money pressure is a proxy for this
+
+## Voice (from writing so far)
+
+- Dry, sardonic, systems-thinking metaphor-prone ("a courthouse at the end of a long hallway")
+- 1st person (to capture internal monologue and unreliable narrator perspective)
+- Sometimes too clever for his own good — "the language of the Snake"
+- Understatement as coping mechanism ("the insurance is a fog")
+
+## Unfinished Business
+
+- Wants: Keep his family afloat, protect Sarah from the reality of their bankruptcy, and prove his worth through the only thing he knows—code. He wants to be the hero who fixes the system, not the one who breaks under it.
+- Thinks he wants: To be proven right about technical excellence; to win the argument with Greg.
+- Actually needs: To accept that his value as a human isn't tied to his git commit history, and that he can't solve family trauma with a more efficient algorithm. He needs to let Sarah in.
+
+## Story Arc (provisional)
+
+- Start: Highly competent but socially isolated, drowning in a system that devalues his integrity.
+- Midpoint: The lie ("The Guy") is in motion, forcing him to choose between his craft (integrity) and his family (survival).
+- End TBD: A reckoning where his radical competence is finally used for himself/family rather than a corporation that hates him—or a tragic fall where his integrity is the last thing he loses.

@@ -1,32 +1,28 @@
 :: prologue-greg-office
 <!-- EPISODE 1: The Deal -->
-[img[src/images/scene01-greg-office.png]]
 
-Greg doesn't write code. Greg has read about code in a LinkedIn carousel.
+Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it. 
 
-The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy. He’s the kind of man who thinks "Server-Side Rendering" is a vintage hobby, like restoring steam engines.
+The fluorescent lights hum their hymn of mediocrity. Greg, VP of Engineering, leans back in his chair, vibrating with "AI leverage" energy.
 
-"Quarterly reviews, Devin. It's time to operationalize your evolution," he says, leaning in close enough for me to smell the Soylent and the desperate scent of a man who just finished a 'Prompt Engineering' seminar.
+"Quarterly reviews, Devin. It's time," he says, leaning in close enough for me to smell the Soylent and the desperate scent of a man who just finished a 'Prompt Engineering' seminar.
 
-His eyes drift to my faded 2010 RailsConf hoodie, the one with the frayed cuffs and the ghostly outline of a Ruby gem. I can feel the weight of my 2,000-line `~/.vimrc` in my pocket, a digital rosary of broken Pathogen hooks.
-
-"It’s got such a nice, 'historical reenactment' dignity to it. Very 'unscalable' chic. Now, tell me: why hasn't your output increased by 10x? The board is looking at our 'compute spend' and they're seeing a lot of... manual labor."
-
+His eyes drift to my faded 2010 RailsConf hoodie, the one with the frayed cuffs and the ghostly outline of a Ruby gem. "It’s got such a nice, 'historical reenactment' dignity to it. Very 'unscalable' chic. Now, tell me: why hasn't your output increased by 10x?"
 
 [[A) Sweat over the .vimrc I've groomed since 2004. ->path-vimrc]]
 [[B) Rewrite the review system in Rust.->path-rust]]
 
 
 :: prologue-walk-home
-The evening air is thick with the smell of money burning. Not mine — not yet — but the premonition of it. My apartment building rises like a courthouse at the end of a long hallway, a "wrapper" of rent that I am desperately trying to keep intact. If I fail, the "unhosted" life isn't an adventure; it's a death sentence for the world I've built for Sarah and the kids.
+The evening air is thick with the smell of money burning. Not mine — not yet — but the premonition of it. My apartment building rises like a courthouse at the end of a long hallway.
 
 I open the door.
 
-Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids are fighting over a broken iPad screen that my 2011 hardware could never hope to mirror. The mortgage statement sits on the counter like a small, polite suicide note, formatted in a font that's too modern for my taste—and far too expensive for my bank account.
+Sarah is on the couch. Leg elevated. The silence in the room has a different texture than it used to. The kids are fighting over a broken iPad screen. The mortgage statement sits on the counter like a small, polite suicide note.
 
 She looks up. "The car was fine," she says. "The other guy wasn't."
 
-Three months. No work. A three-car pileup that somehow involved no cars. The insurance is a fog. The savings account is a rumor. My neuroplasticity is reaching EOL (End of Life), and I'm still trying to solve a 2026 problem with a 2011 stack, praying that technical purity is the same thing as a survival strategy.
+Three months. No work. A three-car pileup that somehow involved no cars. The insurance is a fog. The savings account is a rumor.
 
 What do I do?
 [[A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.->path-a-grind]]
