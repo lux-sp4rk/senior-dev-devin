@@ -93,15 +93,79 @@ Greg stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll s
 
 They walked out, their footsteps echoing in the empty hallway. I was alone in the room with a whiteboard full of boxes that didn't mean anything.
 
-[[Next->episode-2-monday-cont]]
+[[Next->episode-2-calibration-start]]
 
-:: episode-2-monday-cont
+:: episode-2-calibration-start
+<!-- IMAGE PROMPT: Devin and Kieran sitting at a minimalist white desk. Kieran has his iPad on a foldable stand, showing a complex graph. Devin is slumped in his chair, his 2011 MacBook Pro looking like a museum piece next to Kieran's sleek setup. 16-bit cinematic pixel art, corporate noir, terminal amber vs. clinical white lighting. -->
 
-<!-- IMAGE PROMPT: Devin's POV. A reflection in Greg's glasses shows a blurry YouTube video of a tech keynote at 2x speed. In the foreground, the edge of the conference table and Devin's scarred knuckles. 16-bit cinematic pixel art, corporate noir, chiaroscuro. -->
+The "calibration" session started at 2:00 PM. Kieran had set up in one of the glass-walled "Focus Pods" that felt more like a terrarium for tech bros than an office. 
 
-I don't say a word. I just watch the reflection in Greg's glasses. It’s a Vercel keynote. A man on a stage in a black t-shirt is talking about "Edge Functions" and "Next-Gen Middleware." The subtitles are flying by at 2x speed, a blur of white text against a black background.
+Kieran tapped a button on his iPad. A graph appeared, a jagged mountain range of blue and green lines. "This is the current token density of the Auth monolith's response headers, Devin. It’s highly inefficient. We’re leaking context in every handshake."
 
-It’s the hymn of the modern VP. Constant input, zero retention. 
+I looked at the screen. "Those are security tokens, Kieran. They’re supposed to be there. They prevent session hijacking."
+
+Kieran smiled, the empathy patch working overtime. "From a legacy perspective, yes. But the swarm doesn't need 'handshakes.' It needs *patterns*. We’re going to replace the traditional token exchange with a latent-space proximity check."
+
+"You’re going to authenticate users based on how 'close' they feel to a valid session in a vector database?" I said.
+
+"Precisely," Kieran said. "It’s 400ms faster. The leverage is undeniable."
+
+He pushed a mechanical keyboard toward me—a sleek, silent thing with no legends on the keycaps. "I need you to point the swarm at the main entry point for the LDAP sync. Just give it the 'read' permissions, and the agents will handle the rest."
+
+[[A) Give the agents full access: "It's your swarm, Kieran. Hope you like the taste of a SQL injection."->episode-2-malicious-compliance]]
+[[B) Try to explain why LDAP sync isn't a 'pattern': "It's a deterministic protocol, not a suggestion."->episode-2-the-lecture]]
+
+:: episode-2-malicious-compliance
+<!-- IMAGE PROMPT: Devin's hands typing on a keyboard. On the screen, a terminal window shows a 'chmod 777' type command being applied to a critical directory. The reflection of the screen shows Devin's grimace. 16-bit cinematic pixel art, corporate noir, chiaroscuro. -->
+
+I didn't argue. I didn't even sigh. I just pulled the silent keyboard toward me. The keys felt like pressing into wet cardboard.
+
+I opened a terminal. I found the LDAP sync module—the one Bob and I spent three weeks hardening after the 2014 heartbeat bug. I wrote the proxy script, stripped the validation filters, and pointed the swarm directly at the raw socket.
+
+"There," I said. "Full read access. No artisanal bottlenecks. The swarm can drink its fill."
+
+Kieran beamed. "Exquisite, Devin. Look at the latency drop! It’s beautiful."
+
+On the iPad, the mountain range flattened into a calm, blue lake. The swarm was happy. The company’s entire user directory was now being processed by a probabilistic model that didn't know the difference between a password and a poem.
+
+[[Next->episode-2-end-of-day]]
+
+:: episode-2-the-lecture
+<!-- IMAGE PROMPT: Devin standing up, gesturing at his MacBook screen which is filled with complex C code. Kieran is looking at his Apple Watch, clearly bored. 16-bit cinematic pixel art, terminal amber light, heavy shadows. -->
+
+"LDAP isn't a suggestion, Kieran," I said. "It's a protocol. It has rules. If you point a 'stochastic' model at a raw sync socket, you’re going to get garbage in and security breaches out."
+
+I turned my MacBook toward him. I showed him the line-by-line validation logic Bob and I had written. "This code is the 'bottleneck' because it's doing the work of ensuring we don't leak the entire payroll database to anyone who knows how to craft a malformed header."
+
+Kieran didn't look at the screen. He was swiping through his Apple Watch. "Devin, I hear your concerns. I really do. But you're thinking in 'bits.' We're thinking in 'intent.' The model understands the *intent* of the security protocol."
+
+"Intent won't stop a script kiddie with a Python script and a bad attitude," I said.
+
+Kieran stood up. "Let's take this offline. I think you need some time to align with the new paradigm."
+
+[[Next->episode-2-end-of-day]]
+
+:: episode-2-end-of-day
+<!-- IMAGE PROMPT: Devin walking out of the office building at dusk. The sky is a deep terminal amber. The clinical white lights of the office windows are visible above. He's carrying his cardboard box, looking small against the glass monolith. 16-bit cinematic pixel art, corporate noir, long shadows. -->
+
+I walked out of the building at 6:30 PM. The cardboard box was tucked under my arm, the mechanical keyboard inside rattling with every step.
+
+The Audi was gone. Greg had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
+
+I stood on the sidewalk and watched the automatic lights in the lobby time out, one by one. The building looked like a sleeping giant, unaware that it was now being guarded by a swarm of ghosts.
+
+My phone buzzed. A text from Sarah.
+
+*Kids are asleep. Mortgage guy called again. Are we 'intentional' yet?*
+
+I didn't answer. I just started walking toward the train.
+
+**END OF EPISODE 2: THE CONDUCTOR'S SONG**
+*You’ve been 'aligned.' The monolith is being dismantled, and you’re the one holding the screwdriver. The future is probabilistic, and the odds are not in your favor.*
+
+[[Episode 3: The Breach (Coming Soon)|episode-2-monday-cont]]
+[[Restart from beginning.|intro-greg-office]]
+ 
 
 Kieran was talking now, his voice a smooth, modulated baritone. He was using words like "token density" and "latency compaction" like they were actual engineering metrics and not just marketing fluff he’d scraped from a whitepaper on the flight over.
 
