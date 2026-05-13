@@ -9,6 +9,7 @@ An interactive fiction series about a senior dev drowning in corporate AI pressu
 ## Story Status
 
 - **Episode 1** ✅ — "The Deal" (intro through three path branches → Monday meeting)
-- **Episode 2**.pending — Monday meeting, Greg, "The Guy" arrives
+- **Episode 2** 🏗️ — "The Conductor's Song" (The meeting, Kieran Voss, the 'Liaison' demotion)
+- **Episode 3**.pending — The Breach, probabilistic security failure, the fallout
 
 ---
