@@ -30,6 +30,7 @@ This document defines the instructions for the **Gemini Gem** used to illustrate
 | **The Code** | Rails 3 vs. Heuristic Synthesis | Artisanal logic vs. **Probabilistic assembly lines**. |
 
 ## Usage
-Provide the Gem with a passage from the `.twee` files and ask it to:
+When working on story passages:
 1. Describe the composition.
-2. Generate a 16:9 cinematic image following these rules.
+2. **Generate a high-quality image prompt** for a 16:9 cinematic image following these rules.
+3. **DO NOT** trigger the image generation tool yourself. Handoff the prompt to the specialized illustrator agent.
