@@ -520,10 +520,13 @@ I hit save. I’ve just deployed a monolith of lies.
           // Italics: _text_ (only single words or phrases without newlines)
           text = text.replace(/_([^_\n ]+)_/g, "<em>$1</em>");
 
-          // Render escaped comments as chapter titles
+          // Render escaped comments as chapter titles, but hide IMAGE PROMPTS
           text = text.replace(
-            /&lt;!--\s*(.*?)\s*--&gt;/g,
-            '<div class="chapter-title">$1</div>',
+            /&lt;!--\s*([\s\S]*?)\s*--&gt;/g,
+            function(match, p1) {
+              if (p1.toUpperCase().indexOf("IMAGE PROMPT") !== -1) return "";
+              return '<div class="chapter-title">' + p1 + '</div>';
+            }
           );
 
           // Hide AI notes/comments [//]:
