@@ -1,59 +1,35 @@
-# GEMINI.md - Project Context
+# AGENTS.md — senior-dev-devin / PR #21
 
-## Project Overview
-**Devin the Senior Dev** is an interactive fiction project built using a modular Twine (Twee) structure. It tells a branching narrative about a senior developer facing corporate AI pressures and personal financial stress.
+## Worktree Setup
 
-### Core Technologies
-- **Twee (Twine):** Source format for the interactive narrative.
-- **Node.js:** Powers the custom build and development pipeline.
-- **Custom Rendering Engine:** A bespoke HTML/JS engine (defined in `scripts/template.html`) that renders Twee passages in the browser.
+This is a **worktree** off the main repo at `~/Projects/senior-dev-devin`.
 
-### Architecture
-- `src/metadata/`: Contains core story metadata (Title, IFID, Start passage).
-- `src/story/`: Contains modular `.twee` files for different story parts (prologue, episodes, paths).
-- `scripts/`: Contains the build and development logic.
-- `index.html`: The compiled output file containing the entire story and engine.
+```
+~/Projects/senior-dev-devin/              ← main repo, branch pr-18
+~/Projects/senior-dev-devin-pr21/        ← THIS worktree, branch narrative/character-friction-and-backstory
+```
+
+**Symlink:** `./projects/` in agent workspaces → `~/Projects/`
 
 ---
 
-## Building and Running
+## Branch
 
-### Development
-To start the development server with live rebuilding and a local preview:
-```bash
-npm run dev
-```
-- **Preview URL:** `http://localhost:3000`
-- **Watcher:** Automatically triggers a rebuild when `.twee` files in `src/` are modified.
+`narrative/character-friction-and-backstory` → PR #21
 
-### Production Build
-To generate the final `index.html` file:
-```bash
-npm run build
-```
+## Conventions
 
----
+- Branch naming: `narrative/`, `fix/`, `feat/` prefixes
+- Commits: conventional commits (`feat(narrative):`, `fix(ci):`, etc.)
+- CI: Gemini CLI handles review/triage/invoke via `.github/workflows/`
+- **Passage names:** always hyphens, never underscores
 
-## Development Conventions
+## Tech Stack
 
-### 1. Naming Convention (Hyphen Rule)
-**ALWAYS use hyphens (`-`) instead of underscores (`_`) for passage names.**
-- ✅ `:: path-vimrc`
-- ❌ `:: path_vimrc`
+- **Twine/Twee**: `src/story/` — modular story files
+- **Node.js**: `npm run build`, `npm run dev`
+- Passage naming: `:: my-passage` ✅ | `:: my_passage` ❌
 
-**Rationale:** The custom rendering engine uses a regex that can misinterpret underscores as Markdown italics (e.g., `path_vimrc` becomes `path<em>vimrc</em>`), breaking the HTML `data-dest` attribute and causing "Passage not found" errors.
+## Repo
 
-### 2. File Organization
-- New scenes or episodes should be created as separate `.twee` files in `src/story/`.
-- Keep `src/metadata/story.twee` reserved for `:: StoryTitle` and `:: StoryData`.
-
-### 3. Link Syntax
-Standard Harlowe-style links are supported:
-- `[[Display Text->TargetPassage]]` (Recommended for clarity)
-- `[[TargetPassage]]`
-- `[[TargetPassage<-Display Text]]`
-- `[[Display Text|TargetPassage]]`
-
-### 4. Code Style
-- **Build Scripts:** Written in ESM (ES Modules) using Node.js.
-- **Twee Files:** Use HTML comments for internal episode markers (e.g., `<!-- EPISODE 1 -->`).
+`lux-sp4rk/senior-dev-devin` — interactive fiction, Twine-based
