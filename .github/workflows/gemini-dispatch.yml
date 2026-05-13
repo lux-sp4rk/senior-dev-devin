@@ -83,7 +83,7 @@ jobs:
 
       - name: 'Extract command'
         id: 'extract_command'
-        uses: 'actions/github-script@66402087676a30637c545c81a6b55cf185e877b7' # ratchet:actions/github-script@v8.0.0
+        uses: 'actions/github-script@v8.0.0'
         env:
           EVENT_TYPE: '${{ github.event_name }}.${{ github.event.action }}'
           REQUEST: '${{ github.event.comment.body || github.event.review.body || github.event.issue.body }}'
