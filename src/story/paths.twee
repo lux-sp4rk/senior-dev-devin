@@ -70,7 +70,7 @@ I spend forty-eight hours fighting the borrow checker. It’s like wrestling an 
 
 I don't finish the port. I don't even get past the middleware. But I do manage to build a custom memory-safe, thread-safe authentication router that is exactly 4MB of pure, unadulterated hubris. 
 
-For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine Bob seeing this—him nodding, cleaning his glasses on his tie, and saying, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
+For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine Bob seeing this—him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner. He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
 
 [img[src/images/path-rust-hubris.png]]
 
@@ -170,6 +170,8 @@ But it buys two weeks of breathing room. Two weeks until I’m "unhosted."
 I sit in the dark for exactly eleven minutes. Then I open a browser. My 2011 MacBook Pro fans kick in just opening LinkedIn. The modern web is a bloated corpse, and I’m about to perform a digital autopsy.
 
 [img[src/images/path-c-create-guy.png]]
+
+<!-- IMAGE PROMPT: A close-up of a browser window showing a LinkedIn profile for 'Kieran Voss'. The profile picture is an AI-generated headshot of a man in his late 30s with a perfectly groomed beard and a 'tech-disruptor' smile. The UI is 16-bit pixelated, JetBrains Mono font. 16-bit cinematic pixel art, corporate noir, terminal amber highlights. -->
 
 First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
 
