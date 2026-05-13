@@ -97,6 +97,25 @@ I point at the terminal. "It's thread-safe. Memory-safe. It'll save millions in 
 
 "Pack your things, Devin."
 
+[[A) Doubling down: "You're building on sand, Greg. This code is the only thing that's real."->path-rust-03-fired]]
+[[B) Look out the window at the parking lot.->path-rust-03-parking-lot]]
+
+:: path-rust-03-fired
+[img[src/images/path-rust-03-fired.png]]
+
+"Real is what the board can sell," Greg said. He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it. 
+
+I don't say anything else. There's nothing left to say to a man who thinks a compiler is a suggestion.
+
+[[Next->path-rust-03-home-ruin]]
+
+:: path-rust-03-parking-lot
+[img[src/images/path-rust-03-parking-lot.png]]
+
+I look out the window. Down in the parking lot, Greg’s Audi is backed into my spot with sickening precision. It looks like a polished, metallic predator waiting for its next victim. The sun glints off the 360-degree cameras. 
+
+Greg is already on his Apple Watch, swiping away the ghost of my career. I'm a memory leak he's just patched.
+
 [[Next->path-rust-03-home-ruin]]
 
 :: path-rust-03-home-ruin
