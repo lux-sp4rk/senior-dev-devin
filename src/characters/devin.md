@@ -39,7 +39,7 @@ Protagonist. 42 years old (born 1984). Senior software engineer drowning in corp
 
 - Survival vs. integrity: starts choosing survival (fabricating "The Guy") after trying both purity and grinding
 - Family vs. self: **Protective Loyalty** — His financial desperation isn't greed; it's a desperate, quiet attempt to ensure Sarah never has to choose between physical therapy and the mortgage. He will burn his own reputation to keep her world intact.
-- Clearly loves Sarah but has been absent — money pressure is a proxy for this
+- Clearly loves Sarah but has been absent — money pressure is a proxy for this. He views her former career as a furniture restorer as the ultimate expression of "correctness"—a physical integrity he’s trying to replicate in his code.
 
 ## Voice (from writing so far)
 
