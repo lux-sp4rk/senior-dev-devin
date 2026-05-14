@@ -1,0 +1,44 @@
+name: '🖼️ Image Gen'
+
+on:
+  workflow_dispatch:
+    inputs:
+      passage:
+        description: 'Passage name (e.g. path-rust-04-locked-out)'
+        required: true
+        type: string
+
+jobs:
+  generate:
+    runs-on: 'ubuntu-latest'
+    permissions:
+      contents: 'write'
+      pull-requests: 'write'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract IMAGE PROMPT
+        id: extract
+        run: |
+          # Find the IMAGE PROMPT comment in the passage
+          CONTENT=$(grep -A1 ":: ${{ inputs.passage }}" src/story/**/*.twee 2>/dev/null | \
+                    grep "IMAGE PROMPT:" | sed 's/.*IMAGE PROMPT: //')
+          echo "prompt=$CONTENT" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Generate image
+        run: |
+          mmx image generate \
+            --prompt "${{ steps.extract.outputs.prompt }}" \
+            --out-dir src/images/ \
+            --out-prefix ${{ inputs.passage }} \
+            --quiet
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MMX_API_KEY }}
+
+      - name: Commit
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/images/
+          git diff --cached --quiet || { git commit -m "ci: image for ${{ inputs.passage }}"; git push; }
