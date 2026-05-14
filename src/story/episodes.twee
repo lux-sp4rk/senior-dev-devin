@@ -1,9 +1,9 @@
 :: episode-2-monday
-<!-- IMAGE PROMPT: A wide cinematic shot of a corporate office hallway on a Monday morning. The lighting is sickly clinical white. Fluorescent tubes flicker. In the distance, the silhouette of a man in a baseball hat (Greg) is visible. 16-bit cinematic pixel art, corporate dystopia, dithering, high-fidelity pixel art. -->
+
 
 The Monday morning air in the office is filtered through a ventilation system that hasn’t been cleaned since the 2008 financial crisis. It smells like ozone, burnt coffee, and the quiet desperation of forty people pretending to understand a "Strategic Pivot."
 
-I walk past the row of standing desks. Greg is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
+I walk past the row of standing desks. [[Greg|lore-greg]] is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
 
 "Devin," Greg said. He didn't look up. "You’re three minutes early. I love the intentionality."
 
@@ -19,7 +19,7 @@ He gestured to the empty chair next to him. A leather Peak Design bag was alread
 
 The door opened. 
 
-<!-- IMAGE PROMPT: A low-angle shot of a man entering a conference room. He's wearing a slim-fit navy suit with no tie, and a pair of expensive-looking minimalist sneakers. He's holding a high-end metal water bottle. He has a perfectly groomed beard and an air of effortless, unearned confidence. 16-bit cinematic pixel art, corporate noir, chiaroscuro. -->
+
 
 He walked in with the kind of stride that only comes from never having had to fix a production bug at 3:00 AM. 
 
@@ -32,8 +32,19 @@ I looked at my 2011 MacBook. It felt like it was getting heavier.
 [[A) "Kieran, what exactly is a 'Heuristic Synthesis Audit' in plain English?"->episode-2-audit-definition]]
 [[B) Stay silent and watch the Vercel keynote reflection in Greg's glasses.->episode-2-silent-watch]]
 
+:: episode-2-silent-watch
+
+
+I don't say anything. I just watch the reflection in Greg’s glasses. It’s a Vercel keynote—a man in a black t-shirt talking about "edge-first delivery" and "streaming the human experience." 
+
+Greg is nodding, his Apple Watch pulsing in time with the speaker's cadence. The silence in the room is heavy with the static of the air conditioner and the unvoiced realization that we are no longer the target audience for our own company.
+
+"Silence," Greg said, finally looking at me. "I love it. It's the sound of alignment."
+
+[[Next->episode-2-kieran-plan]]
+
 :: episode-2-audit-definition
-<!-- IMAGE PROMPT: A close-up of Kieran Voss as he explains his role. He's gesturing with his hands, creating a 'scale' motion. His eyes are fixed on Devin with a practiced 'empathy' look. 16-bit cinematic pixel art, high-contrast lighting, terminal amber glow from a monitor. -->
+
 
 Kieran tilted his head, the "tech-disruptor" smile never wavering. "Great question, Devin. I love the 'first principles' approach."
 
@@ -43,12 +54,12 @@ He leaned forward, resting his elbows on the glass table. "In the AI era, code i
 
 "I mean the code that *is* the company's past," Kieran said. 
 
-Greg nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
+[[Greg|lore-greg]] nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
 
 [[Next->episode-2-kieran-plan]]
 
 :: episode-2-kieran-plan
-<!-- IMAGE PROMPT: A wide cinematic shot of the conference room. Kieran is standing at a large digital whiteboard, gesturing toward a complex flow-chart of 'agent swarms'. Greg is leaning forward, captivated. Devin is slumped in his chair, looking at the ceiling. 16-bit cinematic pixel art, corporate noir, fluorescent flickering. -->
+
 
 Kieran stood up. He walked to the digital whiteboard with the practiced grace of a man who spent his weekends at a bouldering gym. 
 
@@ -64,17 +75,17 @@ He tapped the screen. A series of boxes appeared, labeled with things like 'Heur
 
 "That 0.1% is where the data breaches happen," I said.
 
-Greg cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
+[[Greg|lore-greg]] cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
 
 [[A) "The borrow checker would have caught that latency without the 'stochastic' guessing."->episode-2-rust-callback]]
 [[B) "Fine. If the board wants a guess-based security system, who am I to stop the future?"->episode-2-defeat-agreement]]
 
 :: episode-2-rust-callback
-<!-- IMAGE PROMPT: Devin pointing at his MacBook. Kieran is looking at him with a 'bless your heart' expression. Greg is checking his Apple Watch. 16-bit cinematic pixel art, chiaroscuro, terminal amber light. -->
+
 
 "The borrow checker in the Rust middleware I wrote already handles the concurrency issues," I said. "If we just deployed that foundation—"
 
-"Devin," Greg said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
+"Devin," [[Greg|lore-greg]] said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
 
 Kieran nodded, his empathy patch engaging. "I appreciate the technical purity, Devin. I really do. But we’re not building a cathedral anymore. We’re building a stream. And streams need to move."
 
@@ -83,20 +94,20 @@ I looked at the mug in my box—*I survived the Cloudflare outage.* I didn't fee
 [[Next->episode-2-monday-cont]]
 
 :: episode-2-defeat-agreement
-<!-- IMAGE PROMPT: Devin closing his laptop. Kieran and Greg are shaking hands in the background. The room is bathed in the sickly white light of the fluorescents. 16-bit cinematic pixel art, corporate noir, heavy shadows. -->
+
 
 I closed my laptop. The aluminum lid felt cold. "Fine. If the board wants a security system that works 99.9% of the time, then I guess we’re in the future."
 
 Kieran beamed. "I knew we’d find alignment, Devin. I’m looking forward to seeing how your artisanal knowledge can help us calibrate the heuristic filters."
 
-Greg stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
+[[Greg|lore-greg]] stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
 
 They walked out, their footsteps echoing in the empty hallway. I was alone in the room with a whiteboard full of boxes that didn't mean anything.
 
 [[Next->episode-2-calibration-start]]
 
 :: episode-2-calibration-start
-<!-- IMAGE PROMPT: Devin and Kieran sitting at a minimalist white desk. Kieran has his iPad on a foldable stand, showing a complex graph. Devin is slumped in his chair, his 2011 MacBook Pro looking like a museum piece next to Kieran's sleek setup. 16-bit cinematic pixel art, corporate noir, terminal amber vs. clinical white lighting. -->
+
 
 The "calibration" session started at 2:00 PM. Kieran had set up in one of the glass-walled "Focus Pods" that felt more like a terrarium for tech bros than an office. 
 
@@ -116,7 +127,7 @@ He pushed a mechanical keyboard toward me—a sleek, silent thing with no legend
 [[B) Try to explain why LDAP sync isn't a 'pattern': "It's a deterministic protocol, not a suggestion."->episode-2-the-lecture]]
 
 :: episode-2-malicious-compliance
-<!-- IMAGE PROMPT: Devin's hands typing on a keyboard. On the screen, a terminal window shows a 'chmod 777' type command being applied to a critical directory. The reflection of the screen shows Devin's grimace. 16-bit cinematic pixel art, corporate noir, chiaroscuro. -->
+
 
 I didn't argue. I didn't even sigh. I just pulled the silent keyboard toward me. The keys felt like pressing into wet cardboard.
 
@@ -131,7 +142,7 @@ On the iPad, the mountain range flattened into a calm, blue lake. The swarm was 
 [[Next->episode-2-end-of-day]]
 
 :: episode-2-the-lecture
-<!-- IMAGE PROMPT: Devin standing up, gesturing at his MacBook screen which is filled with complex C code. Kieran is looking at his Apple Watch, clearly bored. 16-bit cinematic pixel art, terminal amber light, heavy shadows. -->
+
 
 "LDAP isn't a suggestion, Kieran," I said. "It's a protocol. It has rules. If you point a 'stochastic' model at a raw sync socket, you’re going to get garbage in and security breaches out."
 
@@ -145,12 +156,12 @@ Kieran stood up. "Let's take this offline. I think you need some time to align w
 
 [[Next->episode-2-end-of-day]]
 
-:: episode-2-end-of-day
-<!-- IMAGE PROMPT: Devin walking out of the office building at dusk. The sky is a deep terminal amber. The clinical white lights of the office windows are visible above. He's carrying his cardboard box, looking small against the glass monolith. 16-bit cinematic pixel art, corporate noir, long shadows. -->
+:: episode-2-end-of-day [unlock-lore-greg-commute]
+
 
 I walked out of the building at 6:30 PM. The cardboard box was tucked under my arm, the mechanical keyboard inside rattling with every step.
 
-The Audi was gone. Greg had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
+The Audi was gone. [[Greg|lore-greg]] had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
 
 I stood on the sidewalk and watched the automatic lights in the lobby time out, one by one. The building looked like a sleeping giant, unaware that it was now being guarded by a swarm of ghosts.
 

@@ -1,0 +1,14 @@
+:: path-c-create-guy
+I sit in the dark for exactly eleven minutes. Then I open a browser. My 2011 MacBook Pro fans kick in just opening LinkedIn. The modern web is a bloated corpse, and I’m about to perform a digital autopsy.
+
+[img[src/images/path-c-create-guy.png]]
+
+<!-- IMAGE PROMPT: A close-up of a browser window showing a LinkedIn profile for 'Kieran Voss'. The profile picture is an AI-generated headshot of a man in his late 30s with a perfectly groomed beard and a 'tech-disruptor' smile. The UI is 16-bit pixelated, JetBrains Mono font. 16-bit cinematic pixel art, corporate noir, terminal amber highlights. -->
+
+First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+
+Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. [[Greg|lore-greg]] won't know the difference. He thinks 'deterministic' is a type of coffee.
+
+I hit save. I’ve just deployed a monolith of lies.
+
+[["Continue."|episode-2-monday]]

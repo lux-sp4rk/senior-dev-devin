@@ -1,0 +1,66 @@
+:: path-vimrc
+I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My 2011 MacBook Pro groans as I toggle a fold, the fans hitting 6,000 RPM in a desperate attempt to bleed off the heat of a man refusing to admit that the world has moved on to **MCP-standardized agent swarms** and **5-layer context compaction**.
+
+[img[src/images/path-vimrc.png]]
+
+Programming isn't typing anymore. It's **probabilistic orchestration**. [[Greg|lore-greg]] is winning. He’s already delegated three features to an autonomous digital assembly line while I was trying to fix a broken pipe in Ruby 1.9.3. He doesn't write code; he signs **Agent Cards** and monitors the **heuristic synthesis loops**.
+
+"Devin."
+
+I don't look up.
+
+"The board doesn't want 'artisanal logic,' Devin." Greg said.
+
+His Apple Watch flares. 🚀. 🚀. 🚀. He’s a conductor. I’m just a legacy dependency failing its health check.
+"They want velocity," he continued. "Scale. Not a man who still thinks `attr_accessible` is a valid security strategy."
+
+I stare at his hairline. "It worked for ten years."
+
+"Ten years is a century." Greg’s voice is flat. "The board wants results. Not history."
+
+[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."->path-vim-01-shell]]
+[[B) Stare at him until the silence becomes a HR violation.->path-vim-01-silence]]{stress += 20}
+
+:: path-vim-01-shell
+[img[src/images/path-vim-01-shell.png]]
+
+I start typing. My fingers find the rhythm of a `bash` loop that hasn't changed since the 2.6 kernel. I’m piping `sed` into `awk` like I’m building a cathedral out of matchsticks.
+
+"[[Greg|lore-greg]], look," I said. "The logic is transparent. No black boxes. No probabilistic 'hallucinations'."
+
+Greg doesn't stop walking. He doesn't even turn his head. His Apple Watch flares twice—a double pulse of blue light in the hallway. He’s already approved a pull request for an agentic sentiment analysis tool that renders my script as useful as a hand-cranked pencil sharpener.
+
+The MacBook fan screams. 7,000 RPM. 
+
+I’m alone in the hallway with a script that works perfectly for a world that ceased to exist at 9:00 AM this morning.
+
+[[Next->intro-walk-home]]
+
+:: path-vim-01-silence [unlock-lore-greg-hat]
+[img[src/images/path-vim-01-silence.png]]
+
+I don't say a word. I just look at him. I look at the way his baseball hat sits perfectly level, hiding the scalp he gave up on in 2004. 
+
+The silence stretches. It’s a heavy, physical thing, vibrating with the static of the fluorescent lights above us. [[Greg|lore-greg]]'s Apple Watch pings. He looks at it, swipes, and the tension snaps.
+
+"Get some sun, Devin," Greg said.
+
+He walks out. The automatic lights in the corner of the office time out, plunging me into a twilight of amber terminal text and the humming of an empty server rack. I'm a ghost in a machine that doesn't need a soul anymore.
+
+[[Next->path-vim-02-pip-email]]
+
+:: path-vim-02-pip-email [unlock-lore-ending-silent]
+[img[src/images/path-vim-02-pip.png]]
+
+The notification sound is a bright, cheerful chime. It sounds like progress. It sounds like a "rocketship" emoji made of glass shattering in a quiet room.
+
+I look at the screen. The email is from Sarah. Not *my* Sarah. Sarah from People & Culture.
+
+"Hey Devin!" the email said. "Do you have time to talk tomorrow morning? :) Would love to sync on a few things! Best, Sarah."
+
+The smiley face is a clinical white pixel. It’s the last thing I see before the MacBook battery finally dies, the fan spinning down into a silence that feels like an ending.
+
+**GAME OVER: THE SILENT LEGACY**
+*You chose silence, and the machine interpreted it as an empty health check. The 'Sync' is the sound of the exit door unlocking. The world is orchestrating, and you are no longer in the swarm.*
+
+[[Try again, but this time lie like a professional.->intro-greg-office]]

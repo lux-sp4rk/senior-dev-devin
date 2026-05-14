@@ -1,0 +1,27 @@
+:: lore-greg
+**LORE ENTRY: GREG (THE SYMPHONY CONDUCTOR)**
+
+**BIO:**
+- **Role:** VP of Engineering (The "Future")
+- **Age:** 35 (Looks like a rough 48)
+- **Primary Weapon:** Apple Watch / "Learnings"
+- **Status:** Unstable
+
+<!-- IMAGE PROMPT: A close-up of Greg in his clinical white office. He's 35 but looks weathered, with deep stress lines and a persistent five o'clock shadow. He's wearing a perfectly level baseball hat that hides a hairline that's been in retreat since 2004. His eyes are bright with a terrifying, shallow enthusiasm, reflecting the blue glow of an Apple Watch. 16-bit cinematic pixel art, corporate noir, clinical white lighting with harsh shadows. -->
+
+Greg is the VP of Engineering, which is corporate-speak for "the man who replaced the adult in the room." He’s only thirty-five, which is the most infuriating thing about him. He has the unearned confidence of a man who’s never had to debug a race condition at 3 AM, yet he carries the stress of a man who's been fighting a losing war against his own biology for two decades.
+
+He’s been balding since high school—not the clean, dignified baldness of a man who’s accepted his fate, but a desperate, thinning retreat that he refuses to concede. He won't shave the islands that remain, so he wears the hat. A permanent lid on his pride.
+
+To Greg, code isn't something you *write*; it's something you *orchestrate*. He treats the engineering department like a Spotify playlist—just a series of "agentic streams" he can skip or repeat depending on what the board wants to hear. 
+
+{{if lore-greg-commute}}
+**The "Tactical" Commute:** Greg doesn't just drive to work; he "deploys" himself. He backs that Audi into my favorite spot with the 360-degree camera like he’s performing a high-precision satellite docking. He thinks the 360 view makes him a pilot; I just see a man who’s terrified of a curb.
+{{endif}}
+
+{{if lore-greg-hat}}
+**The Armor:** The hat isn't just for the hairline. *The Leak:* I found out it was a gift from his wife on a weekend trip years ago. He treats it like a sacred relic of a life before he became a "conductor." It’s the only part of him that isn't probabilistic, which is probably why he hides it in plain sight.
+{{endif}}
+
+[[Return to Lorebook->lore-index]]
+[[Return to Story->lore-index]]

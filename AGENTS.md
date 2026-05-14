@@ -3,8 +3,8 @@
 ## Worktree Map
 
 ```
-~/Projects/senior-dev-devin/             ← main repo, branch pr-18
-~/Projects/senior-dev-devin-pr21/       ← branch narrative/character-friction-and-backstory (PR #21)
+~/Projects/senior-dev-devin/             ← main repo, branch main
+~/Projects/senior-dev-devin-pr27/       ← branch narrative/rust-hr-ending-refinement (PR #27)
 ```
 
 **Symlink:** `./projects/` in agent workspaces → `~/Projects/`
@@ -13,81 +13,49 @@ Each worktree is a completely separate Git checkout. Switching branches = switch
 
 ---
 
-## Branch Conventions
+## Game State & Logic
 
-| Prefix | What | Example |
-|--------|------|---------|
-| `pr-N` | Long-lived feature branch | `pr-18` |
-| `narrative/` | Story content work | `narrative/character-friction-and-backstory` |
-| `fix/` | Bug or CI fixes | `fix/nodejs20-deprecation-warning` |
-| `feat/` | New features | — |
+The project uses a JSON-based game state system combined with custom Twee syntax.
 
-Never commit directly to `main`. All changes go through a branch → PR → review → merge.
-
----
-
-## Adding a Worktree
-
-```bash
-# From the main repo
-cd ~/Projects/senior-dev-devin
-git fetch origin <branch>
-git worktree add ~/Projects/senior-dev-devin-pr<NUM> <branch-name>
-
-# Then tell the agent which directory to work in
-# e.g., "work in ~/Projects/senior-dev-devin-pr21"
-```
-
----
-
-## GitHub Flow
-
-1. Agent or Uli creates a branch: `git checkout -b narrative/new-scene`
-2. Work happens in the appropriate worktree
-3. Push and open PR: `gh pr create`
-4. CI runs automatically (Gemini Dispatch workflow)
-5. **Uli approves/merges** — agents do not merge without Uli sign-off
-6. After merge: delete the branch locally and on GitHub
-
----
-
-## Project Tech Stack
-
-- **Twine/Twee**: Modular story files in `src/story/`
-- **Node.js**: Build pipeline (`npm run build`, `npm run dev`)
-- **Custom HTML/JS engine**: Renders compiled `index.html`
-
-**Build:**
-```bash
-npm run build   # compiles src/**/*.twee → index.html
-npm run dev     # live-reload dev server
-```
-
-**Passage naming:** Always use hyphens, not underscores. `:: path-vimrc` ✅ `:: path_vimrc` ❌
+-   **Initial State:** Defined in `src/metadata/initial-state.json`.
+-   **Mutation Syntax:** `[[Choice | Destination]]{stat += 10}`.
+-   **Current Stats:**
+    -   `stress`: Tracks Devin's burnout levels. Displayed in the UI navbar.
+-   **Persistence:** State is saved to `localStorage` on every navigation.
 
 ---
 
 ## Image Workflow
 
 **Rule:** Every story path (passage) must have an accompanying image.
-- **Agent Role:** Do NOT generate the image yourself. Instead, create a high-quality **image prompt** based on the [Visual Style Guide](docs/STYLE_GUIDE.md).
-- **Handoff:** Include the prompt in the story file (or a separate assets tracker) for a specialized illustrator agent to fulfill.
+-   **Policy:** Follow [docs/IMAGE_WORKFLOW.md](docs/IMAGE_WORKFLOW.md).
+-   **Agent Role:** Do NOT generate the image yourself. Create a high-quality **image prompt** (as an HTML comment) based on [docs/STYLE_GUIDE.md](docs/STYLE_GUIDE.md).
+-   **Handoff:** Flag for a specialized illustrator agent.
+
+---
+
+## Build & Test
+
+```bash
+npm run build   # compiles src/**/*.twee → index.html
+npm run dev     # live-reload dev server (http://localhost:3000)
+npm test        # runs story logic and state mutation tests
+```
+
+**Dev Mode:** Append `?dev=1` to the URL in the browser to see passage names in the navbar.
+
+---
+
+## Passage Conventions
+
+-   **Naming:** Always use hyphens, not underscores. `:: path-vimrc` ✅ `:: path_vimrc` ❌
+-   **Visuals:** Every passage MUST have an `[img[src/images/passage-name.png]]` tag or a prompt comment.
 
 ---
 
 ## Uli as the Bottleneck
 
-**Rule of thumb:** If you're asking "should I…?" — you probably shouldn't be doing it. Agents should act autonomously within their domain. Uli's job is to:
+**Rule of thumb:** If you're asking "should I…?" — you probably shouldn't be doing it. Agents should act autonomously. Uli's job is to:
 - Review and merge PRs
 - Make creative/strategic calls
 - Say yes or no to publication-gate decisions
-
-**Agents should:**
-- Propose, not ask permission
-- Execute without waiting for confirmation on routine tasks
-- Flag blockers explicitly: "can't proceed until Uli approves X"
-
-**To reduce friction:**
-- Never loop asking for confirmation on multi-step work
-- Use `--handoff` at end of session if Uli needs to do something next
-- Check `memory/` before assuming what's been decided
