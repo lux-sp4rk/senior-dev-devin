@@ -21,8 +21,8 @@ I don't look up from my laptop monitor. "My build's running."
 
 "The AI doesn't care how old it is." Greg said. "Look: I want 10x. The board wants 10x. I'm struggling to see where you fit into that math."
 
-[[A) Sweat over the .vimrc I've groomed since 2004.->path-vimrc]]
-[[B) Port the legacy Auth monolith to Rust to prove that pure efficiency beats AI hallucination.->path-rust-01-hubris]]
+[[A) Sweat over the .vimrc I've groomed since 2004.->path-vimrc]]{stress += 10}
+[[B) Port the legacy Auth monolith to Rust to prove that pure efficiency beats AI hallucination.->path-rust-01-hubris]]{stress += 5}
 
 
 :: intro-walk-home

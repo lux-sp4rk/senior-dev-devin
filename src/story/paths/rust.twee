@@ -3,7 +3,11 @@ I spend forty-eight hours fighting the borrow checker. It’s like wrestling an 
 
 I don't finish the port. I don't even get past the middleware. But I do manage to build a custom memory-safe, thread-safe authentication router that is exactly 4MB of pure, unadulterated hubris. 
 
-For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine [[Bob|lore-bob]] seeing this—my old mentor who single-handedly architected the core monolith before the VC money changed everything. I can see him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner. He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
+For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter.
+
+I imagine [[Bob|lore-bob]] seeing this—my old mentor who single-handedly architected the core monolith before the VC money changed everything. I can see him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner.
+
+He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
 
 [img[src/images/path-rust-hubris.png]]
 
@@ -31,7 +35,7 @@ I point at the terminal. "It's thread-safe. Memory-safe. It'll save millions in 
 "Pack your things, Devin."
 
 [[A) Doubling down: "You're building on sand, Greg. This code is the only thing that's real."->path-rust-03-fired]]
-[[B) Look out the window at the parking lot.->path-rust-03-parking-lot]]
+[[B) Stare at his hairline until it becomes an HR incident.->path-rust-03-hr-incident]]{stress += 25}
 
 :: path-rust-03-fired
 [img[src/images/path-rust-03-fired.png]]
@@ -42,14 +46,35 @@ I don't say anything else. There's nothing left to say to a man who thinks a com
 
 [[Next->path-rust-03-home-ruin]]
 
-:: path-rust-03-parking-lot [unlock-lore-greg-commute]
+:: path-rust-03-hr-incident [unlock-lore-greg-hat]
 [img[src/images/path-rust-03-parking-lot.png]]
 
-I look out the window. Down in the parking lot, [[Greg|lore-greg]]’s Audi is backed into my spot with sickening precision. It looks like a polished, metallic predator waiting for its next victim. The sun glints off the 360-degree cameras. 
+I don't look at the Audi. I don't look at his Apple Watch. I just look at the perfectly level brim of his baseball hat. I look at it until the silence stops being awkward and starts being a liability. I stare at the exact spot where his vanity meets his insecurity, counting the loose threads in the stitching.
 
-Greg is already on his Apple Watch, swiping away the ghost of my career. I'm a memory leak he's just patched.
+[[Greg|lore-greg]]'s hand goes to his hat, adjusting it by a fraction of a millimeter. His face is the color of a kernel panic.
 
-[[Next->path-rust-03-home-ruin]]
+"We're done here, Devin," he said.
+
+I walk back to my desk. The Slack icon is already a generic grey silhouette. The connection is gone.
+
+[[Next->path-rust-04-locked-out]]
+
+:: path-rust-04-locked-out
+[img[src/images/path-vim-02-pip.png]]
+<!-- IMAGE PROMPT: 16-bit cinematic pixel art. A close-up of a 2011 MacBook screen in a darkened office. The screen shows a clinical white login window with the text "Account Disabled. Please contact your system administrator." in JetBrains Mono font. A single clinical white pixel smiley face from an HR email is reflected in the glossy screen. The office lights in the background are out, leaving only the amber glow of a distant exit sign. Corporate noir, high-contrast, chiaroscuro. -->
+
+The email is the last thing that loads before the SSO token expires. It’s from Sarah. Not *my* Sarah. Sarah from People & Culture.
+
+*Subject: Urgent: Professional Conduct Sync*
+
+"Hey Devin," the email said. "Your access has been suspended pending a formal review of this morning's incident. Please leave your badge on the desk and exit the building immediately. A courier will be dispatched with your personal belongings."
+
+The screen flickers and settles into a flat, dead grey.
+
+**GAME OVER: THE HR INCIDENT**
+*Technical excellence is no defense against a 'hostile workplace' flag. You didn't just fail the technical pivot; you failed the social orchestration. Sarah from HR is the final garbage collector, and she just called `free()` on your badge.*
+
+[[Try again, but this time lie like a professional.->intro-greg-office]]
 
 :: path-rust-03-home-ruin [unlock-lore-ending-purist]
 [img[src/images/path-rust-03-home-ruin.png]]

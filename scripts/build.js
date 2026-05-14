@@ -11,6 +11,7 @@ const PROJECT_DIR = resolve(__dirname, "..");
 const SRC_DIR = resolve(PROJECT_DIR, "src");
 const OutputFile = resolve(PROJECT_DIR, "index.html");
 const TemplateFile = resolve(__dirname, "template.html");
+const InitialStateFile = resolve(SRC_DIR, "metadata", "initial-state.json");
 
 function getAllTweeFiles(dirPath, arrayOfFiles) {
   const files = readdirSync(dirPath);
@@ -83,8 +84,12 @@ function build() {
   // Parse passages
   const passagesHtml = parsePassages(combinedTwee);
 
+  // Read initial state
+  const initialState = readFileSync(InitialStateFile, "utf-8");
+
   // Inject into template
-  const html = template.replace("{{PASSAGES}}", passagesHtml);
+  let html = template.replace("{{PASSAGES}}", passagesHtml);
+  html = html.replace("{{INITIAL_STATE}}", initialState);
 
   // Write output
   writeFileSync(OutputFile, html, "utf-8");
