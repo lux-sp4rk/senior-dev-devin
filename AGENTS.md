@@ -5,6 +5,8 @@
 ```
 ~/Projects/senior-dev-devin/             ← main repo, branch pr-18
 ~/Projects/senior-dev-devin-pr21/       ← branch narrative/character-friction-and-backstory (PR #21)
+~/Projects/senior-dev-devin-pr27/       ← branch narrative/rust-hr-ending-refinement (PR #27)
+~/Projects/senior-dev-devin-ci/         ← branch ci/image-gen-workflow (PR #29)
 ```
 
 **Symlink:** `./projects/` in agent workspaces → `~/Projects/`
@@ -64,6 +66,34 @@ npm run dev     # live-reload dev server
 ```
 
 **Passage naming:** Always use hyphens, not underscores. `:: path-vimrc` ✅ `:: path_vimrc` ❌
+
+---
+
+## Image Workflow
+
+**Rule:** Every passage must have an accompanying image.
+
+**Two-step generation:**
+1. **Draft** — Marina generates with `mmx image generate` (fast, cheap for iteration)
+2. **Polish** — NanoBanana Pro for final quality (expensive, use sparingly)
+
+**Prompt format** — embed as an HTML comment directly in the passage:
+```html
+<!-- IMAGE PROMPT: 16-bit cinematic pixel art. A close-up of a 2011 MacBook screen... -->
+```
+
+Follow the [Visual Style Guide](docs/STYLE_GUIDE.md) for character motifs and mandatory keywords.
+
+**Generating images:**
+- **Local (fast iteration):** `mmx image generate --prompt "..." --out-dir src/images/ --out-prefix passage-name`
+- **GitHub Action (on demand):** Go to Actions → "🖼️ Image Gen" → Run workflow → enter passage name
+
+The action requires `MMX_API_KEY` secret in repo Settings → Secrets → Actions.
+
+**Image tag** in passage body:
+```twee
+[img[src/images/passage-name.png]]
+```
 
 ---
 
