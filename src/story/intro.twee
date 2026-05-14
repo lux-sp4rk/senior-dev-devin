@@ -1,7 +1,7 @@
 :: intro-greg-office
 <!-- EPISODE 1: The Deal -->
 
-Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it.
+[[Greg|lore-greg]] doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it.
 
 [img[src/images/scene01-greg-office.png]]
 
@@ -9,18 +9,17 @@ The fluorescent lights hum. Greg, VP of Engineering, leans back in his chair, vi
 
 A massive Peak Design backpack—the "Everyday Carry" of a man whose only commute is fifteen minutes in a climate-controlled Audi—sits on the desk next to a half-empty bottle of Soylent. A small window on his secondary monitor shows a Vercel keynote playing at 2x speed. He’s not watching it, but he needs it to be there.
 
-His Apple Watch pings. I see the reflection in his glasses: a flurry of "rocketship" emojis from the #engineering-alignment Slack channel. He doesn't look. He’s "active" even when he’s killing a career.
+His Apple Watch pings. I see the reflection in his glasses: a flurry of rocketship emojis from the #engineering-alignment Slack channel. He doesn't look. He’s "active" even when he’s killing a career.
+
 "Quarterly reviews, Devin." Greg said. "It's time."
 
-I don't look up from my terminal. "My build's running."
+I don't look up from my laptop monitor. "My build's running."
 
-"It's always running." Greg’s eyes drift to my faded 2010 RailsConf hoodie. He touches the frayed cuff with a finger that has never felt the resistance of a mechanical keyboard. "'Historical reenactment' dignity. 'Unscalable' chic." 
-
-He leans back, the Apple Watch glowing. "Why hasn't the output increased?"
+"It's always running." Greg’s eyes drift to my faded 2010 RailsConf hoodie. He leans back, the Apple Watch glowing. "Why hasn't your output increased?"
 
 "The monolith is sixteen years old, Greg."
 
-"The AI doesn't care how old it is." Greg said. "It wants 10x. The board wants 10x. I'm struggling to see where you fit into that math."
+"The AI doesn't care how old it is." Greg said. "Look: I want 10x. The board wants 10x. I'm struggling to see where you fit into that math."
 
 [[A) Sweat over the .vimrc I've groomed since 2004.->path-vimrc]]
 [[B) Port the legacy Auth monolith to Rust to prove that pure efficiency beats AI hallucination.->path-rust-01-hubris]]

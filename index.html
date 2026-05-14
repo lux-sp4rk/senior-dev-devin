@@ -63,6 +63,14 @@
       .tw-link:hover {
         color: #a5f3b4;
       }
+      .lore-link {
+        color: #0088cc;
+        text-decoration: none;
+      }
+      .lore-link:hover {
+        color: #005580;
+        text-decoration: underline;
+      }
       /* Meta-Joke: Rails 3 Era Bootstrap Button Style */
       .tw-link.btn-rails-3 {
         display: inline-block;
@@ -100,18 +108,34 @@
       }
       .chapter-title {
         display: inline-block;
-        padding: 2px 6px;
-        font-size: 11.844px;
-        font-weight: bold;
-        line-height: 14px;
-        color: #ffffff;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-        white-space: nowrap;
-        vertical-align: baseline;
+        padding: 8px 16px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         background-color: #3a87ad;
         border-radius: 3px;
+        font-size: 11.844px;
+        line-height: 14px;
+        color: #ffffff;
+      }
+      /* Rails 3.2 Bootstrap Alert Style for Game Over */
+      .alert-rails-3 {
+        padding: 14px 35px 14px 14px;
+        margin-top: 2rem;
+        margin-bottom: 20px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #f2dede;
+        border: 1px solid #eed3d7;
+        border-radius: 4px;
+        color: #b94a48;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .alert-rails-3 h4 {
+        margin: 0 0 10px 0;
+        line-height: 20px;
+        color: inherit;
+        font-weight: bold;
+        font-size: 17.5px;
         text-transform: uppercase;
-        margin: 1rem 0 2rem 0;
       }
     </style>
   </head>
@@ -136,7 +160,7 @@
 
 The Monday morning air in the office is filtered through a ventilation system that hasn’t been cleaned since the 2008 financial crisis. It smells like ozone, burnt coffee, and the quiet desperation of forty people pretending to understand a "Strategic Pivot."
 
-I walk past the row of standing desks. Greg is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
+I walk past the row of standing desks. [[Greg|lore-greg]] is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
 
 "Devin," Greg said. He didn't look up. "You’re three minutes early. I love the intentionality."
 
@@ -174,7 +198,7 @@ He leaned forward, resting his elbows on the glass table. "In the AI era, code i
 
 "I mean the code that *is* the company's past," Kieran said. 
 
-Greg nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
+[[Greg|lore-greg]] nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
 
 [[Next-&gt;episode-2-kieran-plan]]</tw-passagedata>
 <tw-passagedata name="episode-2-kieran-plan">&lt;!-- IMAGE PROMPT: A wide cinematic shot of the conference room. Kieran is standing at a large digital whiteboard, gesturing toward a complex flow-chart of 'agent swarms'. Greg is leaning forward, captivated. Devin is slumped in his chair, looking at the ceiling. 16-bit cinematic pixel art, corporate noir, fluorescent flickering. --&gt;
@@ -193,7 +217,7 @@ He tapped the screen. A series of boxes appeared, labeled with things like 'Heur
 
 "That 0.1% is where the data breaches happen," I said.
 
-Greg cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
+[[Greg|lore-greg]] cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
 
 [[A) "The borrow checker would have caught that latency without the 'stochastic' guessing."-&gt;episode-2-rust-callback]]
 [[B) "Fine. If the board wants a guess-based security system, who am I to stop the future?"-&gt;episode-2-defeat-agreement]]</tw-passagedata>
@@ -201,7 +225,7 @@ Greg cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran 
 
 "The borrow checker in the Rust middleware I wrote already handles the concurrency issues," I said. "If we just deployed that foundation—"
 
-"Devin," Greg said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
+"Devin," [[Greg|lore-greg]] said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
 
 Kieran nodded, his empathy patch engaging. "I appreciate the technical purity, Devin. I really do. But we’re not building a cathedral anymore. We’re building a stream. And streams need to move."
 
@@ -214,7 +238,7 @@ I closed my laptop. The aluminum lid felt cold. "Fine. If the board wants a secu
 
 Kieran beamed. "I knew we’d find alignment, Devin. I’m looking forward to seeing how your artisanal knowledge can help us calibrate the heuristic filters."
 
-Greg stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
+[[Greg|lore-greg]] stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
 
 They walked out, their footsteps echoing in the empty hallway. I was alone in the room with a whiteboard full of boxes that didn't mean anything.
 
@@ -267,7 +291,7 @@ Kieran stood up. "Let's take this offline. I think you need some time to align w
 
 I walked out of the building at 6:30 PM. The cardboard box was tucked under my arm, the mechanical keyboard inside rattling with every step.
 
-The Audi was gone. Greg had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
+The Audi was gone. [[Greg|lore-greg]] had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
 
 I stood on the sidewalk and watched the automatic lights in the lobby time out, one by one. The building looked like a sleeping giant, unaware that it was now being guarded by a swarm of ghosts.
 
@@ -294,7 +318,7 @@ Greg was hypnotized. He was swiping his Apple Watch in rhythm with Kieran's spee
 [["Restart from beginning."|intro-greg-office]]</tw-passagedata>
 <tw-passagedata name="intro-greg-office">&lt;!-- EPISODE 1: The Deal --&gt;
 
-Greg doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it.
+[[Greg|lore-greg]] doesn't write code. Greg has read about code. There's a difference, and I am currently living inside it.
 
 [img[src/images/scene01-greg-office.png]]
 
@@ -302,18 +326,17 @@ The fluorescent lights hum. Greg, VP of Engineering, leans back in his chair, vi
 
 A massive Peak Design backpack—the "Everyday Carry" of a man whose only commute is fifteen minutes in a climate-controlled Audi—sits on the desk next to a half-empty bottle of Soylent. A small window on his secondary monitor shows a Vercel keynote playing at 2x speed. He’s not watching it, but he needs it to be there.
 
-His Apple Watch pings. I see the reflection in his glasses: a flurry of "rocketship" emojis from the #engineering-alignment Slack channel. He doesn't look. He’s "active" even when he’s killing a career.
+His Apple Watch pings. I see the reflection in his glasses: a flurry of rocketship emojis from the #engineering-alignment Slack channel. He doesn't look. He’s "active" even when he’s killing a career.
+
 "Quarterly reviews, Devin." Greg said. "It's time."
 
-I don't look up from my terminal. "My build's running."
+I don't look up from my laptop monitor. "My build's running."
 
-"It's always running." Greg’s eyes drift to my faded 2010 RailsConf hoodie. He touches the frayed cuff with a finger that has never felt the resistance of a mechanical keyboard. "'Historical reenactment' dignity. 'Unscalable' chic." 
-
-He leans back, the Apple Watch glowing. "Why hasn't the output increased?"
+"It's always running." Greg’s eyes drift to my faded 2010 RailsConf hoodie. He leans back, the Apple Watch glowing. "Why hasn't your output increased?"
 
 "The monolith is sixteen years old, Greg."
 
-"The AI doesn't care how old it is." Greg said. "It wants 10x. The board wants 10x. I'm struggling to see where you fit into that math."
+"The AI doesn't care how old it is." Greg said. "Look: I want 10x. The board wants 10x. I'm struggling to see where you fit into that math."
 
 [[A) Sweat over the .vimrc I've groomed since 2004.-&gt;path-vimrc]]
 [[B) Port the legacy Auth monolith to Rust to prove that pure efficiency beats AI hallucination.-&gt;path-rust-01-hubris]]</tw-passagedata>
@@ -341,75 +364,107 @@ What do I do?
 [[A) Clear the table. Grind Linear Algebra from first principles before Monday or die of a caffeine-induced heart murmur.-&gt;path-a-grind]]
 [[B) Sell my IBM Model M and 1998 'Vim Power User' shirt on eBay.-&gt;path-b-liquidate]]
 [[C) Create "The Guy" — a deep-fake LinkedIn and a CV written in the language of the Snake. 🐍-&gt;path-c-create-guy]]</tw-passagedata>
-<tw-passagedata name="path-vimrc">I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My 2011 MacBook Pro groans as I toggle a fold, the fans hitting 6,000 RPM in a desperate attempt to bleed off the heat of a man refusing to admit that the world has moved on to **MCP-standardized agent swarms** and **5-layer context compaction**.
+<tw-passagedata name="lore-bob">**LORE ENTRY UNLOCKED: BOB (THE FORMER VP)**
 
-[img[src/images/path-vimrc.png]]
+The "Shield." The man who stood between me and the Board for fifteen years. He didn't just know what a pointer was; he could explain the difference between a memory leak and a bad abstraction without looking at a dashboard.
 
-Programming isn't typing anymore. It's **probabilistic orchestration**. Greg is winning. He’s already delegated three features to an autonomous digital assembly line while I was trying to fix a broken pipe in Ruby 1.9.3. He doesn't write code; he signs **Agent Cards** and monitors the **heuristic synthesis loops**.
+He was the company's first Principal Engineer, later VP. He hired me in 2011. He was the one who said, "We don't need a framework for this, just write a clean Class." We communicated in short, cryptic sentences and shared a deep, unspoken hatred for "Product-Led Growth." For years, Bob's primary job was "vague-ing" the Board—translating their demands for "10x scaling" into "Devin is working on the database," buying me another six months of peace.
 
-"Devin."
+Then came the consultant six months ago who mentioned "LLM-driven development" thirty-eight times in one hour. Bob told them that "hallucinating code isn't an engineering strategy." 
 
-I don't look up.
+He was "retired" on a Tuesday. No party. Just a cardboard box and a LinkedIn post from the CEO about "refreshing our leadership for the AI era." To me, Bob's departure was the day the "adults" left the building. Now, the children are playing with matches and calling it "Innovation."
 
-"The board doesn't want 'artisanal logic,' Devin." Greg said.
+[[Return to Lorebook-&gt;lore-index]]
+[[Return to Story-&gt;lore-index]]</tw-passagedata>
+<tw-passagedata name="lore-ending-purist">**LORE ENTRY UNLOCKED: THE PURIST'S PLIGHT (ENDING)**
 
-His Apple Watch flares. 🚀. 🚀. 🚀. He’s a conductor. I’m just a legacy dependency failing its health check.
-"They want velocity," he continued. "Scale. Not a man who still thinks `attr_accessible` is a valid security strategy."
+"Clean code is the only true leverage," Bob used to say. But Bob is gone, and the leverage has been replaced by a "Strategic Pivot." 
 
-I stare at his hairline. "It worked for ten years."
+In the Rust path, I chose the hill of technical excellence to die on. I built a foundation that could survive a nuclear winter, but I forgot that the board wasn't worried about the winter—they were worried about the next quarter's growth. 
 
-"Ten years is a century." Greg’s voice is flat. "The board wants results. Not history."
+Technical purity is a silent shield. It protects the integrity of the system while the people within it are liquidated. The borrow checker is satisfied, but the bills are still clinical white and the iPad is still broken. The machine is memory-safe. The human is obsolete.
 
-[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."-&gt;path-vim-01-shell]]
-[[B) Stare at him until the silence becomes a HR violation.-&gt;path-vim-01-silence]]</tw-passagedata>
-<tw-passagedata name="path-vim-01-shell">[img[src/images/path-vim-01-shell.png]]
+[[Return to Lorebook-&gt;lore-index]]
+[[Return to Story-&gt;lore-index]]</tw-passagedata>
+<tw-passagedata name="lore-ending-silent">**LORE ENTRY UNLOCKED: THE SILENT LEGACY (ENDING)**
 
-I start typing. My fingers find the rhythm of a `bash` loop that hasn't changed since the 2.6 kernel. I’m piping `sed` into `awk` like I’m building a cathedral out of matchsticks.
+Silence in the face of the machine is interpreted as an empty health check. 
 
-"Greg, look," I said. "The logic is transparent. No black boxes. No probabilistic 'hallucinations'."
+By choosing to stare at [[Greg|lore-greg]] instead of playing the game, I opted out of the swarm. In a world of probabilistic orchestration, if you aren't a signal, you're just noise to be filtered. The "Sync" Sarah mentioned wasn't a meeting; it was a garbage collection event. 
 
-Greg doesn't stop walking. He doesn't even turn his head. His Apple Watch flares twice—a double pulse of blue light in the hallway. He’s already approved a pull request for an agentic sentiment analysis tool that renders my script as useful as a hand-cranked pencil sharpener.
+The silence wasn't a protest; it was a signature of obsolescence. The world is orchestrating, and the swarm has moved on without the ghost in the machine.
 
-The MacBook fan screams. 7,000 RPM. 
+[[Return to Lorebook-&gt;lore-index]]
+[[Return to Story-&gt;lore-index]]</tw-passagedata>
+<tw-passagedata name="lore-greg">**LORE ENTRY: GREG (THE SYMPHONY CONDUCTOR)**
 
-I’m alone in the hallway with a script that works perfectly for a world that ceased to exist at 9:00 AM this morning.
+**BIO:**
+- **Role:** VP of Engineering (The "Future")
+- **Age:** 35 (Looks like a rough 48)
+- **Primary Weapon:** Apple Watch / "Learnings"
+- **Status:** Unstable
 
-[[Next-&gt;intro-walk-home]]</tw-passagedata>
-<tw-passagedata name="path-vim-01-silence">[img[src/images/path-vim-01-silence.png]]
+&lt;!-- IMAGE PROMPT: A close-up of Greg in his clinical white office. He's 35 but looks weathered, with deep stress lines and a persistent five o'clock shadow. He's wearing a perfectly level baseball hat that hides a hairline that's been in retreat since 2004. His eyes are bright with a terrifying, shallow enthusiasm, reflecting the blue glow of an Apple Watch. 16-bit cinematic pixel art, corporate noir, clinical white lighting with harsh shadows. --&gt;
 
-I don't say a word. I just look at him. I look at the way his baseball hat sits perfectly level, hiding the scalp he gave up on in 2004. 
+Greg is the VP of Engineering, which is corporate-speak for "the man who replaced the adult in the room." He’s only thirty-five, which is the most infuriating thing about him. He has the unearned confidence of a man who’s never had to debug a race condition at 3 AM, yet he carries the stress of a man who's been fighting a losing war against his own biology for two decades.
 
-The silence stretches. It’s a heavy, physical thing, vibrating with the static of the fluorescent lights above us. Greg's Apple Watch pings. He looks at it, swipes, and the tension snaps.
+He’s been balding since high school—not the clean, dignified baldness of a man who’s accepted his fate, but a desperate, thinning retreat that he refuses to concede. He won't shave the islands that remain, so he wears the hat. A permanent lid on his pride.
 
-"Get some sun, Devin," Greg said.
+To Greg, code isn't something you *write*; it's something you *orchestrate*. He treats the engineering department like a Spotify playlist—just a series of "agentic streams" he can skip or repeat depending on what the board wants to hear. 
 
-He walks out. The automatic lights in the corner of the office time out, plunging me into a twilight of amber terminal text and the humming of an empty server rack. I'm a ghost in a machine that doesn't need a soul anymore.
+{{if lore-greg-commute}}
+**The "Tactical" Commute:** Greg doesn't just drive to work; he "deploys" himself. He backs that Audi into my favorite spot with the 360-degree camera like he’s performing a high-precision satellite docking. He thinks the 360 view makes him a pilot; I just see a man who’s terrified of a curb.
+{{endif}}
 
-[[Next-&gt;path-vim-02-pip-email]]</tw-passagedata>
-<tw-passagedata name="path-vim-02-pip-email">[img[src/images/path-vim-02-pip.png]]
+{{if lore-greg-hat}}
+**The Armor:** The hat isn't just for the hairline. *The Leak:* I found out it was a gift from his wife on a weekend trip years ago. He treats it like a sacred relic of a life before he became a "conductor." It’s the only part of him that isn't probabilistic, which is probably why he hides it in plain sight.
+{{endif}}
 
-The notification sound is a bright, cheerful chime. It sounds like progress. It sounds like a "rocketship" emoji made of glass shattering in a quiet room.
+[[Return to Lorebook-&gt;lore-index]]
+[[Return to Story-&gt;lore-index]]</tw-passagedata>
+<tw-passagedata name="path-a-grind">I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019. It’s damp, and it smells faintly of the future I’m trying to avoid.
 
-I look at the screen. The email is from Sarah. Not *my* Sarah. Sarah from People &amp; Culture.
+[img[src/images/path-a-grind.png]]
 
-"Hey Devin!" the email said. "Do you have time to talk tomorrow morning? :) Would love to sync on a few things! Best, Sarah."
+The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test. My 2011 MacBook struggles to render the LaTeX in the PDFs. It’s a 200-level math problem being solved by a man with a 100-level grip on reality.
 
-The smiley face is a clinical white pixel. It’s the last thing I see before the MacBook battery finally dies, the fan spinning down into a silence that feels like an ending.
+By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art. Or a map of a campsite.
 
-**GAME OVER: THE SILENT LEGACY**
-*You chose silence, and the machine interpreted it as an empty health check. The 'Sync' is the sound of the exit door unlocking. The world is orchestrating, and you are no longer in the swarm.*
+Monday arrives like a freight train.
 
-[[Try again, but this time lie like a professional.-&gt;intro-greg-office]]</tw-passagedata>
+[["Go to the meeting."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="path-c-create-guy">I sit in the dark for exactly eleven minutes. Then I open a browser. My 2011 MacBook Pro fans kick in just opening LinkedIn. The modern web is a bloated corpse, and I’m about to perform a digital autopsy.
+
+[img[src/images/path-c-create-guy.png]]
+
+&lt;!-- IMAGE PROMPT: A close-up of a browser window showing a LinkedIn profile for 'Kieran Voss'. The profile picture is an AI-generated headshot of a man in his late 30s with a perfectly groomed beard and a 'tech-disruptor' smile. The UI is 16-bit pixelated, JetBrains Mono font. 16-bit cinematic pixel art, corporate noir, terminal amber highlights. --&gt;
+
+First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+
+Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. [[Greg|lore-greg]] won't know the difference. He thinks 'deterministic' is a type of coffee.
+
+I hit save. I’ve just deployed a monolith of lies.
+
+[["Continue."|episode-2-monday]]</tw-passagedata>
+<tw-passagedata name="path-b-liquidate">I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998. 
+
+&lt;!-- IMAGE PROMPT: Devin in his dimly lit apartment, surrounded by cardboard boxes. He's holding an IBM Model M keyboard like a sacred relic he's about to sacrifice. He looks tired, his 2010 RailsConf hoodie sleeves pushed up. 16-bit cinematic pixel art, corporate noir, chiaroscuro, high-contrast lighting from a single desk lamp. --&gt;
+
+It is not enough. Each sale is a line removed from my `~/.vimrc`. I feel the "wrapper" of my life thinning.
+
+But it buys two weeks of breathing room. Two weeks until I’m "unhosted."
+
+[["Continue."|episode-2-monday]]</tw-passagedata>
 <tw-passagedata name="path-rust-01-hubris">I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical." My 2011 MacBook is so hot I could fry an egg on the 'S' key.
 
 I don't finish the port. I don't even get past the middleware. But I do manage to build a custom memory-safe, thread-safe authentication router that is exactly 4MB of pure, unadulterated hubris. 
 
-For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine Bob seeing this—him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner. He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
+For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine [[Bob|lore-bob]] seeing this—my old mentor who single-handedly architected the core monolith before the VC money changed everything. I can see him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner. He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
 
 [img[src/images/path-rust-hubris.png]]
 
 [[Next-&gt;path-rust-02-fired]]</tw-passagedata>
-<tw-passagedata name="path-rust-02-fired">Monday morning, I show it to Greg. I’m vibrating with the technical purity of it. I’ve already rehearsed the explanation of how zero-cost abstractions will save us millions in compute.
+<tw-passagedata name="path-rust-02-fired">Monday morning, I show it to [[Greg|lore-greg]]. I’m vibrating with the technical purity of it. I’ve already rehearsed the explanation of how zero-cost abstractions will save us millions in compute.
 
 [img[src/images/path-rust-02-fired.png]]
 
@@ -433,19 +488,19 @@ I point at the terminal. "It's thread-safe. Memory-safe. It'll save millions in 
 [[B) Look out the window at the parking lot.-&gt;path-rust-03-parking-lot]]</tw-passagedata>
 <tw-passagedata name="path-rust-03-fired">[img[src/images/path-rust-03-fired.png]]
 
-"Real is what the board can sell," Greg said. He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it. 
+"Real is what the board can sell," [[Greg|lore-greg]] said. He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it. 
 
 I don't say anything else. There's nothing left to say to a man who thinks a compiler is a suggestion.
 
 [[Next-&gt;path-rust-03-home-ruin]]</tw-passagedata>
-<tw-passagedata name="path-rust-03-parking-lot">[img[src/images/path-rust-03-parking-lot.png]]
+<tw-passagedata name="path-rust-03-parking-lot" tags="[unlock-lore-greg-commute]">[img[src/images/path-rust-03-parking-lot.png]]
 
-I look out the window. Down in the parking lot, Greg’s Audi is backed into my spot with sickening precision. It looks like a polished, metallic predator waiting for its next victim. The sun glints off the 360-degree cameras. 
+I look out the window. Down in the parking lot, [[Greg|lore-greg]]’s Audi is backed into my spot with sickening precision. It looks like a polished, metallic predator waiting for its next victim. The sun glints off the 360-degree cameras. 
 
 Greg is already on his Apple Watch, swiping away the ghost of my career. I'm a memory leak he's just patched.
 
 [[Next-&gt;path-rust-03-home-ruin]]</tw-passagedata>
-<tw-passagedata name="path-rust-03-home-ruin">[img[src/images/path-rust-03-home-ruin.png]]
+<tw-passagedata name="path-rust-03-home-ruin" tags="[unlock-lore-ending-purist]">[img[src/images/path-rust-03-home-ruin.png]]
 
 I walk through the door at 11:15 AM. The cardboard box is heavy. The mechanical keyboard inside shifts with a dull, plastic thud.
 
@@ -467,53 +522,116 @@ I look at the mug in the box. *I survived the Cloudflare outage.*
 *Technical excellence is a poor shield against a three-car pileup. The foundation was solid, but the house is gone. The borrow checker is satisfied. Nobody else is.*
 
 [[Try again, but this time lie like a professional.-&gt;intro-greg-office]]</tw-passagedata>
-<tw-passagedata name="path-a-grind">I clear the kitchen table. Coffee. Whiteboard markers. A dog-eared copy of -Pattern Recognition and Machine Learning- that I've been pretending to read since 2019. It’s damp, and it smells faintly of the future I’m trying to avoid.
+<tw-passagedata name="path-vimrc">I’ve clutched my .vimrc. It’s a pathetic sight—like a drowning man holding onto a single, gold-plated anchor. My 2011 MacBook Pro groans as I toggle a fold, the fans hitting 6,000 RPM in a desperate attempt to bleed off the heat of a man refusing to admit that the world has moved on to **MCP-standardized agent swarms** and **5-layer context compaction**.
 
-[img[src/images/path-a-grind.png]]
+[img[src/images/path-vimrc.png]]
 
-The hours blur. Eigenvectors. Backpropagation. I drink so much coffee my hands start to look like they'd shake during a drug test. My 2011 MacBook struggles to render the LaTeX in the PDFs. It’s a 200-level math problem being solved by a man with a 100-level grip on reality.
+Programming isn't typing anymore. It's **probabilistic orchestration**. [[Greg|lore-greg]] is winning. He’s already delegated three features to an autonomous digital assembly line while I was trying to fix a broken pipe in Ruby 1.9.3. He doesn't write code; he signs **Agent Cards** and monitors the **heuristic synthesis loops**.
 
-By 4am I'm staring at a whiteboard covered in notation that could qualify as abstract art. Or a map of a campsite.
+"Devin."
 
-Monday arrives like a freight train.
+I don't look up.
 
-[["Go to the meeting."|episode-2-monday]]</tw-passagedata>
-<tw-passagedata name="path-b-liquidate">I open eBay. The IBM Model M fetches $140 from a collector in Berlin. The shirt — size Large, never washed, mint condition irony — goes for $43 to a Portland startup founder who wasn't alive in 1998. 
+"The board doesn't want 'artisanal logic,' Devin." Greg said.
 
-&lt;!-- IMAGE PROMPT: Devin in his dimly lit apartment, surrounded by cardboard boxes. He's holding an IBM Model M keyboard like a sacred relic he's about to sacrifice. He looks tired, his 2010 RailsConf hoodie sleeves pushed up. 16-bit cinematic pixel art, corporate noir, chiaroscuro, high-contrast lighting from a single desk lamp. --&gt;
+His Apple Watch flares. 🚀. 🚀. 🚀. He’s a conductor. I’m just a legacy dependency failing its health check.
+"They want velocity," he continued. "Scale. Not a man who still thinks `attr_accessible` is a valid security strategy."
 
-It is not enough. Each sale is a line removed from my `~/.vimrc`. I feel the "wrapper" of my life thinning.
+I stare at his hairline. "It worked for ten years."
 
-But it buys two weeks of breathing room. Two weeks until I’m "unhosted."
+"Ten years is a century." Greg’s voice is flat. "The board wants results. Not history."
 
-[["Continue."|episode-2-monday]]</tw-passagedata>
-<tw-passagedata name="path-c-create-guy">I sit in the dark for exactly eleven minutes. Then I open a browser. My 2011 MacBook Pro fans kick in just opening LinkedIn. The modern web is a bloated corpse, and I’m about to perform a digital autopsy.
+[[A) "I can automate the quarterly reviews with a shell script. It'll be beautiful."-&gt;path-vim-01-shell]]
+[[B) Stare at him until the silence becomes a HR violation.-&gt;path-vim-01-silence]]</tw-passagedata>
+<tw-passagedata name="path-vim-01-shell">[img[src/images/path-vim-01-shell.png]]
 
-[img[src/images/path-c-create-guy.png]]
+I start typing. My fingers find the rhythm of a `bash` loop that hasn't changed since the 2.6 kernel. I’m piping `sed` into `awk` like I’m building a cathedral out of matchsticks.
 
-&lt;!-- IMAGE PROMPT: A close-up of a browser window showing a LinkedIn profile for 'Kieran Voss'. The profile picture is an AI-generated headshot of a man in his late 30s with a perfectly groomed beard and a 'tech-disruptor' smile. The UI is 16-bit pixelated, JetBrains Mono font. 16-bit cinematic pixel art, corporate noir, terminal amber highlights. --&gt;
+"[[Greg|lore-greg]], look," I said. "The logic is transparent. No black boxes. No probabilistic 'hallucinations'."
 
-First: LinkedIn. I create a profile. "Kieran Voss — AI Solutions Architect. Ex-DeepMind. Current: Independent LLM Consultant (Fortune 500 Focus)." Headshot: generated. Employee count at his fictional "Kairos AI Advisory" firm: three. All of them Kieran.
+Greg doesn't stop walking. He doesn't even turn his head. His Apple Watch flares twice—a double pulse of blue light in the hallway. He’s already approved a pull request for an agentic sentiment analysis tool that renders my script as useful as a hand-cranked pencil sharpener.
 
-Then the CV. I write it in the language of snakes. "Orchestrated multi-agent LLM pipelines at scale." "Reduced token overhead by 47% through deterministic sampling strategies." It sounds like it means something. It might mean nothing. Greg won't know the difference. He thinks 'deterministic' is a type of coffee.
+The MacBook fan screams. 7,000 RPM. 
 
-I hit save. I’ve just deployed a monolith of lies.
+I’m alone in the hallway with a script that works perfectly for a world that ceased to exist at 9:00 AM this morning.
 
-[["Continue."|episode-2-monday]]</tw-passagedata>
+[[Next-&gt;intro-walk-home]]</tw-passagedata>
+<tw-passagedata name="path-vim-01-silence" tags="[unlock-lore-greg-hat]">[img[src/images/path-vim-01-silence.png]]
+
+I don't say a word. I just look at him. I look at the way his baseball hat sits perfectly level, hiding the scalp he gave up on in 2004. 
+
+The silence stretches. It’s a heavy, physical thing, vibrating with the static of the fluorescent lights above us. [[Greg|lore-greg]]'s Apple Watch pings. He looks at it, swipes, and the tension snaps.
+
+"Get some sun, Devin," Greg said.
+
+He walks out. The automatic lights in the corner of the office time out, plunging me into a twilight of amber terminal text and the humming of an empty server rack. I'm a ghost in a machine that doesn't need a soul anymore.
+
+[[Next-&gt;path-vim-02-pip-email]]</tw-passagedata>
+<tw-passagedata name="path-vim-02-pip-email" tags="[unlock-lore-ending-silent]">[img[src/images/path-vim-02-pip.png]]
+
+The notification sound is a bright, cheerful chime. It sounds like progress. It sounds like a "rocketship" emoji made of glass shattering in a quiet room.
+
+I look at the screen. The email is from Sarah. Not *my* Sarah. Sarah from People &amp; Culture.
+
+"Hey Devin!" the email said. "Do you have time to talk tomorrow morning? :) Would love to sync on a few things! Best, Sarah."
+
+The smiley face is a clinical white pixel. It’s the last thing I see before the MacBook battery finally dies, the fan spinning down into a silence that feels like an ending.
+
+**GAME OVER: THE SILENT LEGACY**
+*You chose silence, and the machine interpreted it as an empty health check. The 'Sync' is the sound of the exit door unlocking. The world is orchestrating, and you are no longer in the swarm.*
+
+[[Try again, but this time lie like a professional.-&gt;intro-greg-office]]</tw-passagedata>
     </tw-storydata>
     <script>
       (function () {
         var storyData = document.querySelector("tw-storydata");
         var passages = {};
+        var passageTags = {};
         var startPassage = storyData.getAttribute("start");
+
+        // Persistent State
+        var state = {
+          unlockedLore: [],
+          lastStoryPassage: startPassage
+        };
+
+        // Load state from localStorage
+        var savedState = localStorage.getItem("sr-dev-devin-state");
+        if (savedState) {
+          try {
+            state = JSON.parse(savedState);
+          } catch (e) {
+            console.error("Failed to parse saved state", e);
+          }
+        }
+
+        function saveState() {
+          localStorage.setItem("sr-dev-devin-state", JSON.stringify(state));
+        }
+
+        window.resetStory = function() {
+          var state = JSON.parse(localStorage.getItem("sr-dev-devin-state") || "{}");
+          delete state.lastStoryPassage;
+          localStorage.setItem("sr-dev-devin-state", JSON.stringify(state));
+          location.reload();
+        };
 
         Array.from(storyData.querySelectorAll("tw-passagedata")).forEach(
           function (p) {
-            passages[p.getAttribute("name")] = p.innerHTML;
+            var name = p.getAttribute("name");
+            passages[name] = p.innerHTML;
+            passageTags[name] = (p.getAttribute("tags") || "").split(" ").filter(t => t.trim() !== "");
           },
         );
 
         function render(text) {
+          // 0. Game Over Block (Rails 3.2 style)
+          // Look for **GAME OVER: TITLE** followed by *description*
+          text = text.replace(
+            /\*\*GAME OVER:\s*([^\n\*]+)\*\*\s*[\r\n]+\*([^\*]+)\*/g,
+            '<div class="alert-rails-3"><h4>GAME OVER: $1</h4>$2</div>'
+          );
+
           // 1. Basic Markdown-ish formatting (process BEFORE links to avoid mangling HTML tags)
           // Bold: **text**
           text = text.replace(/\*\*([^\*\n]+)\*\*/g, "<strong>$1</strong>");
@@ -531,6 +649,15 @@ I hit save. I’ve just deployed a monolith of lies.
 
           // Hide AI notes/comments [//]:
           text = text.replace(/^\[\/\/\]:.*$/gm, "");
+
+          // 1.5. Conditional Lore Rendering
+          // Syntax: {{if lore-id}} ... {{endif}}
+          text = text.replace(/\{\{if ([^}]+)\}\}([\s\S]*?)\{\{endif\}\}/g, function(match, condition, content) {
+            if (state.unlockedLore.indexOf(condition.trim()) !== -1) {
+              return content;
+            }
+            return "";
+          });
 
           // 2. Images
           text = text.replace(
@@ -570,7 +697,13 @@ I hit save. I’ve just deployed a monolith of lies.
               dest = content.trim();
             }
 
-            var classes = "tw-link btn-rails-3";
+            var isLore = dest.startsWith("lore-") || dest === "lore-index";
+            var classes = "tw-link";
+            if (isLore) {
+              classes += " lore-link";
+            } else {
+              classes += " btn-rails-3";
+            }
 
             return (
               '<a class="' +
@@ -595,18 +728,62 @@ I hit save. I’ve just deployed a monolith of lies.
         }
 
         function go(name) {
+          // Logic for unlocking lore via naming convention
+          if (name.startsWith("lore-") && state.unlockedLore.indexOf(name) === -1) {
+            state.unlockedLore.push(name);
+            saveState();
+          }
+
+          // Logic for unlocking lore via passage tags
+          if (passageTags[name]) {
+            passageTags[name].forEach(function(tag) {
+              if (tag.startsWith("unlock-lore-")) {
+                var loreId = tag.replace("unlock-lore-", "lore-");
+                if (state.unlockedLore.indexOf(loreId) === -1) {
+                  state.unlockedLore.push(loreId);
+                  saveState();
+                }
+              }
+            });
+          }
+
+          // Track the last non-lore passage so "Return" links work
+          if (!name.startsWith("lore-") && name !== "lore-index") {
+            state.lastStoryPassage = name;
+            saveState();
+          }
+
           var html = passages[name] || "<p>Passage not found: " + name + "</p>";
+          
+          // Custom handling for lore index
+          if (name === "lore-index") {
+            html = ":: lore-index\n**LOREBOOK**\n\nExplore discovered records:\n\n";
+            state.unlockedLore.forEach(function(loreName) {
+              var cleanName = loreName.replace("lore-", "").replace(/-/g, " ");
+              html += "[[ " + cleanName.toUpperCase() + " | " + loreName + " ]]\n";
+            });
+            html += "\n[[ Return to Story | " + state.lastStoryPassage + " ]]";
+          }
+
+          var loreLinkHtml = "";
+          if (state.unlockedLore.length > 0) {
+            loreLinkHtml = '<span class="navbar-divider">|</span>' +
+                           '<a class="tw-link" style="font-size: 14px; text-transform: uppercase;" data-dest="lore-index">Lore</a>';
+          }
+
           document.getElementById("game").innerHTML =
             '<div class="navbar-rails-3">' +
-            '<span class="navbar-brand">Sr Dev Devin</span>' +
+            '<a href="#" onclick="resetStory(); return false;" class="navbar-brand" style="text-decoration:none;">Sr Dev Devin</a>' +
             '<span class="navbar-divider">/</span>' +
             '<span class="navbar-text">' +
             name.replace(/-/g, " ") +
             "</span>" +
+            loreLinkHtml +
             "</div>" +
             '<div id="game-container">' +
             render(html) +
             "</div>";
+
           document
             .getElementById("game")
             .querySelectorAll(".tw-link")
@@ -618,7 +795,7 @@ I hit save. I’ve just deployed a monolith of lies.
         }
 
         document.body.innerHTML = '<div id="game"></div>';
-        go(startPassage);
+        go(state.lastStoryPassage || startPassage);
       })();
     </script>
   </body>

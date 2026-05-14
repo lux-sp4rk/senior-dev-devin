@@ -63,6 +63,14 @@
       .tw-link:hover {
         color: #a5f3b4;
       }
+      .lore-link {
+        color: #0088cc;
+        text-decoration: none;
+      }
+      .lore-link:hover {
+        color: #005580;
+        text-decoration: underline;
+      }
       /* Meta-Joke: Rails 3 Era Bootstrap Button Style */
       .tw-link.btn-rails-3 {
         display: inline-block;
@@ -100,18 +108,34 @@
       }
       .chapter-title {
         display: inline-block;
-        padding: 2px 6px;
-        font-size: 11.844px;
-        font-weight: bold;
-        line-height: 14px;
-        color: #ffffff;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-        white-space: nowrap;
-        vertical-align: baseline;
+        padding: 8px 16px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         background-color: #3a87ad;
         border-radius: 3px;
+        font-size: 11.844px;
+        line-height: 14px;
+        color: #ffffff;
+      }
+      /* Rails 3.2 Bootstrap Alert Style for Game Over */
+      .alert-rails-3 {
+        padding: 14px 35px 14px 14px;
+        margin-top: 2rem;
+        margin-bottom: 20px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #f2dede;
+        border: 1px solid #eed3d7;
+        border-radius: 4px;
+        color: #b94a48;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .alert-rails-3 h4 {
+        margin: 0 0 10px 0;
+        line-height: 20px;
+        color: inherit;
+        font-weight: bold;
+        font-size: 17.5px;
         text-transform: uppercase;
-        margin: 1rem 0 2rem 0;
       }
     </style>
   </head>
@@ -131,15 +155,52 @@
       (function () {
         var storyData = document.querySelector("tw-storydata");
         var passages = {};
+        var passageTags = {};
         var startPassage = storyData.getAttribute("start");
+
+        // Persistent State
+        var state = {
+          unlockedLore: [],
+          lastStoryPassage: startPassage
+        };
+
+        // Load state from localStorage
+        var savedState = localStorage.getItem("sr-dev-devin-state");
+        if (savedState) {
+          try {
+            state = JSON.parse(savedState);
+          } catch (e) {
+            console.error("Failed to parse saved state", e);
+          }
+        }
+
+        function saveState() {
+          localStorage.setItem("sr-dev-devin-state", JSON.stringify(state));
+        }
+
+        window.resetStory = function() {
+          var state = JSON.parse(localStorage.getItem("sr-dev-devin-state") || "{}");
+          delete state.lastStoryPassage;
+          localStorage.setItem("sr-dev-devin-state", JSON.stringify(state));
+          location.reload();
+        };
 
         Array.from(storyData.querySelectorAll("tw-passagedata")).forEach(
           function (p) {
-            passages[p.getAttribute("name")] = p.innerHTML;
+            var name = p.getAttribute("name");
+            passages[name] = p.innerHTML;
+            passageTags[name] = (p.getAttribute("tags") || "").split(" ").filter(t => t.trim() !== "");
           },
         );
 
         function render(text) {
+          // 0. Game Over Block (Rails 3.2 style)
+          // Look for **GAME OVER: TITLE** followed by *description*
+          text = text.replace(
+            /\*\*GAME OVER:\s*([^\n\*]+)\*\*\s*[\r\n]+\*([^\*]+)\*/g,
+            '<div class="alert-rails-3"><h4>GAME OVER: $1</h4>$2</div>'
+          );
+
           // 1. Basic Markdown-ish formatting (process BEFORE links to avoid mangling HTML tags)
           // Bold: **text**
           text = text.replace(/\*\*([^\*\n]+)\*\*/g, "<strong>$1</strong>");
@@ -157,6 +218,15 @@
 
           // Hide AI notes/comments [//]:
           text = text.replace(/^\[\/\/\]:.*$/gm, "");
+
+          // 1.5. Conditional Lore Rendering
+          // Syntax: {{if lore-id}} ... {{endif}}
+          text = text.replace(/\{\{if ([^}]+)\}\}([\s\S]*?)\{\{endif\}\}/g, function(match, condition, content) {
+            if (state.unlockedLore.indexOf(condition.trim()) !== -1) {
+              return content;
+            }
+            return "";
+          });
 
           // 2. Images
           text = text.replace(
@@ -196,7 +266,13 @@
               dest = content.trim();
             }
 
-            var classes = "tw-link btn-rails-3";
+            var isLore = dest.startsWith("lore-") || dest === "lore-index";
+            var classes = "tw-link";
+            if (isLore) {
+              classes += " lore-link";
+            } else {
+              classes += " btn-rails-3";
+            }
 
             return (
               '<a class="' +
@@ -221,18 +297,62 @@
         }
 
         function go(name) {
+          // Logic for unlocking lore via naming convention
+          if (name.startsWith("lore-") && state.unlockedLore.indexOf(name) === -1) {
+            state.unlockedLore.push(name);
+            saveState();
+          }
+
+          // Logic for unlocking lore via passage tags
+          if (passageTags[name]) {
+            passageTags[name].forEach(function(tag) {
+              if (tag.startsWith("unlock-lore-")) {
+                var loreId = tag.replace("unlock-lore-", "lore-");
+                if (state.unlockedLore.indexOf(loreId) === -1) {
+                  state.unlockedLore.push(loreId);
+                  saveState();
+                }
+              }
+            });
+          }
+
+          // Track the last non-lore passage so "Return" links work
+          if (!name.startsWith("lore-") && name !== "lore-index") {
+            state.lastStoryPassage = name;
+            saveState();
+          }
+
           var html = passages[name] || "<p>Passage not found: " + name + "</p>";
+          
+          // Custom handling for lore index
+          if (name === "lore-index") {
+            html = ":: lore-index\n**LOREBOOK**\n\nExplore discovered records:\n\n";
+            state.unlockedLore.forEach(function(loreName) {
+              var cleanName = loreName.replace("lore-", "").replace(/-/g, " ");
+              html += "[[ " + cleanName.toUpperCase() + " | " + loreName + " ]]\n";
+            });
+            html += "\n[[ Return to Story | " + state.lastStoryPassage + " ]]";
+          }
+
+          var loreLinkHtml = "";
+          if (state.unlockedLore.length > 0) {
+            loreLinkHtml = '<span class="navbar-divider">|</span>' +
+                           '<a class="tw-link" style="font-size: 14px; text-transform: uppercase;" data-dest="lore-index">Lore</a>';
+          }
+
           document.getElementById("game").innerHTML =
             '<div class="navbar-rails-3">' +
-            '<span class="navbar-brand">Sr Dev Devin</span>' +
+            '<a href="#" onclick="resetStory(); return false;" class="navbar-brand" style="text-decoration:none;">Sr Dev Devin</a>' +
             '<span class="navbar-divider">/</span>' +
             '<span class="navbar-text">' +
             name.replace(/-/g, " ") +
             "</span>" +
+            loreLinkHtml +
             "</div>" +
             '<div id="game-container">' +
             render(html) +
             "</div>";
+
           document
             .getElementById("game")
             .querySelectorAll(".tw-link")
@@ -244,7 +364,7 @@
         }
 
         document.body.innerHTML = '<div id="game"></div>';
-        go(startPassage);
+        go(state.lastStoryPassage || startPassage);
       })();
     </script>
   </body>

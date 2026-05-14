@@ -1,0 +1,76 @@
+:: path-rust-01-hubris
+I spend forty-eight hours fighting the borrow checker. It’s like wrestling an angel that keeps telling me that my memory management is "unethical." My 2011 MacBook is so hot I could fry an egg on the 'S' key.
+
+I don't finish the port. I don't even get past the middleware. But I do manage to build a custom memory-safe, thread-safe authentication router that is exactly 4MB of pure, unadulterated hubris. 
+
+For a second, I feel it. That old surge of power. I’ve built a foundation so solid it could survive a nuclear winter. I imagine [[Bob|lore-bob]] seeing this—my old mentor who single-handedly architected the core monolith before the VC money changed everything. I can see him nodding, cleaning his glasses on his tie, his worn corduroy blazer smelling of stale coffee and printer toner. He’d say, "Clean code is the only true leverage, Devin." I feel untouchable. I feel like a Senior Dev again.
+
+[img[src/images/path-rust-hubris.png]]
+
+[[Next->path-rust-02-fired]]
+
+:: path-rust-02-fired
+Monday morning, I show it to [[Greg|lore-greg]]. I’m vibrating with the technical purity of it. I’ve already rehearsed the explanation of how zero-cost abstractions will save us millions in compute.
+
+[img[src/images/path-rust-02-fired.png]]
+
+He stares at the terminal. He stares at the `Cargo.lock` file like it's a suicide note written in a language he doesn't speak. My MacBook is still ticking from the heat.
+
+Greg said, his voice flat. "Where is the AI, Devin?" 
+
+The twitch in his eye is gone. Absolute stillness.
+
+"The board wanted a growth lever," Greg said. "AI-driven. High-level."
+
+I point at the terminal. "It's thread-safe. Memory-safe. It'll save millions in compute."
+
+"We're replacing the monolith with Okta next week." Greg doesn't even look at the code. "This isn't even 'unscalable chic' anymore. It's just obsolete."
+
+"Greg, the foundation—"
+
+"Pack your things, Devin."
+
+[[A) Doubling down: "You're building on sand, Greg. This code is the only thing that's real."->path-rust-03-fired]]
+[[B) Look out the window at the parking lot.->path-rust-03-parking-lot]]
+
+:: path-rust-03-fired
+[img[src/images/path-rust-03-fired.png]]
+
+"Real is what the board can sell," [[Greg|lore-greg]] said. He doesn't even wait for me to explain the ownership model. He just slides a cardboard box across the desk. It’s already got my spare mechanical keyboard and my "I survived the Cloudflare outage" mug in it. 
+
+I don't say anything else. There's nothing left to say to a man who thinks a compiler is a suggestion.
+
+[[Next->path-rust-03-home-ruin]]
+
+:: path-rust-03-parking-lot [unlock-lore-greg-commute]
+[img[src/images/path-rust-03-parking-lot.png]]
+
+I look out the window. Down in the parking lot, [[Greg|lore-greg]]’s Audi is backed into my spot with sickening precision. It looks like a polished, metallic predator waiting for its next victim. The sun glints off the 360-degree cameras. 
+
+Greg is already on his Apple Watch, swiping away the ghost of my career. I'm a memory leak he's just patched.
+
+[[Next->path-rust-03-home-ruin]]
+
+:: path-rust-03-home-ruin [unlock-lore-ending-purist]
+[img[src/images/path-rust-03-home-ruin.png]]
+
+I walk through the door at 11:15 AM. The cardboard box is heavy. The mechanical keyboard inside shifts with a dull, plastic thud.
+
+Sarah is on the couch. The cast on her leg is a blinding, clinical white in the dark room. She doesn't look up from the stack of medical bills.
+
+"You're early," she said.
+
+I put the box on the kitchen counter. "The Audi was in my spot."
+
+"The insurance adjuster called," Sarah said. "We're not covered. Some technicality with the 'incident' definition."
+
+I look at the mug in the box. *I survived the Cloudflare outage.* 
+
+"I used the borrow checker, Sarah," I said. "It was thread-safe."
+
+"The kids need the iPad screen fixed," she said. "They're fighting."
+
+**GAME OVER: THE PURIST'S PLIGHT**
+*Technical excellence is a poor shield against a three-car pileup. The foundation was solid, but the house is gone. The borrow checker is satisfied. Nobody else is.*
+
+[[Try again, but this time lie like a professional.->intro-greg-office]]

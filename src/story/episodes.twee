@@ -3,7 +3,7 @@
 
 The Monday morning air in the office is filtered through a ventilation system that hasn’t been cleaned since the 2008 financial crisis. It smells like ozone, burnt coffee, and the quiet desperation of forty people pretending to understand a "Strategic Pivot."
 
-I walk past the row of standing desks. Greg is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
+I walk past the row of standing desks. [[Greg|lore-greg]] is already at the head of the conference table, his baseball hat pulled low. He’s looking at his Apple Watch, swiping through notifications with the mechanical efficiency of a dealer at a high-stakes poker game.
 
 "Devin," Greg said. He didn't look up. "You’re three minutes early. I love the intentionality."
 
@@ -43,7 +43,7 @@ He leaned forward, resting his elbows on the glass table. "In the AI era, code i
 
 "I mean the code that *is* the company's past," Kieran said. 
 
-Greg nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
+[[Greg|lore-greg]] nodded so hard I thought his hat might fall off. "Exactly. We’re moving from 'writing' to 'orchestrating.' Kieran is the conductor."
 
 [[Next->episode-2-kieran-plan]]
 
@@ -64,7 +64,7 @@ He tapped the screen. A series of boxes appeared, labeled with things like 'Heur
 
 "That 0.1% is where the data breaches happen," I said.
 
-Greg cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
+[[Greg|lore-greg]] cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran has already run the simulations. The board is thrilled. They want this deployed by Friday."
 
 [[A) "The borrow checker would have caught that latency without the 'stochastic' guessing."->episode-2-rust-callback]]
 [[B) "Fine. If the board wants a guess-based security system, who am I to stop the future?"->episode-2-defeat-agreement]]
@@ -74,7 +74,7 @@ Greg cleared his throat. "Devin, let's not get bogged down in the 'how.' Kieran 
 
 "The borrow checker in the Rust middleware I wrote already handles the concurrency issues," I said. "If we just deployed that foundation—"
 
-"Devin," Greg said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
+"Devin," [[Greg|lore-greg]] said. His voice was flat now. "We talked about this. Rust is a legacy trap. It's too slow to develop. We need *velocity*. We need Kieran's swarms."
 
 Kieran nodded, his empathy patch engaging. "I appreciate the technical purity, Devin. I really do. But we’re not building a cathedral anymore. We’re building a stream. And streams need to move."
 
@@ -89,7 +89,7 @@ I closed my laptop. The aluminum lid felt cold. "Fine. If the board wants a secu
 
 Kieran beamed. "I knew we’d find alignment, Devin. I’m looking forward to seeing how your artisanal knowledge can help us calibrate the heuristic filters."
 
-Greg stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
+[[Greg|lore-greg]] stood up, his Apple Watch flaring. 🚀. 🚀. 🚀. "Great. Kieran, I'll show you to your pod. Devin, you’re on 'Technical Liaison' duty. Make sure Kieran has everything he needs from the monolith."
 
 They walked out, their footsteps echoing in the empty hallway. I was alone in the room with a whiteboard full of boxes that didn't mean anything.
 
@@ -150,7 +150,7 @@ Kieran stood up. "Let's take this offline. I think you need some time to align w
 
 I walked out of the building at 6:30 PM. The cardboard box was tucked under my arm, the mechanical keyboard inside rattling with every step.
 
-The Audi was gone. Greg had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
+The Audi was gone. [[Greg|lore-greg]] had probably 'tactically inserted' himself into a happy hour with Kieran to celebrate the death of artisanal logic.
 
 I stood on the sidewalk and watched the automatic lights in the lobby time out, one by one. The building looked like a sleeping giant, unaware that it was now being guarded by a swarm of ghosts.
 
