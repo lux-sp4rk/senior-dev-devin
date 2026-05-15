@@ -29,6 +29,7 @@ The project uses a JSON-based game state system combined with custom Twee syntax
 
 **Rule:** Every story path (passage) must have an accompanying image.
 -   **Policy:** Follow [docs/IMAGE_WORKFLOW.md](docs/IMAGE_WORKFLOW.md).
+-   **Cheap Iteration:** Use `source .env.nanobanana` to enable low-cost drafting. This uses the Flash model and 1K resolution to minimize API spend during development.
 -   **Agent Role:** Do NOT generate the image yourself. Create a high-quality **image prompt** (as an HTML comment) based on [docs/STYLE_GUIDE.md](docs/STYLE_GUIDE.md).
 -   **Handoff:** Flag for a specialized illustrator agent.
 
