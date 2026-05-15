@@ -288,6 +288,12 @@
         };
 
         window.openLoreModal = function(name) {
+          // Unlock lore if it's a specific entry
+          if (name.startsWith("lore-") && state.unlockedLore.indexOf(name) === -1) {
+            state.unlockedLore.push(name);
+            saveState();
+          }
+
           var html = passages[name] || "<p>Lore not found: " + name + "</p>";
           
           // Custom handling for lore index
