@@ -3,3 +3,5 @@ node_modules/
 .gemini/
 gha-creds-*.json
 .env.nanobanana
+node_modules/.vite/
+.antigravitycli/

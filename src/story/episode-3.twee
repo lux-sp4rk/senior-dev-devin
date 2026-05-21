@@ -1,0 +1,72 @@
+
+:: episode-3-the-breach
+<!-- EPISODE 3: THE BREACH -->
+<!-- IMAGE PROMPT: 16-bit cinematic pixel art. Devin's 2011 MacBook screen in a dark room. A terminal window is open, showing a stream of clinical white error messages in JetBrains Mono. One line is highlighted in terminal amber: "FATAL: HEURISTIC VALIDATION FAILURE - ENTROPY THRESHOLD EXCEEDED." The room is dimly lit by the flickering blue light of a distant router. Corporate noir, high-contrast, chiaroscuro. -->
+
+The notification didn't come from Slack. It came from a custom watcher script I’d hidden in the LDAP monolith—a bit of "artisanal logic" that Kieran's swarm hadn't found yet.
+
+*2:14 AM. Entropy Alert: Latent-space proximity mismatch on root-access handshake.*
+
+I sit up in bed. The darkness of the room feels heavy, a physical weight pressing against my chest. Sarah is breathing softly beside me, unaware that the probabilistic future just had a collision with reality.
+
+I open my laptop. The fan doesn't even spin up yet; the machine is too tired to be scared. I look at the logs. The swarm didn't just 'guess' a login. It hallucinated an entire administrative session because a malformed header looked "statistically similar" to an onboarding packet.
+
+The conduit is open. Kieran’s conductorship just invited the entire internet to orchestrate our user directory.
+
+[[A) Call Greg. "The swarm is eating itself, Greg. We need to cut the LDAP socket now."->episode-3-call-greg]]
+[[B) Shadow-patch it. "If I can fix it before the morning sync, maybe the conductorship won't have to end in a funeral."->episode-3-shadow-patch]]
+
+:: episode-3-call-greg
+<!-- IMAGE PROMPT: 16-bit cinematic pixel art. A split-screen composition. On the left, a close-up of Devin’s face, illuminated by the harsh blue light of his phone. On the right, Greg’s expensive nightstand. An Apple Watch is glowing with an incoming call, its light reflecting off a glass of Soylent and a perfectly level baseball hat resting nearby. Corporate noir, high-contrast. -->
+
+The phone rings four times. When Greg answers, he sounds like he’s already been awake for a century.
+
+"Devin," Greg said. His voice is a dry rasp. "Is this about the velocity? I’m seeing the dashboard. The numbers are incredible."
+
+"The numbers are a hallucination, Greg," I say. I’m looking at a hex dump of a root-level handshake that never happened. "We have an entropy breach. The swarm just authorized a session for a user that doesn't exist."
+
+"Heuristic validation has a 0.1% margin, Devin. Kieran was clear."
+
+"That 0.1% just downloaded the payroll database, Greg."
+
+Silence. On the other end of the line, I can hear the faint, mechanical chime of an Apple Watch notification. 
+
+"I’ll call Kieran," Greg said. "He'll recalibrate the filters."
+
+"Recalibrate? Greg, we need to shut it down. Now."
+
+"We can't shut it down, Devin. We’re in the stream now. You don't stop a stream. You just... guide it."
+
+[[Next->episode-3-the-wait]]
+
+:: episode-3-shadow-patch
+<!-- IMAGE PROMPT: 16-bit cinematic pixel art. Devin's hands on his mechanical keyboard. The keys are illuminated by the amber glow of the terminal. On the screen, a single block of Ruby code is being wrapped in a conditional guard. "if artisanal_validation(token) ...". The background is the deep shadows of his apartment. Corporate noir, chiaroscuro. -->
+
+I don't call. I don't Slack. I just start typing. 
+
+My fingers find the old, familiar rhythm. `if !token.valid?`. `rescue SecurityError`. It’s the kind of code Kieran calls "friction," but right now, friction is the only thing keeping the building from burning down.
+
+I’m writing a wrapper—a "Ghost Middleware." It will sit silently between the swarm and the raw socket, performing a deterministic check on every probabilistic guess. It’s slow. It will add 200ms of latency back into the "accelerated" pipeline. 
+
+Greg will see it on the dashboard. He’ll see the "velocity" dip. He’ll see the conductor's song lose its tempo.
+
+I hit `git commit`. My heart is a frantic `bash` loop.
+
+[[Next->episode-3-the-wait]]
+
+:: episode-3-the-wait
+<!-- IMAGE PROMPT: 16-bit cinematic pixel art. Devin sitting at his kitchen counter as dawn breaks. A clinical white light is bleeding through the window blinds, cutting across his face. He’s holding his "I survived the Cloudflare outage" mug. The MacBook is closed. He looks exhausted, waiting for the morning sync. Corporate noir, cold morning light. -->
+
+I wait for the sun to come up. It’s a slow, clinical white light that reminds me of Greg’s office. 
+
+By 8:00 AM, the #engineering-alignment channel is already vibrating. 
+
+*Kieran: Seeing some interesting latent-space drift in the Auth filters. Anyone touched the LDAP wrapper?*
+
+*Greg: Devin?*
+
+I pick up my phone. I look at the mortgage statement on the counter. I look at the cardboard box in the corner.
+
+The breach isn't just in the code anymore. It's in the room.
+
+[[Next->episode-3-monday-sync]]
